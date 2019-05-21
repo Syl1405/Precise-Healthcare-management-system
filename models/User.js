@@ -2,7 +2,7 @@ const Sequelize = require("sequelize")
 const db = require("../database/db")
 
 module.exports = db.sequelize.define(
-    'user',
+    'User',
     {
         id: {
             type: Sequelize.INTEGER,
@@ -21,8 +21,5 @@ module.exports = db.sequelize.define(
         password: {
             type: Sequelize.STRING
         }
-    },
-    {
-        timestamps: false
     }
 )

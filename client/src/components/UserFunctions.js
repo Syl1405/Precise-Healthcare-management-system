@@ -21,6 +21,20 @@ export const login = user => {
         })
         .then(res => {
             localStorage.setItem('usertoken', res.data)
+            console.log(res.data)
+            return res.data
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}
+
+export const test = aaa => {
+    return axios
+        .get('test/test')
+        .then(res => {
+            localStorage.setItem('datatoken', res.data)
+            console.log(localStorage.datatoken)
             return res.data
         })
         .catch(err => {

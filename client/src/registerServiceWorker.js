@@ -46,7 +46,8 @@ export default function register() {
         });
       } else {
         // Is not local host. Just register service worker
-        registerValidSW(swUrl);
+        checkValidServiceWorker(swUrl);
+        //registerValidSW(swUrl);
       }
     });
   }

@@ -1,5 +1,5 @@
 const express = require("express")
-const users = express.Router()
+const router = express.Router()
 const cors = require('cors')
 const jwt = require("jsonwebtoken")
 const bcrypt = require('bcrypt')
@@ -8,61 +8,31 @@ var mysql = require('mysql');
 var dbconfig = require('../database/database');
 var connection = mysql.createConnection(dbconfig.connection);
 connection.query('USE ' + dbconfig.database);
-
-const User = require("../models/User")
-users.use(cors())
+router.use(cors())
 
 process.env.SECRET_KEY = 'secret'
 
-users.post('/register', (req,  res) => {
-    const today = new Date()
-    const userData = {
-        name: req.body.name,
-        email: req.body.email,
-        username: req.body.username,
-        password: req.body.password
-    }
+var id = '67af0b6ee92a46b5a987c2e639f01720',time = '2019-04-29 00:00:00';
 
-   connection.query("SELECT * FROM users WHERE username = ? ", [req.body.username], function(err, rows){
+router.get('/test', (req, res) => {
+   connection.query("select userid,updatetime,LightlyActiveMinutes,FairlyActiveMinutes,VeryActiveMinutes,CaloriesOut from templateActive where userid = ? and updatetime < ? order by updatetime desc limit 1;"
+    , [id,time], function(err,  rows){
     if(err)
         res.send('error: ' + err)
-    if(rows.length){
-        res.json({ error: "User already exists" })
-        //return next();
+    if(rows && rows.length){
+        console.log(rows);
+        res.send(rows)
+        //return(next);
     }
     else{
-        //userData.password = bcrypt.hash(req.body.password, 10,null);
-
-        var insertQuery = "insert users (name, email, username, password) values (?, ?, ?, ?)";
-
-        connection.query(insertQuery, [userData.name, userData.email, userData.username, userData.password],
-          function(err, rows){
-               res.json({ status: userData.username + ' registered' })
-          });
-        }
-   });
-})
-
-users.post('/login', (req,  res) => {
-   connection.query("SELECT * FROM users WHERE username = ? and password = ? ", [req.body.username, req.body.password], function(err, rows){
-    if(err)
-        res.send('error: ' + err)
-    if(rows.length){
-        //console.log(rows[0].dataValues);
-        let token = jwt.sign(rows[0], process.env.SECRET_KEY, {
-            expiresIn: 1440
-        })
-        res.send(token)
-        //return next();
-    }
-    else{
-        res.status(400).json({ error: 'User does not exist' })
+        res.status(400).json({ error: 'No data' })
     }
    });
 })
 
-module.exports = users
-
+module.exports = router
+//select userid,updatetime,LightlyActiveMinutes,FairlyActiveMinutes,VeryActiveMinutes,CaloriesOut from templateActive where userid = '67af0b6ee92a46b5a987c2e639f01720' and updatetime < '2019-04-29 00:00:00' order by updatetime desc limit 1;
+//select StagesDeep,StagesLight,StagesRem,StagesWake from templateSleep where UserID = ? order by UpdateTime desc limit 2;
    /* User.findOne({
         where: {
             username: req.body.username
