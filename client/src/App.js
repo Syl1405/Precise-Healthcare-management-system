@@ -9,7 +9,7 @@ import Profile from './components/Profile'
 import Rank from './components/Rank'
 import PersonData from './components/PersonData'
 import test from './components/test'
-
+//<Route exact path="/user/:id" component={Article} />
 class App extends Component {
   render () {
     return (

@@ -46,8 +46,7 @@ export const home = aaa => {
     return axios
         .get('home/home')
         .then(res => {
-            localStorage.setItem('hometoken', res.data)
-            console.log(localStorage.hometoken)
+            
             return res.data
         })
         .catch(err => {

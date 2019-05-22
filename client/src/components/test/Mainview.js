@@ -208,7 +208,6 @@ class Mainview extends Component {
             <div className="container">
                 <div className="jumbotron mt-5">
                     <HighchartsReact highcharts = {Highcharts} options={configs} />
-
                 </div>
             </div>
         )
