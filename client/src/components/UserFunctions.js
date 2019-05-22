@@ -41,3 +41,16 @@ export const test = aaa => {
             console.log(err)
         })
 }
+
+export const home = aaa => {
+    return axios
+        .get('home/home')
+        .then(res => {
+            localStorage.setItem('hometoken', res.data)
+            console.log(localStorage.hometoken)
+            return res.data
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}

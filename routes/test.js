@@ -15,7 +15,7 @@ process.env.SECRET_KEY = 'secret'
 var id = '67af0b6ee92a46b5a987c2e639f01720',time = '2019-04-29 00:00:00';
 
 router.get('/test', (req, res) => {
-   connection.query("select userid,updatetime,LightlyActiveMinutes,FairlyActiveMinutes,VeryActiveMinutes,CaloriesOut from templateActive where userid = ? and updatetime < ? order by updatetime desc limit 1;"
+   connection.query("select userid,updatetime,LightlyActiveMinutes,FairlyActiveMinutes,VeryActiveMinutes,CaloriesOut from templateActive where userid = ? and updatetime < ? and LightlyActiveMinutes > 0 order by updatetime desc limit 2;"
     , [id,time], function(err,  rows){
     if(err)
         res.send('error: ' + err)
@@ -31,7 +31,7 @@ router.get('/test', (req, res) => {
 })
 
 module.exports = router
-//select userid,updatetime,LightlyActiveMinutes,FairlyActiveMinutes,VeryActiveMinutes,CaloriesOut from templateActive where userid = '67af0b6ee92a46b5a987c2e639f01720' and updatetime < '2019-04-29 00:00:00' order by updatetime desc limit 1;
+//select updatetime,LightlyActiveMinutes,FairlyActiveMinutes,VeryActiveMinutes,CaloriesOut from templateActive where userid = '67af0b6ee92a46b5a987c2e639f01720' and updatetime < '2019-04-29 00:00:00' order by updatetime desc limit 1;
 //select StagesDeep,StagesLight,StagesRem,StagesWake from templateSleep where UserID = ? order by UpdateTime desc limit 2;
    /* User.findOne({
         where: {
