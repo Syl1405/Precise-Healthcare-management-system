@@ -122,7 +122,7 @@ router.get('/sleep', (req, res, next) => {
     for(i = 0; i < user.length;i++){
         userid = user[i].userid;
         //console.log("sleep");
-        connection.query("select userid,updatetime,StagesDeep,StagesLight,StagesRem,StagesWake from templateSleep where userid = ? order by updatetime desc limit 2",[userid], function(err,  rows){
+        connection.query("select userid,updatetime,StagesDeep,StagesLight,StagesRem,StagesWake from templateSleep where userid = ? and StagesDeep != 0 order by updatetime desc limit 2",[userid], function(err,  rows){
             if(err)
                 res.send('error: ' + err);
             if(rows && rows.length > 0){

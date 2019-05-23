@@ -3,7 +3,7 @@ import { Link, withRouter } from 'react-router-dom'
 import Div100vh from 'react-div-100vh'
 //import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
 ////style={{backgroundColor: "#444444"}}
-class Login extends Component {
+class Login_2 extends Component {
     render () {
         return (
             <div className="container">    
@@ -21,4 +21,4 @@ class Login extends Component {
     }
 }
 
-export default Login
+export default Login_2

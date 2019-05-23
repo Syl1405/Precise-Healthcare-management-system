@@ -15,13 +15,13 @@ process.env.SECRET_KEY = 'secret'
 var id = '67af0b6ee92a46b5a987c2e639f01720',time = '2019-04-29 00:00:00';
 
 router.get('/test', (req, res) => {
-   connection.query("select userid,updatetime,LightlyActiveMinutes,FairlyActiveMinutes,VeryActiveMinutes,CaloriesOut from templateActive where userid = ? and updatetime < ? and LightlyActiveMinutes > 0 order by updatetime desc limit 2;"
-    , [id,time], function(err,  rows){
+   connection.query("select userid,updatetime,LightlyActiveMinutes,FairlyActiveMinutes,VeryActiveMinutes,CaloriesOut from templateActive where userid = ? and LightlyActiveMinutes > 0 order by updatetime desc limit 2;"
+    , [id], function(err,  rows){
     if(err)
         res.send('error: ' + err)
     if(rows && rows.length){
         console.log(rows);
-        res.send(rows)
+        res.send(rows);
         //return(next);
     }
     else{

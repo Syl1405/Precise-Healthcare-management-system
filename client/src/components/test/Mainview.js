@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import Div100vh from 'react-div-100vh'
 import jwt_decode from 'jwt-decode'
-import { test } from '../UserFunctions'
+import { patient } from '../UserFunctions'
+import '../../index.css';
 
 import Highcharts from 'highcharts' //npm install highcharts-more --save
 import * as HighchartsMore from "highcharts/highcharts-more"
@@ -15,38 +16,46 @@ HighchartsMore(Highstock)
 class Mainview extends Component {
     constructor() {
         super()
+        //console.log(this.props.match.params.id);
         this.state = {
+            name: '',
+            imagepath:'',
             StagesDeep: '',
             StagesLight: '',
             StagesRem: '',
             StagesWake: '',
-            StagesDeep2: '',
-            StagesLight2: '',
-            StagesRem2: '',
-            StagesWake2: '',
             LightlyActiveMinutes: '',
             FairlyActiveMinutes: '',
             VeryActiveMinutes: '',
             CaloriesOut: ''
         }
-        test().then(res => {
-            //this.props.history.push(`/`)
+        var NewArray = new Array();
+　      NewArray = window.location.href.split('/');
+        console.log(NewArray[NewArray.length-1]);
+        const userid =  NewArray[NewArray.length-1];
+        var size = 0;
+        patient(userid).then(res => {
             console.log(res);
+            console.log(res[3] != undefined ? 1 : 0);
             this.setState({
-                /*StagesDeep: res[0].StagesDeep,
-                StagesLight: res[0].StagesLight,
-                StagesRem: res[0].StagesRem,
-                StagesWake: res[0].StagesWake,
-                StagesDeep2: res[1].StagesDeep,
-                StagesLight2: res[1].StagesLight,
-                StagesRem2: res[1].StagesRem,
-                StagesWake2: res[1].StagesWake*/
-                LightlyActiveMinutes: res[0].LightlyActiveMinutes,
-                FairlyActiveMinutes: res[0].FairlyActiveMinutes,
-                VeryActiveMinutes: res[0].VeryActiveMinutes,
-                CaloriesOut: res[0].CaloriesOut
+                name: res[size].name,
+                imagepath: res[size].imagepath,
+                LightlyActiveMinutes: res[size+=2] != undefined ? res[size].sum_1 : 0,
+                FairlyActiveMinutes: res[size] != undefined ? res[size].sum_2 : 0,
+                VeryActiveMinutes: res[size] != undefined ? res[size].sum_3 : 0,
+                CaloriesOut: res[size] != undefined ? res[size].sum_4 : 0,
+                StagesDeep:  res[++size] != undefined ? res[size].StagesDeep : 0,
+                StagesLight: res[size] != undefined ? res[size].StagesLight : 0,
+                StagesRem:  res[size] != undefined ? res[size].StagesRem : 0,
+                StagesWake: res[size] != undefined ? res[size].StagesWake : 0
+                
             })
+
+            
         })
+    }
+    componentDidMount() {
+        
     }
 
     /*componentDidMount () {
@@ -61,7 +70,7 @@ class Mainview extends Component {
     }*/
 
     render () {
-        /*var configs = {
+        var configs = {
             chart: {
                 type: 'bar',
                 height: 300,
@@ -123,8 +132,8 @@ class Mainview extends Component {
                     data: [this.state.StagesWake]
                 },
             ]
-        }*/
-        var configs = {
+        }
+        var configs_2 = {
             chart: {
                 type: 'bar',
                 marginTop: 40,
@@ -207,7 +216,15 @@ class Mainview extends Component {
         return (
             <div className="container">
                 <div className="jumbotron mt-5">
+                    <img src={this.state.imagepath} alt={this.state.name} className="circular--square" height="100" width="100" /><br/>
+                    <a>{this.state.name}</a><br/>
+                </div>
+                <div className="jumbotron mt-5">
                     <HighchartsReact highcharts = {Highcharts} options={configs} />
+                    
+                </div>
+                <div className="jumbotron mt-5">
+                    <HighchartsReact highcharts = {Highcharts} options={configs_2} />
                 </div>
             </div>
         )

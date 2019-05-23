@@ -53,3 +53,17 @@ export const home = aaa => {
             console.log(err)
         })
 }
+
+export const patient = user => {
+    return axios
+        .post('patient/home', {
+            userid : user
+        })
+        .then(res => {
+            
+            return res.data
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}

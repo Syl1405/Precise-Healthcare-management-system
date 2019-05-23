@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link, withRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Div100vh from 'react-div-100vh'
 import { home } from '../UserFunctions'
 import Preview from './Preview';
@@ -17,7 +17,7 @@ class Mainview extends Component {
         home().then(res => {
             rows = res;
             console.log(res);
-            for(let i = 0;i< res.length;i++){
+            for(let i = 0;i < res.length;i++){
                 //console.log(res[i].userid);
                 this.state.user.push(res[i]);
                 /*this.state.name.push(res[i].name);
@@ -30,6 +30,7 @@ class Mainview extends Component {
                 this.setState(this.state)
             }
             console.log(this.state.user);
+
         })
 
     }
@@ -42,7 +43,7 @@ class Mainview extends Component {
                             this.state.user.map((user) => {
                               return (
                                 <div>
-                                    <Preview user={user} />
+                                    <Preview user={user} key={user.userid} />
                                 </div>
                               );
                             })
