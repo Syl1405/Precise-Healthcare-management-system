@@ -7,7 +7,7 @@ import Mainview from './Mainview';
 import '../css/styles.css';
 //import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
 ////style={{backgroundColor: "#444444"}}
-class Landing extends Component {
+class Home extends Component {
     logOut(e) {
         e.preventDefault()
         localStorage.removeItem('usertoken')
@@ -29,11 +29,11 @@ class Landing extends Component {
             </div>
         )
         return (
-            <div className="home-page">
+            <div>
              {localStorage.usertoken ? userLink : loginRegLink}
             </div>
         )
     }
 }
 
-export default Landing
+export default Home

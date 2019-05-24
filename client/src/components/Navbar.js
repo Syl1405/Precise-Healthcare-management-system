@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
+import './css/styles.css';
 
 class Navbar extends Component {
     logOut(e) {
@@ -10,58 +11,28 @@ class Navbar extends Component {
 
     render() {
         const loginRegLink = (
-            <ul className="navbar-nav">
-                <li className="nav-item">
-                    <Link to="/login" className="nav-link">
-                        Login
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/register" className="nav-link">
-                        Register
-                    </Link>
-                </li>
-            </ul>
+            <div className="title_login">
+                <div className="login">
+                    <Link to="/login" className="link_login" >登入</Link>
+                </div>
+                <div className="register">
+                    <Link to="/register" className="link_login">登出</Link>
+                </div>
+            </div>
         )
         const userLink = (
-            <ul className="navbar-nav">
-                <li className="nav-item">
-                    <Link to="/profile" className="nav-link">
-                        User
-                    </Link>
-                </li>
-                <li className="nav-item">
-                    <a href="" onClick={this.logOut.bind(this)} className="nav-link">
-                        Logout
-                    </a>
-                </li>
-            </ul>
+                <div className="title">
+                <div className="text-right">
+                    <a href="" onClick={this.logOut.bind(this)} className="link_login">登出 </a>
+                    <a> &nbsp;</a>
+                </div>
+                </div>
         )
 
         return (
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded">
-                <button className="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbar1"
-                    aria-controls="navbar1"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span className="navbar-toggle-icon"></span>
-                </button>
-
-                <div className="collapse navbar-collapse justify-content-md-center"
-                    id="navbar1">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <Link to="/" className="nav-link">
-                                Home
-                            </Link>
-                        </li>
-                    </ul>
+            <div>
                     {localStorage.usertoken ? userLink : loginRegLink}
-                </div>
-            </nav>
+            </div>
         )
     }
 }

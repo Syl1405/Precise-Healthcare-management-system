@@ -8,7 +8,6 @@ import '../css/styles.css';
 //import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
 ////style={{backgroundColor: "#444444"}}
 var rows;
-var carArray = [{ name : "Ford" , price : 15000 }, { name : "toyota" , price : 12000 } , { name : "Rover" , price : 14000 }];
 class Mainview extends Component {
     constructor() {
         super()
@@ -38,19 +37,15 @@ class Mainview extends Component {
     render () {
         return (
                 <div className="guys">
-                    <div>
                         {
                             this.state.user.map((user) => {
                               return (
-                                <div>
+                                <div  className="oneGuy">
                                     <Preview user={user} key={user.userid} />
                                 </div>
                               );
                             })
-                        }
-                        
-                    </div>
-                    
+                        }                   
                 </div>
         )
     }
