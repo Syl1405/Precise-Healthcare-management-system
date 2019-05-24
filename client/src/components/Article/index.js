@@ -4,7 +4,6 @@ import Div100vh from 'react-div-100vh'
 import Login from './Login';
 import Sidebar from './Sidebar';
 import Mainview from './Mainview';
-import '../css/styles.css';
 //import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
 ////style={{backgroundColor: "#444444"}}
 class Landing extends Component {
@@ -19,11 +18,11 @@ class Landing extends Component {
         )
 
         const userLink = (
-            <div>
-                <div className="navigator">
+            <div class="row" id="row-main">
+                <div class="col-md-2"  style={{backgroundColor: "#444444", height: '100vh',color: 'white'}}>
                     <Sidebar />
                 </div>
-                <div className="mainPanel">
+                <div class="col-md-10" id="content">
                     <Mainview />
                 </div>
             </div>

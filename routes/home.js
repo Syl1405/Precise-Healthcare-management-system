@@ -92,6 +92,7 @@ router.get('/activate', (req, res, next) => {
                 var rows_updatetime = new Date(rows[0].max_time);
                 var rows_userid = rows[0].userid;
                 var total_min = Number(rows[0].sum_1)+Number(rows[0].sum_2)+Number(rows[0].sum_3)-Number(rows[1].sum_1)-Number(rows[1].sum_2)-Number(rows[1].sum_3);
+                var total_min_1 = Number(rows[0].sum_1)+Number(rows[0].sum_2)+Number(rows[0].sum_3);
                 //console.log(rows_userid);
                 connection.query("select activate_time from realtime_data where userid = ? limit 1",[rows_userid], function(err,  rows){
                     if(err)
@@ -103,7 +104,7 @@ router.get('/activate', (req, res, next) => {
                             //var d = new Date(rows[0].activate_time);
                             //console.log(rows[0].activate_time+" "+activate+" "+total_min+" "+rows_userid);
                             var insertQuery = "update realtime_data set activate_time = ? , activate = ? , activate_value = ? where userid = ?";
-                            connection.query(insertQuery, [rows[0].activate_time, activate, total_min, rows_userid],
+                            connection.query(insertQuery, [rows[0].activate_time, activate, total_min_1, rows_userid],
                               function(err, rows){
                                    if(err) res.send('error: ' + err);
                                    //res.json({ status: userid + ' activate update' })
@@ -130,6 +131,7 @@ router.get('/sleep', (req, res, next) => {
                 var rows_updatetime = new Date(rows[0].updatetime);
                 var rows_userid = rows[0].userid;
                 var total_min = Number(rows[0].StagesDeep)+Number(rows[0].StagesLight)+Number(rows[0].StagesRem)+Number(rows[0].StagesWake)-Number(rows[1].StagesDeep)-Number(rows[1].StagesLight)-Number(rows[1].StagesRem)-Number(rows[1].StagesWake);
+                var total_min_1 = Number(rows[0].StagesDeep);
                 connection.query("select sleep_time from realtime_data where userid = ? limit 1",[rows_userid], function(err,  rows){
                     if(err)
                         res.send('error: ' + err)
@@ -139,7 +141,7 @@ router.get('/sleep', (req, res, next) => {
                             var sleep = total_min > 120 || total_min < -120 ? 3 : (total_min > 60 || total_min < -60 ? 2 : 1);
                             var insertQuery = "update realtime_data set sleep_time = ? , sleep = ? , sleep_value = ? where userid = ?";
                             //console.log(rows[0].sleep_time+"/"+sleep+"/"+total_min+"/"+userid);
-                            connection.query(insertQuery, [rows[0].sleep_time, sleep, total_min, rows_userid],
+                            connection.query(insertQuery, [rows[0].sleep_time, sleep, total_min_1, rows_userid],
                               function(err, rows){
                                    if(err)res.send('error: ' + err);
                                    //res.json({ status: userid + ' sleep update' })

@@ -38,16 +38,16 @@ class Mainview extends Component {
             console.log(res);
             console.log(res[3] != undefined ? 1 : 0);
             this.setState({
-                name: res[size].name,
-                imagepath: res[size].imagepath,
-                LightlyActiveMinutes: res[size+=2] != undefined ? res[size].sum_1 : 0,
-                FairlyActiveMinutes: res[size] != undefined ? res[size].sum_2 : 0,
-                VeryActiveMinutes: res[size] != undefined ? res[size].sum_3 : 0,
-                CaloriesOut: res[size] != undefined ? res[size].sum_4 : 0,
-                StagesDeep:  res[++size] != undefined ? res[size].StagesDeep : 0,
-                StagesLight: res[size] != undefined ? res[size].StagesLight : 0,
-                StagesRem:  res[size] != undefined ? res[size].StagesRem : 0,
-                StagesWake: res[size] != undefined ? res[size].StagesWake : 0
+                name: res[0].name,
+                imagepath: res[0].imagepath,
+                LightlyActiveMinutes: res[2] != undefined ? res[2].sum_1 : 0,
+                FairlyActiveMinutes: res[2] != undefined ? res[2].sum_2 : 0,
+                VeryActiveMinutes: res[2] != undefined ? res[2].sum_3 : 0,
+                CaloriesOut: res[2] != undefined ? res[2].sum_4 : 0,
+                StagesDeep:  res[3] != undefined ? res[3].StagesDeep : 0,
+                StagesLight: res[3] != undefined ? res[3].StagesLight : 0,
+                StagesRem:  res[3] != undefined ? res[3].StagesRem : 0,
+                StagesWake: res[3] != undefined ? res[3].StagesWake : 0
                 
             })
 

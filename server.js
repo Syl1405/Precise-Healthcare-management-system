@@ -12,11 +12,13 @@ var Users = require('./routes/Users')
 var Test = require('./routes/test')
 var Home = require('./routes/home')
 var Patient = require('./routes/patient')
+var Rank = require('./routes/rank')
 
 app.use('/users', Users)
 app.use('/test', Test)
 app.use('/home', Home)
 app.use('/patient', Patient)
+app.use('/rank', Rank)
 
 app.listen(port, () => {
     console.log("Server is running on port: " + port)

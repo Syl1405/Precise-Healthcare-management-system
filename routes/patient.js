@@ -17,7 +17,7 @@ var size_user = 0;
 var user = new Array(); 
 var query;
 
-var id;// = '67af0b6ee92a46b5a987c2e639f01720',time = '2019-04-29 00:00:00';
+var id;//= '2c1c3a34e3c142c48c2cb09b176045e5',time = '2019-04-29 00:00:00';
 
 
 router.post('/home', (req, res, next) => {
@@ -25,31 +25,38 @@ router.post('/home', (req, res, next) => {
         if(err)
             res.send('error: ' + err);
         if(rows && rows.length > 0){
-            id = req.body.userid;
             size_user = 0;
             user = new Array(); 
-            console.log(id);
+            //console.log(id);
             user[size_user] = rows[0];
-            size_user++;
+            
             //console.log(user);
             //return next();
-            res.redirect("realtime");
+            
         }
-
+        else{
+            user[size_user] = null;
+        }
+        id = req.body.userid;
+        size_user++;
+        res.redirect("realtime");
     });
 })
 
 router.get('/realtime', (req, res, next) => {
-    query = "select blood_suger,blood_pressure,temperature_time,temperature from realtime_data where userid = ?";
+    query = "select blood_suger,blood_pressure,temperature_time,temperature from realtime_data where userid = ? limit 0";
     connection.query(query,[id], function(err,  rows){
         if(err)
             res.send('error: ' + err);
         if(rows && rows.length > 0){
             user[size_user] = rows[0];  
-            size_user++;
-            //console.log(user);  
-            res.redirect("activate");
+            
         }
+        else{
+            user[size_user] = null;
+        }
+        size_user++;
+        res.redirect("activate");
     });
     
     //res.redirect("activate");
@@ -61,10 +68,13 @@ router.get('/activate', (req, res, next) => {
             res.send('error: ' + err);
         if(rows && rows.length > 0){
             user[size_user] = rows[0];  
-            size_user++;
-            //console.log(user);  
-            res.redirect("sleep");
+
         }
+        else{
+            user[size_user] = null;
+        }
+        size_user++;
+        res.redirect("sleep");
     });
     //res.send(user);
     
@@ -75,11 +85,14 @@ router.get('/sleep', (req, res, next) => {
         if(err)
             res.send('error: ' + err);
         if(rows && rows.length > 0){
-            user[size_user] = rows[0];  
-            size_user++;
+            user[size_user] = rows[0]; 
             console.log(user);  
             
         }
+        else{
+            user[size_user] = null;
+        }
+        size_user++;
         res.send(user);
     });
     

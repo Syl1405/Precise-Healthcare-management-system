@@ -101,7 +101,66 @@ router.get('/main', (req, res, next) => {
    });
 })
 
+router.get('/activate', (req, res, next) => {
+    connection.query("select userid,name,activate_value,imagepath from realtime_data order by activate_value desc limit 10",[id], function(err,  rows){
+        if(err)
+            res.send('error: ' + err);
+        if(rows && rows.length > 0){
+            user[size_user] = rows[0];  
+            size_user++;
+            //console.log(user);  
+            res.redirect("sleep");
+        }
+    });
+    //res.send(user);
+    
+})
+
+
+router.post('/bloodsuger', (req, res, next) => {
+    connection.query("select vuseruid, vtime,vPhysiologicaValueV2 ->'$.BloodSugar' bloodsuger,vPhysiologicaValueV2 ->'$.measureTime' measureTime from templateBloodXXX where vPhysiologicaValueV2 ->'$.BloodSugar' is not null and  vPhysiologicaValueV2 ->'$.BloodSugar' != 999 and vuseruid = ? order by vtime desc limit 1;",[req.body.userid], function(err,  rows){
+        if(err)
+            res.send('error: ' + err);
+        if(rows && rows.length > 0){
+            
+            //console.log(user);  
+            res.send(rows);
+        }
+    });
+    //res.send(user);
+    
+})
+
+router.post('/bloodpressure', (req, res, next) => {
+    connection.query("select vuseruid, vtime,vPhysiologicaValueV2 ->'$.systolicBloodPressure' systolicBloodPressure ,vPhysiologicaValueV2 ->'$.diastolicBloodPressure' diastolicBloodPressure from templateBloodXXX where vuseruid = ? and vPhysiologicaValueV2 ->'$.systolicBloodPressure' is not null and vPhysiologicaValueV2 ->'$.diastolicBloodPressure' order by vtime desc limit 1",[req.body.userid], function(err,  rows){
+        if(err)
+            res.send('error: ' + err);
+        if(rows && rows.length > 0){
+            
+            //console.log(user);  
+            res.send(rows);
+        }
+    });
+    //res.send(user);
+    
+})
+
+router.get('/rank', (req, res, next) => {
+    connection.query("select userid,activate_value from realtime_data order by activate_value desc;", function(err,  rows){
+        if(err)
+            res.send('error: ' + err);
+        if(rows && rows.length > 0){
+            
+            //console.log(user);  
+            res.send(rows);
+        }
+    });
+    //res.send(user);
+    
+})
+
 module.exports = router
 //select userid,updatetime,LightlyActiveMinutes,FairlyActiveMinutes,VeryActiveMinutes,CaloriesOut from templateActive where userid = '67af0b6ee92a46b5a987c2e639f01720' and updatetime < '2019-04-29 00:00:00' order by updatetime desc limit 1;
 //select StagesDeep,StagesLight,StagesRem,StagesWake from templateSleep where UserID = ? order by UpdateTime desc limit 2;
 
+//select vuseruid, vtime,vPhysiologicaValueV2 ->'$.systolicBloodPressure' systolicBloodPressure ,vPhysiologicaValueV2 ->'$.diastolicBloodPressure' diastolicBloodPressure from templateBloodXXX where vPhysiologicaValueV2 ->'$.systolicBloodPressure' is not null and vPhysiologicaValueV2 ->'$.diastolicBloodPressure' order by vtime desc limit 3;
