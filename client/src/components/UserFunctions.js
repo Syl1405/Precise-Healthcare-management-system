@@ -54,9 +54,23 @@ export const home = aaa => {
         })
 }
 
-export const patient = user => {
+export const patient_home = user => {
     return axios
         .post('patient/home', {
+            userid : user
+        })
+        .then(res => {
+            
+            return res.data
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}
+
+export const patient_1 = user => {
+    return axios
+        .post('patient/realtime', {
             userid : user
         })
         .then(res => {

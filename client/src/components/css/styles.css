@@ -38,6 +38,7 @@ div{
     border-radius: 50%;
 }
 .logo{
+    background-color: #FF9E43;
     position: absolute;
     left:0%;
     top:0%;
@@ -48,7 +49,7 @@ div{
     background-color: #FF9E43;
     position: absolute;
     left:0vw;
-    top:7.5vw;
+    top:6vw;
     height:400vh;
     width:8.3vw;
 
@@ -193,8 +194,8 @@ div{
     width:8.3vw;
     height:26.8vw;
     position:absolute;
-    left:82vw;
-    top:10vw;
+    left:80vw;
+    top:5vw;
 }
 /* dashboard */
 .mainPanel .boardTitle{
@@ -301,21 +302,49 @@ div{
     width:14vw;
     height:14vw;
     margin:2.3vw;
+    border-radius: 50%;
 }
 /* graph */
 .mainPanel .graphs{
     margin-left:20vw;
     margin-top:-47vw;
-    height:120vw;
-    width:56vw;
+    height:150vw;
+    width:58vw;
     display: grid;
     grid-gap: 3vw 1vw;
     grid-template-columns: auto;
     padding: 5vw;
     border:1px solid;
+    text-align:center;
 }
-.mainPanel .graphs div{
+.mainPanel .graphs_1{
+    margin-left:20vw;
+    margin-top:-47vw;
+    height:75vw;
+    width:58vw;
+    display: grid;
+    grid-gap: 3vw 1vw;
+    grid-template-columns: auto;
+    padding: 5vw;
     border:1px solid;
+    text-align:center;
+}
+.mainPanel .graphs_2{
+    margin-left:20vw;
+    margin-top:-47vw;
+    height:180vw;
+    width:58vw;
+    display: grid;
+    grid-gap: 3vw 1vw;
+    grid-template-columns: auto;
+    padding: 5vw;
+    border:1px solid;
+    text-align:center;
+}
+.mainPanel .graph{
+    height:120vw;
+    width:100vw;
+    text-align:center;
 }
 /* audio */
 .mainPanel .audios{

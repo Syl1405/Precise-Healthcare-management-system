@@ -20,6 +20,7 @@ class Home extends Component {
 
         const userLink = (
             <div>
+                <div className="logo" />
                 <div className="navigator">
                     <Sidebar />
                 </div>

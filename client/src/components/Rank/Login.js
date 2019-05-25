@@ -6,14 +6,14 @@ import Div100vh from 'react-div-100vh'
 class Login extends Component {
     render () {
         return (
-            <div className="mainPanel_login">    
+            <div className="container">    
                 <div className="jumbotron text-center">
-                    <a href="/login" className="btn btn-lg btn-success"><Link to="/login" className="btn btn-lg btn-success">
-                        登入
+                    <a href="/login" class="btn btn-lg btn-success"><Link to="/login" className="btn btn-lg btn-success">
+                        Login
                     </Link></a>
                     &nbsp;
-                    <a href="/signup" className="btn btn-lg btn-info"><Link to="/register" className="btn btn-lg btn-info">
-                        登出
+                    <a href="/signup" class="btn btn-lg btn-info"><Link to="/register" className="btn btn-lg btn-info">
+                        Register
                     </Link></a>
                 </div>
             </div>

@@ -28,8 +28,8 @@ router.post('/home', (req, res, next) => {
             size_user = 0;
             user = new Array(); 
             //console.log(id);
-            user[size_user] = rows[0];
-            
+            user[0] = rows[0];
+            res.send(rows); 
             //console.log(user);
             //return next();
             
@@ -37,24 +37,24 @@ router.post('/home', (req, res, next) => {
         else{
             user[size_user] = null;
         }
-        id = req.body.userid;
-        size_user++;
-        res.redirect("realtime");
     });
 })
 
-router.get('/realtime', (req, res, next) => {
+router.post('/realtime', (req, res, next) => {
     query = "select blood_suger,blood_pressure,temperature_time,temperature from realtime_data where userid = ? limit 0";
-    connection.query(query,[id], function(err,  rows){
+    connection.query(query,[req.body.userid], function(err,  rows){
         if(err)
             res.send('error: ' + err);
         if(rows && rows.length > 0){
+            size_user = 0;
+            user = new Array(); 
             user[size_user] = rows[0];  
             
         }
         else{
             user[size_user] = null;
         }
+        id = req.body.userid;
         size_user++;
         res.redirect("activate");
     });

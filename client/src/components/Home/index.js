@@ -7,6 +7,7 @@ import Mainview from './Mainview';
 import '../css/styles.css';
 //import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
 ////style={{backgroundColor: "#444444"}}
+var image =  require('../image/example.PNG')
 class Home extends Component {
     logOut(e) {
         e.preventDefault()
@@ -20,11 +21,13 @@ class Home extends Component {
 
         const userLink = (
             <div>
+                <div className="logo" />
                 <div className="navigator">
                     <Sidebar />
                 </div>
                 <div className="mainPanel">
                     <Mainview />
+                    <div className="iconInfo"><img src={image} /></div>
                 </div>
             </div>
         )

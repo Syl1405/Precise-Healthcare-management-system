@@ -4,29 +4,37 @@ import Div100vh from 'react-div-100vh'
 import Login from './Login';
 import Sidebar from './Sidebar';
 import Mainview from './Mainview';
+import '../css/styles.css';
 //import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
 ////style={{backgroundColor: "#444444"}}
-class Article extends React.Component {
-
-  constructor (props) {
-    super(props)
-    
-    const {id} = this.props.match.params
-    this.state = {
-      product: {
-        id
-      }
+class Home extends Component {
+    logOut(e) {
+        e.preventDefault()
+        localStorage.removeItem('usertoken')
+        this.props.history.push(`/`)
     }
-  }
-  
-  render () {
-    return (
-      <div >
-        <h1>aaa</h1>
-      </div>
-    )
-  }
+    render () {
+        const loginRegLink = (
+            <Login />
+        )
+
+        const userLink = (
+            <div>
+                <div className="logo" />
+                <div className="navigator">
+                    <Sidebar />
+                </div>
+                <div className="mainPanel">
+                    <Mainview />
+                </div>
+            </div>
+        )
+        return (
+            <div>
+             {localStorage.usertoken ? userLink : loginRegLink}
+            </div>
+        )
+    }
 }
 
-
-export default Article
+export default Home

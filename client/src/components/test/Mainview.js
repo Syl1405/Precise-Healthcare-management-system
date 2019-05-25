@@ -1,18 +1,22 @@
 import React, { Component } from 'react'
-import { Link, withRouter } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom' 
+import { vw, vh } from 'react-native-css'
 import Div100vh from 'react-div-100vh'
 import jwt_decode from 'jwt-decode'
-import { patient } from '../UserFunctions'
+import { patient_home } from '../UserFunctions'
 import '../../index.css';
+import '../css/styles.css';
+//import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
 
 import Highcharts from 'highcharts' //npm install highcharts-more --save
 import * as HighchartsMore from "highcharts/highcharts-more"
 import Highstock from 'highcharts/highstock'
 import HighchartsReact from 'highcharts-react-official' //npm install highcharts-react-official
+
 HighchartsMore(Highcharts)
 HighchartsMore(Highstock)
-//import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
-////style={{backgroundColor: "#444444"}}
+//var {vw, vh, vmin, vmax} = require('react-native-viewport-units');
+
 class Mainview extends Component {
     constructor() {
         super()
@@ -20,6 +24,12 @@ class Mainview extends Component {
         this.state = {
             name: '',
             imagepath:'',
+            birth:'',
+            blood:'',
+            disease:'',
+            address:'',
+            phone:'',
+            smoke:'',
             StagesDeep: '',
             StagesLight: '',
             StagesRem: '',
@@ -34,12 +44,18 @@ class Mainview extends Component {
         console.log(NewArray[NewArray.length-1]);
         const userid =  NewArray[NewArray.length-1];
         var size = 0;
-        patient(userid).then(res => {
+        patient_home(userid).then(res => {
             console.log(res);
             console.log(res[3] != undefined ? 1 : 0);
             this.setState({
-                name: res[0].name,
-                imagepath: res[0].imagepath,
+                name: res[0] != undefined ? res[0].name : '無紀錄',
+                imagepath: res[0] != undefined ? res[0].imagepath : null,
+                birth: res[0] != undefined ? res[0].birth : '無紀錄',
+                blood: res[0] != undefined ? res[0].blood : '無紀錄',
+                disease: res[0] != undefined ? res[0].disease : '無紀錄',
+                phone: res[0] != undefined ? res[0].phone : '無紀錄',
+                smoke: res[0] != undefined ? res[0].smoke : '無紀錄',
+                address: res[0] != undefined ? res[0].address : '無紀錄',
                 LightlyActiveMinutes: res[2] != undefined ? res[2].sum_1 : 0,
                 FairlyActiveMinutes: res[2] != undefined ? res[2].sum_2 : 0,
                 VeryActiveMinutes: res[2] != undefined ? res[2].sum_3 : 0,
@@ -140,7 +156,7 @@ class Mainview extends Component {
                 marginBottom: 80,
                 plotBorderWidth: 1,
                 height: 300,
-                width: 650
+                width: 600
             },
 
             legend: {
@@ -214,17 +230,31 @@ class Mainview extends Component {
             ]
         }
         return (
-            <div className="container">
-                <div className="jumbotron mt-5">
-                    <img src={this.state.imagepath} alt={this.state.name} className="circular--square" height="100" width="100" /><br/>
-                    <a>{this.state.name}</a><br/>
+            <div>
+                <div className="basicInfo">基本資料
+                    <div><img src={this.state.imagepath} className="photo"/></div>
+                    <p>生日: {this.state.birth}</p>
+                    <p>血型: {this.state.blood}</p>
+                    <p>病史: {this.state.disease}</p>
+                    <p>電話: {this.state.phone}</p>
+                    <p>地址: {this.state.address}</p>
                 </div>
-                <div className="jumbotron mt-5">
-                    <HighchartsReact highcharts = {Highcharts} options={configs} />
-                    
+                <div className="chooser">
+                    <div className="choosed">當前數據</div>
+                    <div>歷史紀錄</div>
+                    <div>疾病風險</div>
+                    <div>音檔</div>
+                    <div>相簿</div>
                 </div>
-                <div className="jumbotron mt-5">
-                    <HighchartsReact highcharts = {Highcharts} options={configs_2} />
+                <div className="graphs">
+                    <div style={{margin:"0 auto"}}>
+                        昨日睡眠<br/>
+                        <HighchartsReact highcharts = {Highcharts} options={configs} className="graph" />
+                    </div>
+                    <div style={{margin:"0 auto"}}>
+                        昨日活動量/卡路里
+                        <HighchartsReact highcharts = {Highcharts} options={configs_2}  className="graph"/>
+                    </div>
                 </div>
             </div>
         )

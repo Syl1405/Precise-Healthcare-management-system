@@ -1,15 +1,9 @@
 import React, { Component } from 'react'
-import { Link, withRouter } from 'react-router-dom' 
-import { vw, vh } from 'react-native-css'
-import Div100vh from 'react-div-100vh'
-import jwt_decode from 'jwt-decode'
-import { patient_home } from '../UserFunctions'
-import constantData from './History_Sleep.json';
-import Preview_1 from './Preview_1';
-import Preview_2 from './Preview_2';
+import { Link, withRouter } from 'react-router-dom'
+import { connect } from 'react-redux';
 import '../../index.css';
-import '../css/styles.css';
-//import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
+import constantData from './History_Sleep.json';
+import { patient_1 } from '../UserFunctions'
 
 import Highcharts from 'highcharts' //npm install highcharts-more --save
 import * as HighchartsMore from "highcharts/highcharts-more"
@@ -18,119 +12,45 @@ import HighchartsReact from 'highcharts-react-official' //npm install highcharts
 
 HighchartsMore(Highcharts)
 HighchartsMore(Highstock)
-//var {vw, vh, vmin, vmax} = require('react-native-viewport-units');
 
-class Mainview extends Component {
+
+class Preview_1 extends Component {
     constructor() {
         super()
-        this.onClick = this.handleClick.bind(this);
-        //console.log(this.props.match.params.id);
         this.state = {
-            name: '',
-            imagepath:'',
-            birth:'',
-            blood:'',
-            disease:'',
-            address:'',
-            phone:'',
-            smoke:'',
-            chooser: 'chooser_1'
+            StagesDeep: '',
+            StagesLight: '',
+            StagesRem: '',
+            StagesWake: '',
+            LightlyActiveMinutes: '',
+            FairlyActiveMinutes: '',
+            VeryActiveMinutes: '',
+            CaloriesOut: ''
         }
         var NewArray = new Array();
 　      NewArray = window.location.href.split('/');
         console.log(NewArray[NewArray.length-1]);
         const userid =  NewArray[NewArray.length-1];
-        var size = 0;
-        patient_home(userid).then(res => {
+        patient_1(userid).then(res => {
             console.log(res);
             //console.log(res[3] != undefined ? 1 : 0);
             this.setState({
-                name: res[0] != undefined ? res[0].name : '無紀錄',
-                imagepath: res[0] != undefined ? res[0].imagepath : null,
-                birth: res[0] != undefined ? res[0].birth : '無紀錄',
-                blood: res[0] != undefined ? res[0].blood : '無紀錄',
-                disease: res[0] != undefined ? res[0].disease : '無紀錄',
-                phone: res[0] != undefined ? res[0].phone : '無紀錄',
-                smoke: res[0] != undefined ? res[0].smoke : '無紀錄',
-                address: res[0] != undefined ? res[0].address : '無紀錄',
+                LightlyActiveMinutes: res[1] != undefined ? res[1].sum_1 : 0,
+                FairlyActiveMinutes: res[1] != undefined ? res[1].sum_2 : 0,
+                VeryActiveMinutes: res[1] != undefined ? res[1].sum_3 : 0,
+                CaloriesOut: res[1] != undefined ? res[1].sum_4 : 0,
+                StagesDeep:  res[2] != undefined ? res[2].StagesDeep : 0,
+                StagesLight: res[2] != undefined ? res[2].StagesLight : 0,
+                StagesRem:  res[2] != undefined ? res[2].StagesRem : 0,
+                StagesWake: res[2] != undefined ? res[2].StagesWake : 0
             })
 
             console.log(this.state.StagesDeep);
         })
-        
-    }
-    componentDidMount() {
-        
-    }
 
-    handleClick (e) {
-        this.setState({chooser: e.target.id})
-        console.log(this.state.aaa);
     }
-
-    /*componentDidMount () {
-        const token = localStorage.datatoken
-        //const decoded = jwt_decode(token)
-        this.setState({
-            StagesDeep: token[0].StagesDeep,
-            StagesLight: token[1].StagesLight,
-            StagesRem: token[2].StagesRem,
-            StagesWake: token[3].StagesWake
-        })
-    }*/
 
     render () {
-        const chooser_1 = (
-            <div>
-            <div className="chooser">
-                <div id="chooser_1" className="choosed">當前數據</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_2">歷史紀錄</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_3">疾病風險</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_4">音檔</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_5">相簿</div>
-            </div>
-            <Preview_1 />
-            </div>
-        )
-        const chooser_2 = (
-            <div>
-            <div className="chooser">
-                <div onClick={this.handleClick.bind(this)} id="chooser_1" >當前數據</div>
-                <div id="chooser_2" className="choosed">歷史紀錄</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_3">疾病風險</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_4">音檔</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_5">相簿</div>
-            </div>
-            <Preview_2 />
-            </div>
-        )
-        const chooser_3 = (
-            <div className="chooser">
-                <div onClick={this.handleClick.bind(this)} id="chooser_1" >當前數據</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_2">歷史紀錄</div>
-                <div id="chooser_3" className="choosed">疾病風險</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_4">音檔</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_5">相簿</div>
-            </div>
-        )
-        const chooser_4 = (
-            <div className="chooser">
-                <div onClick={this.handleClick.bind(this)} id="chooser_1" >當前數據</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_2">歷史紀錄</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_3">疾病風險</div>
-                <div id="chooser_4" className="choosed">音檔</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_5">相簿</div>
-            </div>
-        )
-        const chooser_5 = (
-            <div className="chooser">
-                <div onClick={this.handleClick.bind(this)} id="chooser_1" >當前數據</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_2">歷史紀錄</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_3">疾病風險</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_4">音檔</div>
-                <div id="chooser_5" className="choosed">相簿</div>
-            </div>
-        )
         var configs = {
             chart: {
                 type: 'bar',
@@ -376,27 +296,7 @@ class Mainview extends Component {
             ]
         }
         return (
-            <div>
-                <div className="basicInfo">基本資料
-                    <div><img src={this.state.imagepath} className="photo"/></div>
-                    <p>生日: {this.state.birth}</p>
-                    <p>血型: {this.state.blood}</p>
-                    <p>病史: {this.state.disease}</p>
-                    <p>電話: {this.state.phone}</p>
-                    <p>地址: {this.state.address}</p>
-                </div>
-                {this.state.chooser == "chooser_1" ? chooser_1 : (this.state.chooser == "chooser_2" ? chooser_2 : (this.state.chooser == "chooser_3" ? chooser_3 : (this.state.chooser == "chooser_4" ? chooser_4 : chooser_5)))}
-                
-            </div>
-        )
-    }
-}
-
-export default Mainview
-
-/*<div>
-                    
-                    <div className="graphs">
+                <div className="graphs_1">
                         <div style={{margin:"0 auto"}}>
                             昨日睡眠<br/>
                             <HighchartsReact highcharts = {Highcharts} options={configs} className="graph" />
@@ -405,8 +305,10 @@ export default Mainview
                             昨日活動量/卡路里
                             <HighchartsReact highcharts = {Highcharts} options={configs_2}  className="graph"/>
                         </div>
-                        <div style={{margin:"0 auto"}}>
-                            <HighchartsReact highcharts = {Highstock} constructorType = {'stockChart'} options = {configs_3} />
-                         </div>
                     </div>
-                </div>*/
+                
+        )
+    }
+}
+
+export default Preview_1
