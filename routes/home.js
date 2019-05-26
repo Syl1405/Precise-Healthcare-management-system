@@ -93,7 +93,7 @@ router.get('/activate', (req, res, next) => {
                 var rows_userid = rows[0].userid;
                 var total_min = Number(rows[0].sum_1)+Number(rows[0].sum_2)+Number(rows[0].sum_3)-Number(rows[1].sum_1)-Number(rows[1].sum_2)-Number(rows[1].sum_3);
                 var total_min_1 = Number(rows[0].sum_1)+Number(rows[0].sum_2)+Number(rows[0].sum_3);
-                //console.log(rows_userid);
+                console.log("total_min_1:"+total_min_1);
                 connection.query("select activate_time from realtime_data where userid = ? limit 1",[rows_userid], function(err,  rows){
                     if(err)
                         res.send('error: ' + err)

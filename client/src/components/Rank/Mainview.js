@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import Div100vh from 'react-div-100vh'
 import jwt_decode from 'jwt-decode'
-import { patient } from '../UserFunctions'
+import { rank } from '../UserFunctions'
 import '../../index.css';
+import '../css/rank.css';
 
 import Highcharts from 'highcharts' //npm install highcharts-more --save
 import * as HighchartsMore from "highcharts/highcharts-more"
@@ -16,7 +17,27 @@ HighchartsMore(Highstock)
 class Mainview extends Component {
     constructor() {
         super()
+        this.state = {
+            user: []
+        };
         //console.log(this.props.match.params.id);
+        rank().then(res => {
+            console.log(res);
+            for(let i = 0;i < res.length;i++){
+                //console.log(res[i].userid);
+                this.state.user.push(res[i]);
+                /*this.state.name.push(res[i].name);
+                this.state.blood_suger.push(res[i].blood_suger);
+                this.state.blood_pressure.push(res[i].blood_pressure);
+                this.state.temperature.push(res[i].temperature);
+                this.state.activate.push(res[i].activate);
+                this.state.sleep.push(res[i].sleep);
+                this.state.imagepath.push(res[i].imagepath);*/
+                this.setState(this.state)
+            }
+            console.log(this.state.user);
+
+        })
     }
     componentDidMount() {
         
@@ -35,8 +56,8 @@ class Mainview extends Component {
 
     render () {
         return (
-            <div className="container">
-                aaa
+            <div>
+              ra
             </div>
         )
     }

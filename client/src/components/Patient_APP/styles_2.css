@@ -143,9 +143,9 @@ div{
 .mainPanel{
     position: absolute;
     background-color: #FCF4EC;
-    left:8.3vw;
-    top:6vw;
-    width:91.7vw;
+    left:0vw;
+    top:0vw;
+    width:100vw;
     height:400vh;
 }
 .mainPanel_login{
@@ -161,14 +161,19 @@ div{
     left:25vw;
     top:4vw;
     height:4vw;
-    width:58vw;
-    display: grid;
-    grid-gap: 0vw 0vw;
-    grid-template-columns: auto auto auto auto auto;
-    border:0px;
+    width:70vw;
+    border:0vw;
 }
 .chooser div{
     border:1px solid;
+}
+.chooser_1 div{
+    height:4vw;
+    width:16vw;
+}
+.chooser_2 div{
+    height:4vw;
+    width:11vw;
 }
 .chooser .choosed{
     background-color: #FF9E43;
@@ -320,8 +325,8 @@ div{
 .mainPanel .graphs_1{
     margin-left:25vw;
     margin-top:-47vw;
-    height:75vw;
-    width:58vw;
+    height:90vw;
+    width:70vw;
     display: grid;
     grid-gap: 3vw 1vw;
     grid-template-columns: auto;
@@ -332,8 +337,8 @@ div{
 .mainPanel .graphs_2{
     margin-left:25vw;
     margin-top:-47vw;
-    height:180vw;
-    width:58vw;
+    height:195vw;
+    width:70vw;
     display: grid;
     grid-gap: 3vw 1vw;
     grid-template-columns: auto;
@@ -350,7 +355,7 @@ div{
     height:20vw;
 }
 .mainPanel .graph_name{
-    width:40vw;
+    width:60vw;
     height:5vw;
     text-align:center;
 }
@@ -423,156 +428,4 @@ border:1px solid;
     background-color: #FFFFFF;
     z-index:87;
     padding-top:10vw;
-}
-
-
-.chooser{
-    position: absolute;
-    left:25vw;
-    top:4vw;
-    height:4vw;
-    width:58vw;
-    display: grid;
-    grid-gap: 0vw 0vw;
-    grid-template-columns: auto auto auto auto auto;
-    border:0px;
-}
-.chooser_app{
-    position: absolute;
-    left:25vw;
-    top:4vw;
-    height:4vw;
-    width:70vw;
-    display: grid;
-    grid-gap: 0vw 0vw;
-    grid-template-columns: auto auto auto auto auto;
-    border:0px;
-}
-.chooser_1 div{
-    height:4vw;
-    width:16vw;
-}
-.chooser_2 div{
-    height:4vw;
-    width:11vw;
-}
-.chooser_app div{
-    border:1px solid;
-}
-.chooser_app .choosed{
-    background-color: #FF9E43;
-}
-.mainPanel_app{
-    position: absolute;
-    background-color: #FCF4EC;
-    left:0vw;
-    top:0vw;
-    width:100vw;
-    height:630vh;
-}
-.mainPanel_app .graph_name{
-    width:60vw;
-    height:5vw;
-    text-align:center;
-}
-.mainPanel_app .audios{
-    margin-left:20vw;
-    margin-top:-47vw;
-    height:120vw;
-    width:62vw;
-    display: grid;
-    grid-gap: 3vw 3vw;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows:9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw;
-    padding: 2vw;
-    border:1px solid;
-}
-.mainPanel_app .pictureTool{
-    position: absolute;
-    left:40vw;
-    top:9vw;
-    height:0vw;
-    width:45vw;
-    display: grid;
-    grid-gap: 0vw 2vw;
-    grid-template-columns: auto auto auto;
-}
-.mainPanel_app .pictureTool div{
-    border:1px solid;
-}
-.mainPanel_app .pictureSelector{
-    position: absolute;
-    left:21vw;
-    top:15vw;
-    height:0vw;
-    width:10vw;
-    display: grid;
-    grid-gap: 3vw 0vw;
-    grid-template-columns: auto;
-}
-.mainPanel_app .pictureSelector div{
-border:1px solid;
-}
-.mainPanel_app .pictures{
-    padding-left:12vw;
-    padding-top:5vw;
-    padding-right:1vw;
-    margin-left:20vw;
-    margin-top:-47vw;
-    height:120vw;
-    width:53vw;
-    display: grid;
-    grid-gap: 3vw 3vw;
-    grid-template-columns: auto auto auto;
-    grid-template-rows:10.5vw 10.5vw 10.5vw 10.5vw 10.5vw 10.5vw 10.5vw 10.5vw 10.5vw 10.5vw 10.5vw 10.5vw 10.5vw 10.5vw ;
-    border:1px solid;
-}
-.mainPanel_app .graphs{
-    margin-left:20vw;
-    margin-top:-47vw;
-    height:150vw;
-    width:70vw;
-    display: grid;
-    grid-gap: 3vw 1vw;
-    grid-template-columns: auto;
-    padding: 5vw;
-    border:1px solid;
-    text-align:center;
-}
-.mainPanel_app .graphs_1{
-    margin-left:25vw;
-    margin-top:-47vw;
-    height:90vw;
-    width:70vw;
-    display: grid;
-    grid-gap: 3vw 1vw;
-    grid-template-columns: auto;
-    padding: 5vw;
-    border:1px solid;
-    text-align:center;
-}
-.mainPanel_app .graphs_2{
-    margin-left:25vw;
-    margin-top:-47vw;
-    height:295vw;
-    width:70vw;
-    display: grid;
-    grid-gap: 3vw 1vw;
-    grid-template-columns: auto;
-    padding: 5vw;
-    border:1px solid;
-    text-align:center;
-}
-.mainPanel_app .graph{
-    height:80vw;
-    width:100vw;
-    text-align:center;
-}
-.mainPanel_app .basicInfo{
-
-    margin-left:1vw;
-    margin-top:4vw;
-    height:51vw;
-    width:18.16vw;  
-    
 }

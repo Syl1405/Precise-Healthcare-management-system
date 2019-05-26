@@ -46,8 +46,8 @@ class Preview_1 extends Component {
                 StagesLight: res[2] != undefined ? res[2].StagesLight : 0,
                 StagesRem:  res[2] != undefined ? res[2].StagesRem : 0,
                 StagesWake: res[2] != undefined ? res[2].StagesWake : 0,
-                width: Number(document.body.clientWidth*0.4),
-                height: Number(document.body.clientWidth*0.2)
+                width: Number(document.body.clientWidth*0.6),
+                height: Number(document.body.clientWidth*0.3)
             })
 
             console.log(this.state.width);

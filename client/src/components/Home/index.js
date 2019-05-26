@@ -4,6 +4,7 @@ import Div100vh from 'react-div-100vh'
 import Login from './Login';
 import Sidebar from './Sidebar';
 import Mainview from './Mainview';
+import Navbar from '../Navbar';
 import '../css/styles.css';
 //import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
 ////style={{backgroundColor: "#444444"}}
@@ -32,7 +33,11 @@ class Home extends Component {
             </div>
         )
         return (
+            
             <div>
+            <div>
+             <Navbar />
+             </div>
              {localStorage.usertoken ? userLink : loginRegLink}
             </div>
         )

@@ -5,6 +5,7 @@ import { HashRouter as Router, Route,Switch } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Patient from './components/Patient'
+import Patient_APP from './components/Patient_APP'
 import Login from './components/Login'
 import Register from './components/Register'
 import Profile from './components/Profile'
@@ -17,7 +18,7 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Navbar />
+          
           <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/rank" component={Rank} />
@@ -27,6 +28,7 @@ class App extends Component {
           <Route path="/login" component={Login} />
           <Route path="/profile" component={Profile} />
           <Route path="/patient/:id"  component={Patient} />
+          <Route path="/patientid/:id"  component={Patient_APP} />
             
           </Switch>
         </div>

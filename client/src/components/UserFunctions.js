@@ -81,3 +81,15 @@ export const patient_1 = user => {
             console.log(err)
         })
 }
+
+export const rank = aaa => {
+    return axios
+        .get('rank/rank')
+        .then(res => {
+            
+            return res.data
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}

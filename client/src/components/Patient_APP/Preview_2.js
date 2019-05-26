@@ -21,15 +21,13 @@ class Preview_2 extends Component {
     constructor() {
         super()
         this.state = {
-            width: Number(document.body.clientWidth*0.4),
-            height: Number(document.body.clientWidth*0.2),
-            textsize: Number(document.body.clientWidth*0.001)
+            width: Number(document.body.clientWidth*0.6),
+            height: Number(document.body.clientWidth*0.5)
         }
         
     }
 
     render () {
-        console.log(this.state.textsize);
         var configs_1 = {
             chart: {
                 type: 'column',
@@ -48,17 +46,17 @@ class Preview_2 extends Component {
             },
             rangeSelector : {
                   buttons: [
-                  { type: 'day', count: 1, text: '1 d', fontSize: "0rem"},
+                  { type: 'day', count: 1, text: '1 d'},
                   { type: 'day', count: 7, text: '1 w'},
                   { type: 'month', count: 1, text: '1 m'},
                   { type: 'month', count: 3, text: '3 m'},
                   { type: 'all', text: 'All'}
                   ],
-                  selected : 5
+                  selected : 5,itemStyle:{"fontSize": "0rem" }
               },
             
             title : {
-                text : '',
+                text : ''
             },
             yAxis: {
                 min: 0,
@@ -93,12 +91,14 @@ class Preview_2 extends Component {
                         enabled: false,
                         color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
                     }
-                }
+                },
+                width: this.state.width/20,
+                height: this.state.width/20
             },
             navigator: {
                 enabled: true,
                 series: {
-                    type: 'column',
+                    type: 'column'
                 },
                 width: this.state.width/20,
                 height: this.state.width/20
