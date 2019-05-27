@@ -166,12 +166,15 @@ div{
     grid-gap: 0vw 0vw;
     grid-template-columns: auto auto auto auto auto;
     border:0px;
+    background-color: #FFD686;
+    border-radius: 1.5vw 1.5vw 0 0;
 }
 .chooser div{
-    border:1px solid;
+
 }
 .chooser .choosed{
-    background-color: #FF9E43;
+    background-color: #FFFF;
+    border-radius: 1.5vw 1.5vw 0 0;
 }
 .sortAndSearch{
     width:0vw;
@@ -267,9 +270,49 @@ div{
 .leaderboard{
     border: 0px;
 }
+.leaderboard .title_1{
+    margin-left:40vw;
+    margin-top:2vw;
+    width:10vw;
+    height:4vw;
+    background-color: #FFFFFF;
+    border-radius: 1.5vw;
+    color: #FF9E43;
+}
+.leaderboard .cup{
+    margin-left:25vw;
+    margin-top:2vw;
+    width:40vw;
+    height:22vw;
+    color: #FF9E43;
+}
+.leaderboard .cup .rank_1{
+    margin-left:0vw;
+    margin-top:1vw;
+    width:5vw;
+    height:5vw;
+    color: #FF9E43;
+    border-radius: 50%;
+}
+.leaderboard .cup .rank_2{
+    margin-left:-25vw;
+    margin-top:2.1vw;
+    width:5vw;
+    height:5vw;
+    color: #FF9E43;
+    border-radius: 50%;
+}
+.leaderboard .cup .rank_3{
+    margin-left:28.5vw;
+    margin-top:-5.3vw;
+    width:5vw;
+    height:5vw;
+    color: #FF9E43;
+    border-radius: 50%;
+}
 .leaderboard .guys{
     margin-left:19.5vw;
-    margin-top:2vw;
+    margin-top:4vw;
     width:54.8vw;
     height:0vw;
     display: grid;
@@ -280,18 +323,53 @@ div{
 
 }
 .leaderboard .oneGuy{
-    width:19.5vw;
-    height:5.8vw;
+    margin-left:22.5vw;
+    margin-top:3vw;
+    width:45vw;
+    height:5vw;
     background-color: #FFFFFF;
+}
+.leaderboard .oneGuy .img{
+    margin-left:-2vw;
+    margin-top:0vw;
+    width:5vw;
+    height:5vw;
+    color: #FF9E43;
+    border-radius: 50%;
+}
+.leaderboard .oneGuy .name{
+    margin-left:8vw;
+    margin-top:0vw;
+    width:5vw;
+    height:5vw;
+    color: #FF9E43;
+    border-radius: 50%;
+}
+.leaderboard .oneGuy .rank{
+    margin-left:4vw;
+    margin-top:0vw;
+    width:5vw;
+    height:5vw;
+    color: #FF9E43;
+    border-radius: 50%;
+}
+.leaderboard .oneGuy .value{
+    margin-left:12vw;
+    margin-top:0vw;
+    width:5vw;
+    height:5vw;
+    color: #FF9E43;
+    border-radius: 50%;
 }
 /* personal */
 .mainPanel .basicInfo{
 
-    margin-left:1vw;
+    margin-left:3vw;
     margin-top:4vw;
     height:51vw;
     width:18.16vw;  
-    
+    background-color: #FFFFFF;
+    border-radius: 1.5vw;
 }
 .basicInfo p{
     padding-left:2.25vw;
@@ -314,8 +392,8 @@ div{
     grid-gap: 3vw 1vw;
     grid-template-columns: auto;
     padding: 5vw;
-    border:1px solid;
     text-align:center;
+    background-color: #FFFF;
 }
 .mainPanel .graphs_1{
     margin-left:25vw;
@@ -326,8 +404,8 @@ div{
     grid-gap: 3vw 1vw;
     grid-template-columns: auto;
     padding: 5vw;
-    border:1px solid;
     text-align:center;
+    background-color: #FFFF;
 }
 .mainPanel .graphs_2{
     margin-left:25vw;
@@ -338,8 +416,28 @@ div{
     grid-gap: 3vw 1vw;
     grid-template-columns: auto;
     padding: 5vw;
-    border:1px solid;
     text-align:center;
+    background-color: #FFFF;
+}
+.mainPanel .graphs_3{
+    margin-left:25vw;
+    margin-top:-47vw;
+    height:40vw;
+    width:58vw;
+    display: grid;
+    grid-gap: 3vw 1vw;
+    grid-template-columns: auto;
+    padding: 5vw;
+    text-align:center;
+    background-color: #FFFF;
+}
+.mainPanel .graphs_4{
+    margin-left:25vw;
+    margin-top:-47vw;
+    height:80vw;
+    width:58vw;
+    text-align:center;
+    background-color: #FFFF;
 }
 .mainPanel .graph{
     height:80vw;
@@ -426,41 +524,49 @@ border:1px solid;
 }
 
 
-.chooser{
-    position: absolute;
-    left:25vw;
-    top:4vw;
-    height:4vw;
-    width:58vw;
-    display: grid;
-    grid-gap: 0vw 0vw;
-    grid-template-columns: auto auto auto auto auto;
-    border:0px;
-}
 .chooser_app{
     position: absolute;
     left:25vw;
     top:4vw;
     height:4vw;
     width:70vw;
-    display: grid;
-    grid-gap: 0vw 0vw;
-    grid-template-columns: auto auto auto auto auto;
     border:0px;
+    background-color: #FFD686;
+    border-radius: 1.5vw 1.5vw 0 0;
 }
-.chooser_1 div{
+.chooser_app .chooser_1 {
+    margin-left:0vw;
+    margin-top:0vw;
     height:4vw;
     width:16vw;
 }
-.chooser_2 div{
+.chooser_app .chooser_2 {
+    margin-left:15vw;
+    margin-top:-4vw;
     height:4vw;
-    width:11vw;
+    width:16vw;
 }
-.chooser_app div{
-    border:1px solid;
+.chooser_app .chooser_3 {
+    margin-left:30vw;
+    margin-top:-4vw;
+    height:4vw;
+    width:16vw;
+}
+.chooser_app .chooser_4 {
+    margin-left:43vw;
+    margin-top:-4vw;
+    height:4vw;
+    width:16vw;
+}
+.chooser_app .chooser_5 {
+    margin-left:55vw;
+    margin-top:-4vw;
+    height:4vw;
+    width:16vw;
 }
 .chooser_app .choosed{
-    background-color: #FF9E43;
+    background-color: #FFFFFF;
+    border-radius: 1.5vw 1.5vw 0 0;
 }
 .mainPanel_app{
     position: absolute;
@@ -536,7 +642,6 @@ border:1px solid;
     grid-gap: 3vw 1vw;
     grid-template-columns: auto;
     padding: 5vw;
-    border:1px solid;
     text-align:center;
 }
 .mainPanel_app .graphs_1{
@@ -548,8 +653,8 @@ border:1px solid;
     grid-gap: 3vw 1vw;
     grid-template-columns: auto;
     padding: 5vw;
-    border:1px solid;
     text-align:center;
+    background-color: #FFFFFF;
 }
 .mainPanel_app .graphs_2{
     margin-left:25vw;
@@ -560,8 +665,28 @@ border:1px solid;
     grid-gap: 3vw 1vw;
     grid-template-columns: auto;
     padding: 5vw;
-    border:1px solid;
     text-align:center;
+    background-color: #FFFFFF;
+}
+.mainPanel_app .graphs_3{
+    margin-left:25vw;
+    margin-top:-47vw;
+    height:70vw;
+    width:70vw;
+    display: grid;
+    grid-gap: 3vw 1vw;
+    grid-template-columns: auto;
+    padding: 5vw;
+    text-align:center;
+    background-color: #FFFFFF;
+}
+.mainPanel_app .graphs_4{
+    margin-left:25vw;
+    margin-top:-47vw;
+    height:80vw;
+    width:70vw;
+    text-align:center;
+    background-color: #FFFFFF;
 }
 .mainPanel_app .graph{
     height:80vw;
@@ -570,9 +695,11 @@ border:1px solid;
 }
 .mainPanel_app .basicInfo{
 
-    margin-left:1vw;
+    margin-left:3vw;
     margin-top:4vw;
     height:51vw;
     width:18.16vw;  
+    background-color: #FFFFFF;
+    border-radius: 1.5vw;
     
 }

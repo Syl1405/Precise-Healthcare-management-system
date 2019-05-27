@@ -7,6 +7,11 @@ import { patient_home } from '../UserFunctions'
 import constantData from './History_Sleep.json';
 import Preview_1 from './Preview_1';
 import Preview_2 from './Preview_2';
+import Preview_3 from './Preview_3';
+import _Preview_2 from './_Preview_2';
+import _Preview_3 from './_Preview_3';
+import Preview_4 from './Preview_4';
+import Preview_5 from './Preview_5';
 import '../../index.css';
 import '../css/styles.css';
 //import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
@@ -19,6 +24,10 @@ import HighchartsReact from 'highcharts-react-official' //npm install highcharts
 HighchartsMore(Highcharts)
 HighchartsMore(Highstock)
 //var {vw, vh, vmin, vmax} = require('react-native-viewport-units');
+
+var NewArray = new Array();
+NewArray = window.location.href.split('/');
+const userid =  NewArray[NewArray.length-1];
 
 class Mainview extends Component {
     constructor() {
@@ -34,11 +43,12 @@ class Mainview extends Component {
             address:'',
             phone:'',
             smoke:'',
-            chooser: 'chooser_1'
+            chooser: 'chooser_1',
+            id: userid
         }
         var NewArray = new Array();
 　      NewArray = window.location.href.split('/');
-        console.log(NewArray[NewArray.length-1]);
+        //console.log(NewArray[NewArray.length-1]);
         const userid =  NewArray[NewArray.length-1];
         var size = 0;
         patient_home(userid).then(res => {
@@ -53,9 +63,10 @@ class Mainview extends Component {
                 phone: res[0] != undefined ? res[0].phone : '無紀錄',
                 smoke: res[0] != undefined ? res[0].smoke : '無紀錄',
                 address: res[0] != undefined ? res[0].address : '無紀錄',
+                id: userid
             })
 
-            console.log(this.state.StagesDeep);
+            //console.log(this.state.StagesDeep);
         })
         
     }
@@ -65,7 +76,7 @@ class Mainview extends Component {
 
     handleClick (e) {
         this.setState({chooser: e.target.id})
-        console.log(this.state.aaa);
+        //console.log(this.state.aaa);
     }
 
     /*componentDidMount () {
@@ -80,6 +91,15 @@ class Mainview extends Component {
     }*/
 
     render () {
+        let preview_2,preview_3;
+        if(this.state.id == "67af0b6ee92a46b5a987c2e639f01720" || this.state.id == "2c1c3a34e3c142c48c2cb09b176045e5"){
+            preview_2 = <_Preview_2 />
+            preview_3 = <_Preview_3 />
+        }
+        else{
+            preview_2 =  <Preview_2 />
+            preview_3 = <Preview_3 />
+        }
         const chooser_1 = (
             <div>
             <div className="chooser">
@@ -92,6 +112,7 @@ class Mainview extends Component {
             <Preview_1 />
             </div>
         )
+        
         const chooser_2 = (
             <div>
             <div className="chooser">
@@ -101,10 +122,11 @@ class Mainview extends Component {
                 <div onClick={this.handleClick.bind(this)} id="chooser_4">音檔</div>
                 <div onClick={this.handleClick.bind(this)} id="chooser_5">相簿</div>
             </div>
-            <Preview_2 />
+                {preview_2}
             </div>
         )
         const chooser_3 = (
+            <div>
             <div className="chooser">
                 <div onClick={this.handleClick.bind(this)} id="chooser_1" >當前數據</div>
                 <div onClick={this.handleClick.bind(this)} id="chooser_2">歷史紀錄</div>
@@ -112,8 +134,11 @@ class Mainview extends Component {
                 <div onClick={this.handleClick.bind(this)} id="chooser_4">音檔</div>
                 <div onClick={this.handleClick.bind(this)} id="chooser_5">相簿</div>
             </div>
+            {preview_3}
+            </div>
         )
         const chooser_4 = (
+            <div>
             <div className="chooser">
                 <div onClick={this.handleClick.bind(this)} id="chooser_1" >當前數據</div>
                 <div onClick={this.handleClick.bind(this)} id="chooser_2">歷史紀錄</div>
@@ -121,14 +146,19 @@ class Mainview extends Component {
                 <div id="chooser_4" className="choosed">音檔</div>
                 <div onClick={this.handleClick.bind(this)} id="chooser_5">相簿</div>
             </div>
+            <Preview_4 />
+            </div>
         )
         const chooser_5 = (
+            <div>
             <div className="chooser">
                 <div onClick={this.handleClick.bind(this)} id="chooser_1" >當前數據</div>
                 <div onClick={this.handleClick.bind(this)} id="chooser_2">歷史紀錄</div>
                 <div onClick={this.handleClick.bind(this)} id="chooser_3">疾病風險</div>
                 <div onClick={this.handleClick.bind(this)} id="chooser_4">音檔</div>
                 <div id="chooser_5" className="choosed">相簿</div>
+            </div>
+            <Preview_5 />
             </div>
         )
         var configs = {
@@ -379,6 +409,8 @@ class Mainview extends Component {
             <div>
                 <div className="basicInfo">基本資料
                     <div><img src={this.state.imagepath} className="photo"/></div>
+                    <a className="text-center" style={{fontSize:"3rem"}}> {this.state.name}</a> 
+                    <br/><br/>
                     <p>生日: {this.state.birth}</p>
                     <p>血型: {this.state.blood}</p>
                     <p>病史: {this.state.disease}</p>
@@ -393,20 +425,3 @@ class Mainview extends Component {
 }
 
 export default Mainview
-
-/*<div>
-                    
-                    <div className="graphs">
-                        <div style={{margin:"0 auto"}}>
-                            昨日睡眠<br/>
-                            <HighchartsReact highcharts = {Highcharts} options={configs} className="graph" />
-                        </div>
-                        <div style={{margin:"0 auto"}}>
-                            昨日活動量/卡路里
-                            <HighchartsReact highcharts = {Highcharts} options={configs_2}  className="graph"/>
-                        </div>
-                        <div style={{margin:"0 auto"}}>
-                            <HighchartsReact highcharts = {Highstock} constructorType = {'stockChart'} options = {configs_3} />
-                         </div>
-                    </div>
-                </div>*/

@@ -146,7 +146,7 @@ router.post('/bloodpressure', (req, res, next) => {
 })
 
 router.get('/rank', (req, res, next) => {
-    connection.query("select userid,activate_value from realtime_data order by activate_value desc;", function(err,  rows){
+    connection.query("select name,imagepath,activate_value from realtime_data order by activate_value desc;", function(err,  rows){
         if(err)
             res.send('error: ' + err);
         if(rows && rows.length > 0){

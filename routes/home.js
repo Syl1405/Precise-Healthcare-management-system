@@ -157,7 +157,7 @@ router.get('/sleep', (req, res, next) => {
 })
 
 router.get('/main', (req, res, next) => {
-    connection.query("select userid,name,blood_suger,blood_pressure,temperature,activate,activate_value,sleep,sleep_value,imagepath from realtime_data order by blood_suger desc,blood_pressure desc,temperature desc,activate desc,sleep desc,userid asc limit 10", function(err,  rows){
+    connection.query("select userid,name,blood_suger,blood_pressure,temperature,activate,activate_value,sleep,sleep_value,imagepath,(blood_suger+blood_pressure+temperature+activate+sleep) as total from realtime_data order by  total desc,blood_suger desc,blood_pressure desc,temperature desc,activate desc,sleep desc,userid asc limit 10", function(err,  rows){
         if(err)
             res.send('error: ' + err)
         if(rows && rows.length > 0){

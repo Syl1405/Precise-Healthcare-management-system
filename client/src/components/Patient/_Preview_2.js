@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
 import '../../index.css';
-import constantData from './History_Sleep.json';
+import constantData from './_History_Sleep.json';
 import _constantData from './_History_Sleep.json';
-import constantData_2 from './History_ActiveCalories.json';
+import constantData_2 from './_History_ActiveCalories.json';
 import _constantData_2 from './_History_ActiveCalories.json';
-import constantData_3 from './History_BloodSugarPressure.json';
+import constantData_3 from './_History_BloodSugarPressure.json';
 import _constantData_3 from './_History_BloodSugarPressure.json';
 import { patient_1 } from '../UserFunctions'
 
