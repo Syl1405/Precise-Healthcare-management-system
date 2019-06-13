@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
-import '../../index.css';
+import '../css/index.css';
 
 
 const Preview = props => {
@@ -11,17 +11,40 @@ const Preview = props => {
   var temperature = user.temperature == 3 ? require('../image/thermometer_red.png') : (user.temperature == 2 ? require('../image/thermometer_yellow.png') :(user.temperature == 1 ? require('../image/thermometer_green.png') : require('../image/thermometer.png')));
   var activate = user.activate == 3 ? require('../image/running_red.png') : (user.activate == 2 ? require('../image/running_red.png') :(user.activate == 1 ? require('../image/running_green.png') : require('../image/running.png')));
   var sleep = user.sleep == 3 ? require('../image/crescent-moon_red.png') : (user.sleep == 2 ? require('../image/crescent-moon_yellow.png') :(user.sleep == 1 ? require('../image/crescent-moon_green.png') : require('../image/crescent-moon.png')));
-
+  var newImg = new Image(); 
+  newImg.src = user.imagepath; 
+  var imgHeight = newImg.height; 
+  var imgWidth = newImg.width; 
+  let photo;
+  if(imgHeight > imgWidth)
+    photo = (
+      <div className="circular--portrait">
+        <img src={user.imagepath} alt={user.name} />
+      </div>
+    )
+  else if (imgWidth > imgHeight)
+    photo = (
+      <div className="circular--landscape">
+        <img src={user.imagepath} alt={user.name} />
+      </div>
+    )
+  else
+    photo = (
+      <div className="photo">
+        <img src={user.imagepath} alt={user.name} />
+      </div>
+    )
   return (
     
     <div>
         <Link to={`patient/${user.userid}`} className="link">
             <div className="top_blank"></div>
-            <div className="photo">
-              <img src={user.imagepath} alt={user.name} />
-            </div>
+            {photo}
             <div className="name">
               {user.name} 
+            </div>
+            <div className="detail">
+              {user.sex}, {user.age}歲
             </div>
             <div class="condition">
               <img src={blood} alt="" /><img src={blood_pressure} /><img src={temperature} /><img src={activate} /><img src={sleep} />

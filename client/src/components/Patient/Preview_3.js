@@ -3,6 +3,7 @@ import { Link, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
 import '../../index.css';
 import constantData from './_History_Rate2.json';
+import constantData4 from './fake_data1.json';
 import { patient_1 } from '../UserFunctions'
 
 import Highcharts from 'highcharts' //npm install highcharts-more --save
@@ -52,7 +53,7 @@ class Preview_2 extends Component {
                   { type: 'month', count: 3, text: '3m'},
                   { type: 'all', text: 'All'}
                   ],
-                  selected : 5
+                  selected : 1
             },
             
             title : {
@@ -84,8 +85,12 @@ class Preview_2 extends Component {
             },
             series: [
                 {
-                    name: 'Rate',
-                    data: constantData.rate
+                    name: 'Cardi_rate',
+                    data: constantData4.Cardi_rate
+                },
+                {
+                    name: 'Diebetes_rate',
+                    data: constantData4.Diebetes_rate
                 }
             ]
         }

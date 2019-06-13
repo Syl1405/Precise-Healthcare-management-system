@@ -27,8 +27,8 @@ class Preview_2 extends Component {
     constructor() {
         super()
         this.state = {
-            width: Number(document.body.clientWidth*0.4),
-            height: Number(document.body.clientWidth*0.2),
+            width: Number(document.body.clientWidth*0.5),
+            height: Number(document.body.clientWidth*0.3),
             textsize: Number(document.body.clientWidth*0.001),
             id : userid
             

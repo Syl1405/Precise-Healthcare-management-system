@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { vw, vh } from 'react-native-css'
 import '../../index.css';
 import constantData from './History_Sleep.json';
+import constantData4 from './fake_data1.json';
 import { patient_1 } from '../UserFunctions'
 
 import Highcharts from 'highcharts' //npm install highcharts-more --save
@@ -199,6 +200,303 @@ class Preview_1 extends Component {
                 }
             ]
         }
+        var configs_3 = {
+            chart: {
+                type: 'boxplot',
+                width: this.state.width,
+                height: this.state.height
+            },
+        
+            title: {
+                text: ''
+            },
+        
+            legend: {
+                enabled: false
+            },
+        
+            xAxis: {
+                categories: ['Heart Rate', 'Systolic Blood Pressure', 'Diastolic Blood Pressure', 'Blood Suger',
+                            'Sleep', 'Active', 'Calorie']
+            },
+        
+            yAxis: [
+                {
+                    title: {
+                        text: 'Value'
+                    },
+                    visible: false
+                },
+                {
+                    title: {
+                        text: 'Calories Value'
+                    },
+                    visible: false,
+                    opposite: true
+                }
+            ],
+
+            series: [
+                {
+                    name: "Box vlues",
+                    data: [
+                        {
+                            x: 0,
+                            low: constantData4.box_Heart[0],
+                            q1: constantData4.box_Heart[1],
+                            median: constantData4.box_Heart[2],
+                            q3: constantData4.box_Heart[3],
+                            high: constantData4.box_Heart[4],
+                            name: "Heart Rate",
+                            color: '#1f77b4'
+                        },
+                        {
+                            x: 1,
+                            low: constantData4.box_SystolicBloodPressure[0],
+                            q1: constantData4.box_SystolicBloodPressure[1],
+                            median: constantData4.box_SystolicBloodPressure[2],
+                            q3: constantData4.box_SystolicBloodPressure[3],
+                            high: constantData4.box_SystolicBloodPressure[4],
+                            name: "Systolic Blood Pressure",
+                            color: '#ff7f0e'
+                        },
+                        {
+                            x: 2,
+                            low: constantData4.box_DiastolicBloodPressure[0],
+                            q1: constantData4.box_DiastolicBloodPressure[1],
+                            median: constantData4.box_DiastolicBloodPressure[2],
+                            q3: constantData4.box_DiastolicBloodPressure[3],
+                            high: constantData4.box_DiastolicBloodPressure[4],
+                            name: "Diasttolic Blood Pressure",
+                            color: '#2ca02c'
+                        },
+                        {
+                            x: 3,
+                            low: constantData4.box_BloodSugar[0],
+                            q1: constantData4.box_BloodSugar[1],
+                            median: constantData4.box_BloodSugar[2],
+                            q3: constantData4.box_BloodSugar[3],
+                            high: constantData4.box_BloodSugar[4],
+                            name: "Blood Suger",
+                            color: '#9467bd'
+                        },
+                        {
+                            x: 4,
+                            low: constantData4.box_Sleep[0],
+                            q1: constantData4.box_Sleep[1],
+                            median: constantData4.box_Sleep[2],
+                            q3: constantData4.box_Sleep[3],
+                            high: constantData4.box_Sleep[4],
+                            name: "Sleep",
+                            color: '#1f77b4'
+                        },
+                        {
+                            x: 5,
+                            low: constantData4.box_Active[0],
+                            q1: constantData4.box_Active[1],
+                            median: constantData4.box_Active[2],
+                            q3: constantData4.box_Active[3],
+                            high: constantData4.box_Active[4],
+                            name: "Active",
+                            color: '#ff7f0e'
+                        },
+                        /*
+                        {
+                            x: 6,
+                            low: constantData4.box_Calorie[0],
+                            q1: constantData4.box_Calorie[1],
+                            median: constantData4.box_Calorie[2],
+                            q3: constantData4.box_Calorie[3],
+                            high: constantData4.box_Calorie[4],
+                            name: "Calorie",
+                            color: '#2ca02c'
+                        },
+                        */
+                    ],
+                },
+                
+                {
+                    name: "old_heart",
+                    color: "#aec7e8",
+                    type: 'scatter',
+                    data: constantData4.scatter_Heart,
+                    marker: {
+                        symbol : "circle",
+                        radius: 1
+                    },
+                    jitter: {
+                        x: 0.24 // Exact fit for box plot's groupPadding and pointPadding
+                    },
+                    enableMouseTracking: false
+                },
+                {
+                    name: "old_SBP",
+                    color: "#ffbb78",
+                    type: 'scatter',
+                    data: constantData4.scatter_SystolicBloodPressure,
+                    marker: {
+                        symbol : "circle",
+                        radius: 1
+                    },
+                    jitter: {
+                        x: 0.24 // Exact fit for box plot's groupPadding and pointPadding
+                    },
+                    enableMouseTracking: false
+                },
+                {
+                    name: "old_DBP",
+                    color: "#98df8a",
+                    type: 'scatter',
+                    data: constantData4.scatter_DiastolicBloodPressure,
+                    marker: {
+                        symbol : "circle",
+                        radius: 1
+                    },
+                    jitter: {
+                        x: 0.24 // Exact fit for box plot's groupPadding and pointPadding
+                    },
+                    enableMouseTracking: false
+                },
+                {
+                    name: "old_BS",
+                    color: "#c5b0d5",
+                    type: 'scatter',
+                    data: constantData4.sactter_BloodSugar,
+                    marker: {
+                        symbol : "circle",
+                        radius: 1
+                    },
+                    jitter: {
+                        x: 0.24 // Exact fit for box plot's groupPadding and pointPadding
+                    },
+                    enableMouseTracking: false
+                },
+                {
+                    name: "old_Sleep",
+                    color: "#aec7e8",
+                    type: 'scatter',
+                    data: constantData4.scatter_Sleep,
+                    marker: {
+                        symbol : "circle",
+                        radius: 1
+                    },
+                    jitter: {
+                        x: 0.24 // Exact fit for box plot's groupPadding and pointPadding
+                    },
+                    enableMouseTracking: false
+                },
+                {
+                    name: "old_Active",
+                    color: "#ffbb78",
+                    type: 'scatter',
+                    data: constantData4.scatter_Active,
+                    marker: {
+                        symbol : "circle",
+                        radius: 1
+                    },
+                    jitter: {
+                        x: 0.24 // Exact fit for box plot's groupPadding and pointPadding
+                    },
+                    enableMouseTracking: false
+                },
+                /*
+                {
+                    name: "old_Calorie",
+                    color: "#98df8a",
+                    type: 'scatter',
+                    data: constantData4.scatter_Calorie,
+                    marker: {
+                        symbol : "circle",
+                        radius: 3
+                    },
+                    jitter: {
+                        x: 0.24 // Exact fit for box plot's groupPadding and pointPadding
+                    },
+                    enableMouseTracking: false
+                },
+                */
+
+                {
+                    name: "new_heart",
+                    color: "red",
+                    type: 'scatter',
+                    data: constantData4.new_Heart,
+                    marker: {
+                        symbol : "circle",
+                        radius: 3
+                    },
+                    enableMouseTracking: true
+                },
+                {
+                    name: "new_SBP",
+                    color: "red",
+                    type: 'scatter',
+                    data: constantData4.new_SystolicBloodPressure,
+                    marker: {
+                        symbol : "circle",
+                        radius: 3
+                    },
+                    enableMouseTracking: true
+                },
+                {
+                    name: "new_DBP",
+                    color: "red",
+                    type: 'scatter',
+                    data: constantData4.new_DiastolicBloodPressure,
+                    marker: {
+                        symbol : "circle",
+                        radius: 3
+                    },
+                    enableMouseTracking: true
+                },
+                {
+                    name: "new_BS",
+                    color: "red",
+                    type: 'scatter',
+                    data: constantData4.new_BloodSugar,
+                    marker: {
+                        symbol : "circle",
+                        radius: 3
+                    },
+                    enableMouseTracking: true
+                },
+                {
+                    name: "new_Sleep",
+                    color: "red",
+                    type: 'scatter',
+                    data: constantData4.new_Sleep,
+                    marker: {
+                        symbol : "circle",
+                        radius: 3
+                    },
+                    enableMouseTracking: true
+                },
+                {
+                    name: "new_Active",
+                    color: "red",
+                    type: 'scatter',
+                    data: constantData4.new_Active,
+                    marker: {
+                        symbol : "circle",
+                        radius: 3
+                    },
+                    enableMouseTracking: true
+                },
+                /*
+                {
+                    name: "new_Calorie",
+                    color: "red",
+                    type: 'scatter',
+                    data: new_Calorie,
+                    marker: {
+                        symbol : "circle",
+                        radius: 3
+                    },
+                    enableMouseTracking: true
+                },
+                */
+            ]
+        }
         return (
                 <div className="graphs_1">
                         <div style={{margin:"0 auto"}}>
@@ -208,6 +506,10 @@ class Preview_1 extends Component {
                         <div style={{margin:"0 auto"}}>
                             <div className="graph_name">昨日活動量/卡路里</div>
                             <HighchartsReact highcharts = {Highcharts} options={configs_2}/>
+                        </div>
+                        <div style={{margin:"0 auto"}}>
+                            <div className="graph_name">數據對比</div>
+                            <HighchartsReact highcharts = {Highcharts} options={configs_3}/>
                         </div>
                     </div>
                 

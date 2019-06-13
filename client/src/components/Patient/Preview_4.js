@@ -9,6 +9,7 @@ import Highcharts from 'highcharts' //npm install highcharts-more --save
 import * as HighchartsMore from "highcharts/highcharts-more"
 import Highstock from 'highcharts/highstock'
 import HighchartsReact from 'highcharts-react-official' //npm install highcharts-react-official
+import {cloud} from './cloud/voice.js'
 
 
 HighchartsMore(Highcharts)
@@ -25,12 +26,12 @@ class Preview_4 extends Component {
         }
         
     }
-
     render () {
         console.log(example);
         return (
                 <div className="graphs_4">
-                    <img src={example} />
+                    <img src={example} onClick={cloud} />
+                    <div id = "cloud"></div>
                 </div>
                 
         )
