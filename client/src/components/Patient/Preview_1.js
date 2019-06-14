@@ -47,7 +47,7 @@ class Preview_1 extends Component {
                 StagesLight: res[2] != undefined ? res[2].StagesLight : 0,
                 StagesRem:  res[2] != undefined ? res[2].StagesRem : 0,
                 StagesWake: res[2] != undefined ? res[2].StagesWake : 0,
-                width: Number(document.body.clientWidth*0.4),
+                width: Number(document.body.clientWidth*0.5),
                 height: Number(document.body.clientWidth*0.2)
             })
 
@@ -219,22 +219,34 @@ class Preview_1 extends Component {
                 categories: ['Heart Rate', 'Systolic Blood Pressure', 'Diastolic Blood Pressure', 'Blood Suger',
                             'Sleep', 'Active', 'Calorie']
             },
-        
+            
             yAxis: [
                 {
                     title: {
-                        text: 'Value'
+                        text: ''
                     },
-                    visible: false
+                    labels:{
+                        enabled: false
+                    },
+                    visible: true
                 },
                 {
                     title: {
-                        text: 'Calories Value'
+                        text: ''
                     },
-                    visible: false,
+                    labels:{
+                        enabled: false
+                    },
+                    visible: true,
                     opposite: true
                 }
             ],
+
+            plotOptions: {
+                boxplot: {
+                    enableMouseTracking: false
+                }
+            },
 
             series: [
                 {
@@ -300,7 +312,6 @@ class Preview_1 extends Component {
                             name: "Active",
                             color: '#ff7f0e'
                         },
-                        /*
                         {
                             x: 6,
                             low: constantData4.box_Calorie[0],
@@ -310,8 +321,7 @@ class Preview_1 extends Component {
                             high: constantData4.box_Calorie[4],
                             name: "Calorie",
                             color: '#2ca02c'
-                        },
-                        */
+                        }
                     ],
                 },
                 
@@ -399,7 +409,6 @@ class Preview_1 extends Component {
                     },
                     enableMouseTracking: false
                 },
-                /*
                 {
                     name: "old_Calorie",
                     color: "#98df8a",
@@ -407,15 +416,14 @@ class Preview_1 extends Component {
                     data: constantData4.scatter_Calorie,
                     marker: {
                         symbol : "circle",
-                        radius: 3
+                        radius: 1
                     },
                     jitter: {
                         x: 0.24 // Exact fit for box plot's groupPadding and pointPadding
                     },
                     enableMouseTracking: false
                 },
-                */
-
+                
                 {
                     name: "new_heart",
                     color: "red",
@@ -425,7 +433,7 @@ class Preview_1 extends Component {
                         symbol : "circle",
                         radius: 3
                     },
-                    enableMouseTracking: true
+                    enableMouseTracking: false
                 },
                 {
                     name: "new_SBP",
@@ -436,7 +444,7 @@ class Preview_1 extends Component {
                         symbol : "circle",
                         radius: 3
                     },
-                    enableMouseTracking: true
+                    enableMouseTracking: false
                 },
                 {
                     name: "new_DBP",
@@ -447,7 +455,7 @@ class Preview_1 extends Component {
                         symbol : "circle",
                         radius: 3
                     },
-                    enableMouseTracking: true
+                    enableMouseTracking: false
                 },
                 {
                     name: "new_BS",
@@ -458,7 +466,7 @@ class Preview_1 extends Component {
                         symbol : "circle",
                         radius: 3
                     },
-                    enableMouseTracking: true
+                    enableMouseTracking: false
                 },
                 {
                     name: "new_Sleep",
@@ -469,7 +477,7 @@ class Preview_1 extends Component {
                         symbol : "circle",
                         radius: 3
                     },
-                    enableMouseTracking: true
+                    enableMouseTracking: false
                 },
                 {
                     name: "new_Active",
@@ -480,21 +488,19 @@ class Preview_1 extends Component {
                         symbol : "circle",
                         radius: 3
                     },
-                    enableMouseTracking: true
+                    enableMouseTracking: false
                 },
-                /*
                 {
                     name: "new_Calorie",
                     color: "red",
                     type: 'scatter',
-                    data: new_Calorie,
+                    data: constantData4.new_Calorie,
                     marker: {
                         symbol : "circle",
                         radius: 3
                     },
-                    enableMouseTracking: true
-                },
-                */
+                    enableMouseTracking: false
+                }
             ]
         }
         return (

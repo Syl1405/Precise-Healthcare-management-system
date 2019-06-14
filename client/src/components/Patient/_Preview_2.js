@@ -9,6 +9,7 @@ import _constantData_2 from './_History_ActiveCalories.json';
 import constantData_3 from './_History_BloodSugarPressure.json';
 import _constantData_3 from './_History_BloodSugarPressure.json';
 import { patient_1 } from '../UserFunctions'
+import constantData4 from './fake_data3.json';
 
 import Highcharts from 'highcharts' //npm install highcharts-more --save
 import * as HighchartsMore from "highcharts/highcharts-more"
@@ -62,7 +63,7 @@ class Preview_2 extends Component {
                   { type: 'month', count: 3, text: '3 m'},
                   { type: 'all', text: 'All'}
                   ],
-                  selected : 5
+                  selected : 1
               },
             
             title : {
@@ -115,19 +116,19 @@ class Preview_2 extends Component {
             series: [
                 {
                     name: 'Deep',
-                    data: constantData.Deep
+                    data: constantData4.Sleep_Deep
                 },
                 {
                     name: 'Light',
-                    data: constantData.Light
+                    data: constantData4.Sleep_Light
                 },
                 {
                     name: 'Rem',
-                    data: constantData.Rem
+                    data: constantData4.Sleep_Rem
                 },
                 {
                     name: 'Wake',
-                    data: constantData.Wake
+                    data: constantData4.Sleep_Wake
                 }
             ]
         }
@@ -155,7 +156,7 @@ class Preview_2 extends Component {
                   { type: 'month', count: 3, text: '3 m'},
                   { type: 'all', text: 'All'}
                   ],
-                  selected : 5
+                  selected : 1
             },
             
             title : {
@@ -205,15 +206,15 @@ class Preview_2 extends Component {
             series: [
                 {
                     name: 'LightlyActiveMinutes',
-                    data: constantData_2.Light
+                    data: constantData4.Active_Light
                 },
                 {
                     name: 'FairlyActiveMinutes',
-                    data: constantData_2.Fairly
+                    data: constantData4.Active_Fairly
                 },
                 {
                     name: 'VeryActiveMinutes',
-                    data: constantData_2.Very
+                    data: constantData4.Active_Very
                 }
             ]
         }
@@ -241,7 +242,7 @@ class Preview_2 extends Component {
                   { type: 'month', count: 3, text: '3m'},
                   { type: 'all', text: 'All'}
                   ],
-                  selected : 5
+                  selected : 1
             },
             
             title : {
@@ -274,7 +275,7 @@ class Preview_2 extends Component {
             series: [
                 {
                     name: 'Calories',
-                    data: constantData_2.Calorie
+                    data: constantData4.Calorie
                 }
             ]
         }
@@ -302,7 +303,7 @@ class Preview_2 extends Component {
                   { type: 'month', count: 3, text: '3m'},
                   { type: 'all', text: 'All'}
                   ],
-                  selected : 5
+                  selected : 1
             },
             
             title : {
@@ -329,12 +330,12 @@ class Preview_2 extends Component {
                 {
                     name: 'SystolicBloodPressure',
                     color: 'red',
-                    data: constantData_3.SystolicBloodPressure
+                    data: constantData4.SystolicBloodPressure
                 },
                 {
                     name: 'DiastolicBloodPressure',
                     color: 'blue',
-                    data: constantData_3.DiastolicBloodPressure
+                    data: constantData4.DiastolicBloodPressure
                 }
             ]
         }
@@ -362,7 +363,7 @@ class Preview_2 extends Component {
                   { type: 'month', count: 3, text: '3m'},
                   { type: 'all', text: 'All'}
                   ],
-                  selected : 5
+                  selected : 1
               },
             
             title : {
@@ -390,7 +391,7 @@ class Preview_2 extends Component {
             series: [
                 {
                     name: 'BloodSugar',
-                    data: constantData_3.BloodSugar
+                    data: constantData4.BloodSugar
                 }
             ]
         }

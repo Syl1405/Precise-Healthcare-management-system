@@ -28,6 +28,8 @@ HighchartsMore(Highstock)
 var NewArray = new Array();
 NewArray = window.location.href.split('/');
 const userid =  NewArray[NewArray.length-1];
+console.log(userid);
+const log = require("../image/users/" + "67af0b6ee92a46b5a987c2e639f01720" + "/selfie.png");
 
 class Mainview extends Component {
     constructor() {
@@ -408,7 +410,7 @@ class Mainview extends Component {
         return (
             <div>
                 <div className="basicInfo">基本資料
-                    <div><img src={this.state.imagepath} className="photo"/></div>
+                    <div><img src={log} className="photo"/></div>
                     <a className="text-center" style={{fontSize:"3rem"}}> {this.state.name}</a> 
                     <br/><br/>
                     <p>生日: {this.state.birth}</p>

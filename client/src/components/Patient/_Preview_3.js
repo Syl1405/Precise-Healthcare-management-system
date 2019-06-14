@@ -9,7 +9,7 @@ import Highcharts from 'highcharts' //npm install highcharts-more --save
 import * as HighchartsMore from "highcharts/highcharts-more"
 import Highstock from 'highcharts/highstock'
 import HighchartsReact from 'highcharts-react-official' //npm install highcharts-react-official
-
+import constantData4 from './fake_data1.json';
 
 HighchartsMore(Highcharts)
 HighchartsMore(Highstock)
@@ -19,8 +19,8 @@ class Preview_2 extends Component {
     constructor() {
         super()
         this.state = {
-            width: Number(document.body.clientWidth*0.4),
-            height: Number(document.body.clientWidth*0.2),
+            width: Number(document.body.clientWidth*0.5),
+            height: Number(document.body.clientWidth*0.3),
             textsize: Number(document.body.clientWidth*0.001)
         }
         
@@ -52,7 +52,7 @@ class Preview_2 extends Component {
                   { type: 'month', count: 3, text: '3m'},
                   { type: 'all', text: 'All'}
                   ],
-                  selected : 5
+                  selected : 1
             },
             
             title : {
@@ -84,17 +84,21 @@ class Preview_2 extends Component {
             },
             series: [
                 {
-                    name: 'Rate',
-                    data: constantData.rate
+                    name: 'Cardi_rate',
+                    data: constantData4.Cardi_rate
+                },
+                {
+                    name: 'Diebetes_rate',
+                    data: constantData4.Diebetes_rate
                 }
             ]
         }
         return (
                 <div className="graphs_3">
-                        <div style={{margin:"0 auto"}}>
-                            <div className="graph_name">心血管疾病</div>
-                            <HighchartsReact highcharts = {Highstock} constructorType = {'stockChart'} options = {configs_1} />
-                        </div>
+                    <div style={{margin:"0 auto"}}>
+                        <div className="graph_name">疾病</div>
+                        <HighchartsReact highcharts = {Highstock} constructorType = {'stockChart'} options = {configs_1} />
+                    </div>
                 </div>
                 
         )
