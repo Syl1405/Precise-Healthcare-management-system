@@ -9,8 +9,8 @@ const Preview = props => {
   var blood_pressure = user.blood_pressure == 3 ? require('../image/blood-pressure_red.png') : (user.blood_pressure == 2 ? require('../image/blood-pressure_yellow.png') :(user.blood_pressure == 1 ? require('../image/blood-pressure_green.png') : require('../image/blood-pressure.png')));
   var temperature = user.temperature == 3 ? require('../image/thermometer_red.png') : (user.temperature == 2 ? require('../image/thermometer_yellow.png') :(user.temperature == 1 ? require('../image/thermometer_green.png') : require('../image/thermometer.png')));
   var activate = user.activate == 3 ? require('../image/running_red.png') : (user.activate == 2 ? require('../image/running_red.png') :(user.activate == 1 ? require('../image/running_green.png') : require('../image/running.png')));
-  var sleep = user.sleep == 3 ? require('../image/crescent-moon_red.png') : (user.sleep == 2 ? require('../image/crescent-moon_yellow.png') :(user.sleep == 1 ? require('../image/crescent-moon_green.png') : require('../image/crescent-moon.png'))); 
-  const logo = require('../' + user.imagepath + '.png'); 
+  var sleep = user.sleep == 3 ? require('../image/crescent-moon_red.png') : (user.sleep == 2 ? require('../image/crescent-moon_yellow.png') :(user.sleep == 1 ? require('../image/crescent-moon_green.png') : require('../image/crescent-moon.png')));
+  const logo = require('../' + user.imagepath + '.png');
   //
   let photo;
   photo = (
@@ -19,23 +19,23 @@ const Preview = props => {
       </div>
   )
   return (
-    
+
     <div>
         <Link to={`patient/${user.userid}`} className="link">
             <div className="top_blank"></div>
             {photo}
             <div className="name">
-              {user.name} 
+              {user.name}
             </div>
             <div className="detail">
               {user.sex}, {user.age}歲
             </div>
             <div class="condition">
-              <img src={blood} alt="" /><img src={blood_pressure} /><img src={temperature} /><img src={activate} /><img src={sleep} />
+              <img src={blood} alt="" /><img src={blood_pressure} /><img src={temperature} /><img src={sleep} /><img src={activate} />
             </div>
-      </Link>  
+      </Link>
     </div>
-    
+
   );
 }
 

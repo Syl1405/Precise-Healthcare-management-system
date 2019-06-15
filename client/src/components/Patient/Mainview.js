@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link, withRouter } from 'react-router-dom' 
+import { Link, withRouter } from 'react-router-dom'
 import { vw, vh } from 'react-native-css'
 import Div100vh from 'react-div-100vh'
 import jwt_decode from 'jwt-decode'
@@ -70,10 +70,10 @@ class Mainview extends Component {
 
             //console.log(this.state.StagesDeep);
         })
-        
+
     }
     componentDidMount() {
-        
+
     }
 
     handleClick (e) {
@@ -106,23 +106,23 @@ class Mainview extends Component {
             <div>
             <div className="chooser">
                 <div id="chooser_1" className="choosed">當前數據</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_2">歷史紀錄</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_3">疾病風險</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_4">音檔</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_5">相簿</div>
+                <div onClick={this.handleClick.bind(this)}  className="unchoosed" id="chooser_2">歷史紀錄</div>
+                <div onClick={this.handleClick.bind(this)}  className="unchoosed" id="chooser_3">疾病風險</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed" id="chooser_4">音檔</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed" id="chooser_5">相簿</div>
             </div>
             <Preview_1 />
             </div>
         )
-        
+
         const chooser_2 = (
             <div>
             <div className="chooser">
-                <div onClick={this.handleClick.bind(this)} id="chooser_1" >當前數據</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed"id="chooser_1" >當前數據</div>
                 <div id="chooser_2" className="choosed">歷史紀錄</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_3">疾病風險</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_4">音檔</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_5">相簿</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed" id="chooser_3">疾病風險</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed" id="chooser_4">音檔</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed" id="chooser_5">相簿</div>
             </div>
                 {preview_2}
             </div>
@@ -130,11 +130,11 @@ class Mainview extends Component {
         const chooser_3 = (
             <div>
             <div className="chooser">
-                <div onClick={this.handleClick.bind(this)} id="chooser_1" >當前數據</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_2">歷史紀錄</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed" id="chooser_1" >當前數據</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed" id="chooser_2">歷史紀錄</div>
                 <div id="chooser_3" className="choosed">疾病風險</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_4">音檔</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_5">相簿</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed" id="chooser_4">音檔</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed" id="chooser_5">相簿</div>
             </div>
             {preview_3}
             </div>
@@ -142,11 +142,11 @@ class Mainview extends Component {
         const chooser_4 = (
             <div>
             <div className="chooser">
-                <div onClick={this.handleClick.bind(this)} id="chooser_1" >當前數據</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_2">歷史紀錄</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_3">疾病風險</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed" id="chooser_1" >當前數據</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed" id="chooser_2">歷史紀錄</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed" id="chooser_3">疾病風險</div>
                 <div id="chooser_4" className="choosed">音檔</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_5">相簿</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed" id="chooser_5">相簿</div>
             </div>
             <Preview_4 />
             </div>
@@ -154,10 +154,10 @@ class Mainview extends Component {
         const chooser_5 = (
             <div>
             <div className="chooser">
-                <div onClick={this.handleClick.bind(this)} id="chooser_1" >當前數據</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_2">歷史紀錄</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_3">疾病風險</div>
-                <div onClick={this.handleClick.bind(this)} id="chooser_4">音檔</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed" id="chooser_1" >當前數據</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed" id="chooser_2">歷史紀錄</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed" id="chooser_3">疾病風險</div>
+                <div onClick={this.handleClick.bind(this)} className="unchoosed" id="chooser_4">音檔</div>
                 <div id="chooser_5" className="choosed">相簿</div>
             </div>
             <Preview_5 />
@@ -191,12 +191,12 @@ class Mainview extends Component {
                     }
                 }
             },
-            
+
             tooltip: {
                 headerFormat: '<b>{point.x}</b><br/>',
                 pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
             },
-            
+
             plotOptions: {
                 bar: {
                     stacking: 'normal',
@@ -206,7 +206,7 @@ class Mainview extends Component {
                     }
                 }
             },
-            
+
             series: [
                 {
                     name: 'Deep',
@@ -247,7 +247,7 @@ class Mainview extends Component {
             xAxis: {
                 categories: ['Calories','Active']
             },
-        
+
             yAxis: [
                 {
                     title: {
@@ -330,7 +330,7 @@ class Mainview extends Component {
                   ],
                   selected : 5
               },
-            
+
             title : {
                 text : ''
             },
@@ -409,18 +409,20 @@ class Mainview extends Component {
         }
         return (
             <div>
-                <div className="basicInfo">基本資料
+                <div className="basicInfo">
                     <div><img src={log} className="photo"/></div>
-                    <a className="text-center" style={{fontSize:"3rem"}}> {this.state.name}</a> 
+                    <a className="name" > {this.state.name}</a>
                     <br/><br/>
-                    <p>生日: {this.state.birth}</p>
-                    <p>血型: {this.state.blood}</p>
-                    <p>病史: {this.state.disease}</p>
-                    <p>電話: {this.state.phone}</p>
-                    <p>地址: {this.state.address}</p>
+                    <p>性別： {this.state.birth}</p>
+                    <p>年齡： {this.state.birth}</p>
+                    <p>生日： {this.state.birth}</p>
+                    <p>血型： {this.state.blood}</p>
+                    <p>病史： {this.state.disease}</p>
+                    <p>電話： {this.state.phone}</p>
+                    <p>地址： {this.state.address}</p>
                 </div>
                 {this.state.chooser == "chooser_1" ? chooser_1 : (this.state.chooser == "chooser_2" ? chooser_2 : (this.state.chooser == "chooser_3" ? chooser_3 : (this.state.chooser == "chooser_4" ? chooser_4 : chooser_5)))}
-                
+
             </div>
         )
     }

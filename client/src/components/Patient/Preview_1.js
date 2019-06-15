@@ -85,12 +85,12 @@ class Preview_1 extends Component {
                     }
                 }
             },
-            
+
             tooltip: {
                 headerFormat: '<b>{point.x}</b><br/>',
                 pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
             },
-            
+
             plotOptions: {
                 bar: {
                     stacking: 'normal',
@@ -100,7 +100,7 @@ class Preview_1 extends Component {
                     }
                 }
             },
-            
+
             series: [
                 {
                     name: 'Deep',
@@ -141,7 +141,7 @@ class Preview_1 extends Component {
             xAxis: {
                 categories: ['Calories','Active']
             },
-        
+
             yAxis: [
                 {
                     title: {
@@ -206,20 +206,20 @@ class Preview_1 extends Component {
                 width: this.state.width,
                 height: this.state.height
             },
-        
+
             title: {
                 text: ''
             },
-        
+
             legend: {
                 enabled: false
             },
-        
+
             xAxis: {
                 categories: ['Heart Rate', 'Systolic Blood Pressure', 'Diastolic Blood Pressure', 'Blood Suger',
                             'Sleep', 'Active', 'Calorie']
             },
-            
+
             yAxis: [
                 {
                     title: {
@@ -324,7 +324,7 @@ class Preview_1 extends Component {
                         }
                     ],
                 },
-                
+
                 {
                     name: "old_heart",
                     color: "#aec7e8",
@@ -423,7 +423,7 @@ class Preview_1 extends Component {
                     },
                     enableMouseTracking: false
                 },
-                
+
                 {
                     name: "new_heart",
                     color: "red",
@@ -505,20 +505,23 @@ class Preview_1 extends Component {
         }
         return (
                 <div className="graphs_1">
-                        <div style={{margin:"0 auto"}}>
+                        <div>
                             <div className="graph_name">昨日睡眠</div>
                             <HighchartsReact highcharts = {Highcharts} options={configs}/>
+                            <hr/>
                         </div>
-                        <div style={{margin:"0 auto"}}>
+                        <div className="graph_margin">
                             <div className="graph_name">昨日活動量/卡路里</div>
                             <HighchartsReact highcharts = {Highcharts} options={configs_2}/>
+                            <hr/>
                         </div>
-                        <div style={{margin:"0 auto"}}>
+                        <div className="graph_margin">
                             <div className="graph_name">數據對比</div>
                             <HighchartsReact highcharts = {Highcharts} options={configs_3}/>
+                            <hr/>
                         </div>
                     </div>
-                
+
         )
     }
 }

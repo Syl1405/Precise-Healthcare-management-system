@@ -1,6 +1,6 @@
 body::-webkit-scrollbar {
     display: none;
-    font-family: "微軟正黑體";   
+    font-family: "微軟正黑體";
 }
 body{
         background-color: #FCF4EC;
@@ -30,7 +30,8 @@ div{
 .link_login {
     color: white;
     text-decoration:none;
-    font-weight:bold;
+    font-size: 1.3rem;
+  /**/
 }
 .link_login:hover {
     color:  #FFDDAA;
@@ -75,6 +76,14 @@ div{
     height:6vw;
     padding-top:2vw;
     z-index: 5;
+    font-size: 3rem;
+}
+.title .text-right{
+  text-align:right;
+  margin-top: -4vw;
+}
+.title .text-center{
+  text-align:center;
 }
 .title_login{
     background-color: #FF9E43;
@@ -163,21 +172,29 @@ div{
     position: absolute;
     left:25vw;
     top:4vw;
-    height:4vw;
+    height:3vw;
     width:58vw;
     display: grid;
     grid-gap: 0vw 0vw;
     grid-template-columns: auto auto auto auto auto;
     border:0px;
-    background-color: #FFD686;
+    /* background-color: #FFD686; */
+    /* background-color: #FFFFFF; */
     border-radius: 1.5vw 1.5vw 0 0;
-}
-.chooser div{
-
+    color: brown;
 }
 .chooser .choosed{
     background-color: #FFFF;
-    border-radius: 1.5vw 1.5vw 0 0;
+    border-radius: 1vw 1vw 0 0;
+    padding-top: 0.5vw;
+    font-size: 1.5rem;
+}
+.chooser .unchoosed{
+    background-color: #FFD686;
+    border-radius: 1vw 1vw 0 0;
+    margin-left: 0.1vw;
+    padding-top: 0.5vw;
+    font-size: 1.5rem;
 }
 .sortAndSearch{
     width:0vw;
@@ -210,6 +227,7 @@ div{
     width: 18.17vw;
     height: 5vw;
     margin:1vw;
+
     background-color: #FFFFFF;
 }
 .guys{
@@ -218,15 +236,19 @@ div{
     height:0vw;
     display: grid;
     grid-gap: 3vw 1vw;
-    grid-template-columns: 15vw 15vw 15vw 15vw;
+    grid-template-columns: 16vw 16vw 16vw 16vw;
     grid-template-rows:12vw 12vw 12vw 12vw 12vw 12vw 12vw 12vw 12vw 12vw  ;
     padding-left: 8vw;
     border: 0px;
 }
 .oneGuy{
     background-color: #FFFFFF;
-    border-radius: 1.5vw;
+    border-radius: 1vw;
     margin-top:1vw;
+    margin-right:1vw;
+    filter: drop-shadow(0.3vw 0.3vw 0.2vw rgba(0, 0, 0, 0.15));
+    width:16.5vw;
+    height:10vw;
 }
 .oneGuy:hover{
     background-color:#FFD686;
@@ -268,32 +290,30 @@ div{
 }
 .oneGuy .name{
     margin-left:2.5vw;
-    margin-top:-4vw;
-    font-size: 1.5rem;
+    margin-top:-4.5vw;
+    font-size: 1.3rem;
     font-family: "微軟正黑體";
     margin-bottom: 0vw;
 }
 .oneGuy .detail{
     margin-left:2vw;
-    margin-top:0vw;
-    font-size: 1rem;
+    margin-top:0.3vw;
+    font-size: 0.8rem;
     color: gray;
     margin-bottom: 0vw;
 }
 .oneGuy .condition{
-    margin-top:2vw;
+    margin-top:-0.2vw;
     border:0px;
-    width:15vw;
+    width:16.5vw;
 }
 .oneGuy .condition img{
     width:2vw;
     height:2vw;
     margin-right:0.5vw;
-    margin-right:0.5vw;
-    margin-top:-1vw;
-    margin-bottom:2vw;
+    margin-left:0.5vw;
 }
-.oneGuy button{
+.oneGuy button{ /*這啥？？？*/
     width:12vw;
     height:2.5vw;
     border-radius:10%/50%;
@@ -315,7 +335,7 @@ div{
     width:10vw;
     height:4vw;
     background-color: #FFFFFF;
-    border-radius: 1.5vw;
+    border-radius: 1vw;
     color: #FF9E43;
 }
 .leaderboard .cup{
@@ -403,12 +423,13 @@ div{
 /* personal */
 .mainPanel .basicInfo{
 
-    margin-left:3vw;
+    margin-left:5vw;
     margin-top:4vw;
     height:51vw;
-    width:18.16vw;  
+    width:18.16vw;
     background-color: #FFFFFF;
-    border-radius: 1.5vw;
+    border-radius: 1vw;
+    /* filter: drop-shadow(0.3vw 0.3vw 0.1vw rgba(0, 0, 0, 0.1)) */
 }
 .basicInfo p{
     padding-left:2.25vw;
@@ -416,43 +437,47 @@ div{
     text-align: left;
 }
 .basicInfo .photo{
-    width:14vw;
-    height:14vw;
-    margin:2.3vw;
+    width:10vw;
+    height:10vw;
+    margin-top:3vw;
+    margin-bottom: 1vw;
     border-radius: 50%;
+}
+.basicInfo a{
+    margin-top: -2vw;
+    font-size:2vw;
 }
 /* graph */
 .mainPanel .graphs{
     margin-left:20vw;
-    margin-top:-47vw;
+    margin-top:-48vw;
     height:150vw;
     width:58vw;
     display: grid;
-    grid-gap: 3vw 1vw;
+    grid-gap: 0vw 1vw;
     grid-template-columns: auto;
-    padding: 5vw;
+    padding: 0vw;
     text-align:center;
     background-color: #FFFF;
 }
 .mainPanel .graphs_1{
     margin-left:25vw;
-    margin-top:-47vw;
-    height:90vw;
+    margin-top:-48vw;
+    height:120vw;
     width:58vw;
     display: grid;
-    grid-gap: 3vw 1vw;
+    grid-gap: 0vw 0vw;
     grid-template-columns: auto;
-    padding: 5vw;
-    text-align:center;
+    padding: 3vw;
     background-color: #FFFF;
 }
 .mainPanel .graphs_2{
     margin-left:25vw;
-    margin-top:-47vw;
-    height:195vw;
+    margin-top:-48vw;
+    height:200vw;
     width:58vw;
     display: grid;
-    grid-gap: 3vw 1vw;
+    grid-gap: 1vw 0.5vw;
     grid-template-columns: auto;
     padding: 5vw;
     text-align:center;
@@ -460,7 +485,7 @@ div{
 }
 .mainPanel .graphs_3{
     margin-left:25vw;
-    margin-top:-47vw;
+    margin-top:-48vw;
     height:40vw;
     width:58vw;
     display: grid;
@@ -472,7 +497,7 @@ div{
 }
 .mainPanel .graphs_4{
     margin-left:25vw;
-    margin-top:-47vw;
+    margin-top:-48vw;
     height:80vw;
     width:58vw;
     text-align:center;
@@ -481,7 +506,6 @@ div{
 .mainPanel .graph{
     height:80vw;
     width:100vw;
-    text-align:center;
 }
 .graph_height{
     height:20vw;
@@ -489,7 +513,12 @@ div{
 .mainPanel .graph_name{
     width:50vw;
     height:5vw;
-    text-align:center;
+    text-align:left;
+    font-size: 1.5rem;
+    /* margin-top: -1vw; */
+}
+.mainPanel .graph_margin{
+    margin-top: -25vw;
 }
 /* audio */
 .mainPanel .audios{
@@ -505,7 +534,7 @@ div{
     border:1px solid;
 }
 .audio{
-        padding-top:0.2vw; 
+        padding-top:0.2vw;
         padding-right: 0.1vw;
         font-size: 1.4vw;
 
@@ -571,9 +600,9 @@ border:1px solid;
     width:70vw;
     border:0px;
     background-color: #FFD686;
-    border-radius: 1.5vw 1.5vw 0 0;
+    border-radius: 1vw 1vw 0 0;
 }
-.chooser_app .chooser_1 {
+.chooser_app .chooser_1 { /*你怎麼沒跟我說有app的啦＝—＝*/
     margin-left:0vw;
     margin-top:0vw;
     height:4vw;
@@ -605,7 +634,12 @@ border:1px solid;
 }
 .chooser_app .choosed{
     background-color: #FFFFFF;
-    border-radius: 1.5vw 1.5vw 0 0;
+    border-radius: 1vw 1vw 0 0;
+}
+
+.chooser_app .unchoosed{
+    background-color: #FFD686;
+    border-radius: 1vw 1vw 0 0;
 }
 .mainPanel_app{
     position: absolute;
@@ -737,8 +771,8 @@ border:1px solid;
     margin-left:3vw;
     margin-top:4vw;
     height:51vw;
-    width:18.16vw;  
+    width:18.16vw;
     background-color: #FFFFFF;
     border-radius: 1.5vw;
-    
+
 }

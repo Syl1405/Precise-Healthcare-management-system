@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link, withRouter } from 'react-router-dom' 
+import { Link, withRouter } from 'react-router-dom'
 import { vw, vh } from 'react-native-css'
 import Div100vh from 'react-div-100vh'
 import jwt_decode from 'jwt-decode'
@@ -64,14 +64,14 @@ class Mainview extends Component {
                 StagesLight: res[3] != undefined ? res[3].StagesLight : 0,
                 StagesRem:  res[3] != undefined ? res[3].StagesRem : 0,
                 StagesWake: res[3] != undefined ? res[3].StagesWake : 0
-                
+
             })
 
-            
+
         })
     }
     componentDidMount() {
-        
+
     }
 
     /*componentDidMount () {
@@ -114,12 +114,12 @@ class Mainview extends Component {
                     }
                 }
             },
-            
+
             tooltip: {
                 headerFormat: '<b>{point.x}</b><br/>',
                 pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
             },
-            
+
             plotOptions: {
                 bar: {
                     stacking: 'normal',
@@ -129,7 +129,7 @@ class Mainview extends Component {
                     }
                 }
             },
-            
+
             series: [
                 {
                     name: 'Deep',
@@ -170,7 +170,7 @@ class Mainview extends Component {
             xAxis: {
                 categories: ['Calories','Active']
             },
-        
+
             yAxis: [
                 {
                     title: {

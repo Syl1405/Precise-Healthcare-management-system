@@ -22,6 +22,7 @@ class Navbar extends Component {
         )
         const userLink = (
                 <div className="title">
+                    <div className="text-center">我還沒寫</div>
                 <div className="text-right">
                     <a href="" onClick={this.logOut.bind(this)} className="link_login">登出 </a>
                     <a> &nbsp;</a>
