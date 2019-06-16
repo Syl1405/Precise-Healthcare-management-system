@@ -217,7 +217,7 @@ div{
     height:26.8vw;
     position:absolute;
     left:80vw;
-    top:5vw;
+    top:7vw;
 }
 /* dashboard */
 .mainPanel .boardTitle{
@@ -240,12 +240,61 @@ div{
     padding-left: 8vw;
     border: 0px;
 }
+#sort{
+  width:8vw;
+  border: 1px #8C1C04 solid;
+  position:absolute;
+  left:70vw;
+  color:#8C1C04;
+  background:#FFD686;
+  border-radius:0.5vw;
+  font-size: 2vw;
+  filter: drop-shadow(0.3vw 0.3vw 0.6vw rgba(0, 0, 0, 0.1));
+}
+#search{
+  /* margin-left: 2vw; */
+  width:8vw;
+  border: 1px #8C1C04 solid;
+  position:absolute;
+  left:80vw;
+  color:#8C1C04;
+  background:#FFD686;
+  border-radius:0.5vw;
+  filter: drop-shadow(0.3vw 0.3vw 0.6vw rgba(0, 0, 0, 0.1));
+  font-size: 2vw;
+}
+/* .loginpage{
+  background-image:url( '../image/background.jpg' );
+　background-size: Cover ;
+  /* background: #FCF4EC; */
+  /* color: #8C1C04;
+  font-family: "微軟正黑體"; */
+/* } */
+/* .logincontent{
+  background-image:url( '../image/background.jpg' );
+　background-size: Cover;
+  width:100%;
+  height:100%;
+  } */
+.logincontent form{
+  width:30%;
+  height:100%;
+}
+.loginbtn{
+  width:8vw;
+  border: 1px #8C1C04 solid;
+  color:#8C1C04;
+  background:#FFD686;
+  border-radius:0.5vw;
+  font-size: 2vw;
+  filter: drop-shadow(0.3vw 0.3vw 0.6vw rgba(0, 0, 0, 0.1));
+}
 .oneGuy{
     background-color: #FFFFFF;
     border-radius: 1vw;
     margin-top:1vw;
     margin-right:1vw;
-    filter: drop-shadow(0.3vw 0.3vw 0.2vw rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0.3vw 0.3vw 0.6vw rgba(0, 0, 0, 0.1));
     width:16.5vw;
     height:9.5vw;
 }

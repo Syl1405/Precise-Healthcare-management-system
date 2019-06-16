@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { login } from './UserFunctions'
-
+import './css/styles.css';
+import block from "./image/block.jpg";
 class Login extends Component {
     constructor() {
         super()
@@ -34,13 +35,12 @@ class Login extends Component {
 
     render () {
         return (
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-6 mt-5 mx-auto">
+            <div className="loginpage">
+                <div className="logincontent">
                         <form noValidate onSubmit={this.onSubmit}>
-                            <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
+                            <div id="loginText">登入</div>
                             <div className="form-group">
-                                <label htmlFor="username">Username</label>
+                                <label htmlFor="username" style={{fontSize: "1.5vw"}}>帳號</label>
                                 <input type="username"
                                     className="form-control"
                                     name="username"
@@ -50,7 +50,7 @@ class Login extends Component {
                                 />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="password">Password</label>
+                                <label htmlFor="password" style={{fontSize: "1.5vw"}}>密碼</label>
                                 <input type="password"
                                     className="form-control"
                                     name="password"
@@ -60,11 +60,10 @@ class Login extends Component {
                                 />
                             </div>
                             <button type="submit"
-                                className="btn btn-lg btn-primary btn-block">
-                                Sign in
+                                className="loginbtn">
+                                確定
                             </button>
                         </form>
-                    </div>
                 </div>
             </div>
         )

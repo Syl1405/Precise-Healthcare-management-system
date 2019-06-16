@@ -34,8 +34,16 @@ class Mainview extends Component {
         })
 
     }
+    writeConsole() {
+          console.log('點了點了點了')
+      }
     render () {
         return (
+          <div className="menu">
+          <div className="btn">
+            <input type="button" onClick={this.writeConsole} id="sort" value="排序" />
+            <input type="button" onClick={this.writeConsole} id="search" value="搜尋" />
+          </div>
                 <div className="guys">
                         {
                             this.state.user.map((user) => {
@@ -45,9 +53,10 @@ class Mainview extends Component {
                                 </div>
                               );
                             })
-                        }                   
+                        }
                 </div>
-                
+            </div>
+
         )
     }
 }
