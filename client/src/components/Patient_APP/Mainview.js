@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link, withRouter } from 'react-router-dom' 
+import { Link, withRouter } from 'react-router-dom'
 import { vw, vh } from 'react-native-css'
 import Div100vh from 'react-div-100vh'
 import jwt_decode from 'jwt-decode'
@@ -62,10 +62,10 @@ class Mainview extends Component {
 
             console.log(this.state.StagesDeep);
         })
-        
+
     }
     componentDidMount() {
-        
+
     }
 
     handleClick (e) {
@@ -182,12 +182,12 @@ class Mainview extends Component {
                     }
                 }
             },
-            
+
             tooltip: {
                 headerFormat: '<b>{point.x}</b><br/>',
                 pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
             },
-            
+
             plotOptions: {
                 bar: {
                     stacking: 'normal',
@@ -197,7 +197,7 @@ class Mainview extends Component {
                     }
                 }
             },
-            
+
             series: [
                 {
                     name: 'Deep',
@@ -238,7 +238,7 @@ class Mainview extends Component {
             xAxis: {
                 categories: ['Calories','Active']
             },
-        
+
             yAxis: [
                 {
                     title: {
@@ -321,7 +321,7 @@ class Mainview extends Component {
                   ],
                   selected : 5
               },
-            
+
             title : {
                 text : ''
             },
@@ -393,7 +393,7 @@ class Mainview extends Component {
                     name: 'Wake',
                     data: constantData.Wake,
                     tooltip: {
-                        valueDecimals: 2
+                        valueDecimals: 2//魚目混珠good
                     }
                 }
             ]
@@ -402,7 +402,7 @@ class Mainview extends Component {
             <div>
                 <div className="basicInfo">基本資料
                     <div><img src={this.state.imagepath} className="photo"/></div>
-                    <a className="text-center" style={{fontSize:"1rem"}}> {this.state.name}</a> 
+                    <a className="text-center" style={{fontSize:"1rem"}}> {this.state.name}</a>
 
                     <p>生日: {this.state.birth}</p>
                     <p>血型: {this.state.blood}</p>
@@ -411,7 +411,7 @@ class Mainview extends Component {
                     <p>地址: {this.state.address}</p>
                 </div>
                 {this.state.chooser == "chooser_1" ? chooser_1 : (this.state.chooser == "chooser_2" ? chooser_2 : (this.state.chooser == "chooser_3" ? chooser_3 : (this.state.chooser == "chooser_4" ? chooser_4 : chooser_5)))}
-                
+
             </div>
         )
     }
@@ -420,7 +420,7 @@ class Mainview extends Component {
 export default Mainview
 
 /*<div>
-                    
+
                     <div className="graphs">
                         <div style={{margin:"0 auto"}}>
                             昨日睡眠<br/>

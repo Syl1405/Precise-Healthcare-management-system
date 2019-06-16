@@ -31,13 +31,13 @@ class Preview_2 extends Component {
             height: Number(document.body.clientWidth*0.3),
             textsize: Number(document.body.clientWidth*0.001),
             id : userid
-            
+
         }
-        
+
     }
 
     render () {
-        
+
         var configs_1 = {
             chart: {
                 type: 'column',
@@ -64,7 +64,7 @@ class Preview_2 extends Component {
                   ],
                   selected : 1
               },
-            
+
             title : {
                 text : '',
             },
@@ -157,7 +157,7 @@ class Preview_2 extends Component {
                   ],
                   selected : 1
             },
-            
+
             title : {
                 text : ''
             },
@@ -222,7 +222,7 @@ class Preview_2 extends Component {
                 type: 'line',
                 width: this.state.width,
                 height: this.state.height
-            },                      
+            },
             legend: {
                 enabled: true,
                 align: 'center',
@@ -243,7 +243,7 @@ class Preview_2 extends Component {
                   ],
                   selected : 1
             },
-            
+
             title : {
                 text : ''
             },
@@ -304,7 +304,7 @@ class Preview_2 extends Component {
                   ],
                   selected : 1
             },
-            
+
             title : {
                 text : ''
             },
@@ -364,7 +364,7 @@ class Preview_2 extends Component {
                   ],
                   selected : 1
               },
-            
+
             title : {
                 text : ''
             },
@@ -402,7 +402,6 @@ class Preview_2 extends Component {
                         </div>
                         <div style={{margin:"0 auto"}}>
                             <div className="graph_name">活動量</div>
-                            
                             <HighchartsReact highcharts = {Highstock} constructorType = {'stockChart'} options = {configs_2} />
                         </div>
                         <div style={{margin:"0 auto"}}>
@@ -418,7 +417,7 @@ class Preview_2 extends Component {
                             <HighchartsReact highcharts = {Highstock} constructorType = {'stockChart'} options = {configs_5} />
                         </div>
                 </div>
-                
+
         )
     }
 }
