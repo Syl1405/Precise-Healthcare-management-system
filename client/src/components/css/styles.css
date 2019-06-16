@@ -247,7 +247,7 @@ div{
     margin-right:1vw;
     filter: drop-shadow(0.3vw 0.3vw 0.2vw rgba(0, 0, 0, 0.15));
     width:16.5vw;
-    height:10vw;
+    height:9.5vw;
 }
 .oneGuy:hover{
     background-color:#FFD686;
@@ -288,21 +288,21 @@ div{
     margin-bottom: 1vw;
 }
 .oneGuy .name{
-    margin-left:2.5vw;
+    margin-left:1.5vw;
     margin-top:-4.5vw;
     font-size: 1.3rem;
     font-family: "微軟正黑體";
     margin-bottom: 0vw;
 }
 .oneGuy .detail{
-    margin-left:2vw;
+    margin-left:1vw;
     margin-top:0.3vw;
     font-size: 0.8rem;
     color: gray;
     margin-bottom: 0vw;
 }
 .oneGuy .condition{
-    margin-top:-0.2vw;
+    margin-top: 0.2vw;
     border:0px;
     width:16.5vw;
 }
@@ -339,6 +339,7 @@ div{
     border-radius: 0.5vw;
     border-width:1px;
     color: #FF9E43;
+    font-size: 2vw;
 }
 .leaderboard .cup{
     margin-left:25vw;
@@ -413,6 +414,7 @@ div{
     height:5vw;
     color: #707070;
     border-radius: 50%;
+    font-size: 2vw;
 }
 .leaderboard .oneGuy .rank{
   margin-left:2vw;

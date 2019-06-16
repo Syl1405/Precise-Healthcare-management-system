@@ -40,6 +40,8 @@ class Mainview extends Component {
             name: '',
             imagepath:'',
             birth:'',
+            sex: '',
+            age: '',
             blood:'',
             disease:'',
             address:'',
@@ -60,6 +62,8 @@ class Mainview extends Component {
                 name: res[0] != undefined ? res[0].name : '無紀錄',
                 imagepath: res[0] != undefined ? res[0].imagepath : null,
                 birth: res[0] != undefined ? res[0].birth : '無紀錄',
+                sex: res[0] != undefined ? res[0].sex : '無紀錄',
+                age: res[0] != undefined ? res[0].age : '無紀錄',
                 blood: res[0] != undefined ? res[0].blood : '無紀錄',
                 disease: res[0] != undefined ? res[0].disease : '無紀錄',
                 phone: res[0] != undefined ? res[0].phone : '無紀錄',
@@ -413,8 +417,8 @@ class Mainview extends Component {
                     <div><img src={log} className="photo"/></div>
                     <a className="name" > {this.state.name}</a>
                     <br/><br/>
-                    <p>性別： {this.state.birth}</p>
-                    <p>年齡： {this.state.birth}</p>
+                    <p>性別： {this.state.sex}</p>
+                    <p>年齡： {this.state.age}</p>
                     <p>生日： {this.state.birth}</p>
                     <p>血型： {this.state.blood}</p>
                     <p>病史： {this.state.disease}</p>
