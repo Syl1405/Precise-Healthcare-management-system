@@ -251,6 +251,9 @@ div{
   font-size: 2vw;
   filter: drop-shadow(0.3vw 0.3vw 0.6vw rgba(0, 0, 0, 0.1));
 }
+.sort_panel{
+    
+}
 #search{
   /* margin-left: 2vw; */
   width:8vw;

@@ -171,6 +171,37 @@ router.get('/main', (req, res, next) => {
    });
 })
 
+router.post('/sort', (req, res, next) => {
+    console.log(req.body.sort);
+    connection.query("select userid,name,blood_suger,blood_pressure,temperature,activate,activate_value,sleep,sleep_value,imagepath,sex,age,(blood_suger+blood_pressure+temperature+activate+sleep) as total from realtime_data order by "+ req.body.sort +" desc,total desc,blood_suger desc,blood_pressure desc,temperature desc,activate desc,sleep desc,userid asc limit 10", function(err,  rows){
+        if(err)
+            res.send('error: ' + err)
+        if(rows && rows.length > 0){
+            console.log(rows);
+            res.send(rows); 
+        }
+        else{
+            res.status(400).json({ error: 'No data' })
+        }
+   });
+})
+
+router.post('/search', (req, res, next) => {
+    console.log(req.body.type);
+    console.log(req.body.request);
+    connection.query("select userid,name,blood_suger,blood_pressure,temperature,activate,activate_value,sleep,sleep_value,imagepath,sex,age,(blood_suger+blood_pressure+temperature+activate+sleep) as total from realtime_data where "+req.body.type+" = '"+req.body.request+"' order by total desc,blood_suger desc,blood_pressure desc,temperature desc,activate desc,sleep desc,userid asc limit 10", function(err,  rows){
+        if(err)
+            res.send('error: ' + err)
+        if(rows && rows.length > 0){
+            console.log(rows);
+            res.send(rows); 
+        }
+        else{
+            res.status(400).json({ error: 'No data' })
+        }
+   });
+})
+
 module.exports = router
 //select userid,updatetime,LightlyActiveMinutes,FairlyActiveMinutes,VeryActiveMinutes,CaloriesOut from templateActive where userid = '67af0b6ee92a46b5a987c2e639f01720' and updatetime < '2019-04-29 00:00:00' order by updatetime desc limit 1;
 //select StagesDeep,StagesLight,StagesRem,StagesWake from templateSleep where UserID = ? order by UpdateTime desc limit 2;

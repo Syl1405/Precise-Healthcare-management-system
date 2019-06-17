@@ -93,3 +93,31 @@ export const rank = aaa => {
             console.log(err)
         })
 }
+
+export const sort = sort => {
+    return axios
+        .post('home/sort', {
+            sort: sort
+        })
+        .then(res => {
+            //localStorage.setItem('sorttoken', res.data)
+            return res.data
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}
+
+export const search = user => {
+    return axios
+        .post('home/search', {
+            type: user.type,
+            request: user.request
+        })
+        .then(res => {
+            return res.data
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}

@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import './css/styles.css';
-var NewArray = new Array();
-NewArray = window.location.href.split('/');
+
 if(window.location.href.match('patient')!=null)
     console.log("12345789");
 class Navbar extends Component {

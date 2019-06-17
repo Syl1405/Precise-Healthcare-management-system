@@ -29,7 +29,6 @@ class App extends Component {
           <Route path="/profile" component={Profile} />
           <Route path="/patient/:id"  component={Patient} />
           <Route path="/patientid/:id"  component={Patient_APP} />
-            
           </Switch>
         </div>
       </Router>
