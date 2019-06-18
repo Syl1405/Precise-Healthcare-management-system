@@ -31,32 +31,10 @@ class Preview_5 extends Component {
         imgtype(userid).then(res => {
             rows = res;
             console.log(res);
-            for(let i = 0;i < res.length;i++){
-                //console.log(res[i].userid);
-                this.state.type_all.push(res[i]);
-                /*this.state.name.push(res[i].name);
-                this.state.blood_suger.push(res[i].blood_suger);
-                this.state.blood_pressure.push(res[i].blood_pressure);
-                this.state.temperature.push(res[i].temperature);
-                this.state.activate.push(res[i].activate);
-                this.state.sleep.push(res[i].sleep);
-                this.state.imagepath.push(res[i].imagepath);*/
-                this.setState(this.state)
-            }
-            this.setState({type: this.state.type_all[0]})
-            console.log(this.state);
-            const user = {
-                userid: userid,
-                type: res[0]
-            }
-            console.log(user);
-            imgdata(user).then(res => {
-                rows = res;
-                console.log(res);
-                this.setState({image: []})
+            if(res){
                 for(let i = 0;i < res.length;i++){
                     //console.log(res[i].userid);
-                    this.state.image.push(res[i]);
+                    this.state.type_all.push(res[i]);
                     /*this.state.name.push(res[i].name);
                     this.state.blood_suger.push(res[i].blood_suger);
                     this.state.blood_pressure.push(res[i].blood_pressure);
@@ -66,9 +44,34 @@ class Preview_5 extends Component {
                     this.state.imagepath.push(res[i].imagepath);*/
                     this.setState(this.state)
                 }
+                this.setState({type: this.state.type_all[0]})
                 console.log(this.state);
-            })
-
+                const user = {
+                    userid: userid,
+                    type: res[0]
+                }
+                console.log(user);
+                imgdata(user).then(res => {
+                    rows = res;
+                    console.log(res);
+                    this.setState({image: []})
+                    if(res){
+                        for(let i = 0;i < res.length;i++){
+                            //console.log(res[i].userid);
+                            this.state.image.push(res[i]);
+                            /*this.state.name.push(res[i].name);
+                            this.state.blood_suger.push(res[i].blood_suger);
+                            this.state.blood_pressure.push(res[i].blood_pressure);
+                            this.state.temperature.push(res[i].temperature);
+                            this.state.activate.push(res[i].activate);
+                            this.state.sleep.push(res[i].sleep);
+                            this.state.imagepath.push(res[i].imagepath);*/
+                            this.setState(this.state)
+                        }
+                        console.log(this.state);
+                    }
+                })
+            }
         })
         
         this.onChange = this.onChange.bind(this)
@@ -86,20 +89,15 @@ class Preview_5 extends Component {
             rows = res;
             console.log(res);
             this.setState({image: []});
-            for(let i = 0;i < res.length;i++){
-                //console.log(res[i].userid);
-                this.state.image.push(res[i]);
-                /*this.state.name.push(res[i].name);
-                this.state.blood_suger.push(res[i].blood_suger);
-                this.state.blood_pressure.push(res[i].blood_pressure);
-                this.state.temperature.push(res[i].temperature);
-                this.state.activate.push(res[i].activate);
-                this.state.sleep.push(res[i].sleep);
-                this.state.imagepath.push(res[i].imagepath);*/
-                this.setState(this.state)
+            if(res){
+                for(let i = 0;i < res.length;i++){
+                    //console.log(res[i].userid);
+                    this.state.image.push(res[i]);
+                    this.setState(this.state)
+                }
+                console.log(this.state);
+                this.forceUpdate();
             }
-            console.log(this.state);
-            this.forceUpdate();
         })
 
     }

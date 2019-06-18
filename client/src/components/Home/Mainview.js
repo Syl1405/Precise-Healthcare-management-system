@@ -22,18 +22,11 @@ class Mainview extends Component {
         home().then(res => {
             rows = res;
             console.log(res);
-            for(let i = 0;i < res.length;i++){
-                //console.log(res[i].userid);
-                this.state.user.push(res[i]);
-                /*this.state.name.push(res[i].name);
-                this.state.blood_suger.push(res[i].blood_suger);
-                this.state.blood_pressure.push(res[i].blood_pressure);
-                this.state.temperature.push(res[i].temperature);
-                this.state.activate.push(res[i].activate);
-                this.state.sleep.push(res[i].sleep);
-                this.state.imagepath.push(res[i].imagepath);*/
-                this.setState(this.state)
-            }
+            if(res)
+                for(let i = 0;i < res.length;i++){
+                    this.state.user.push(res[i]);
+                    this.setState(this.state)
+                }
             console.log(this.state);
         })
         this.onChange = this.onChange.bind(this)
@@ -61,7 +54,6 @@ class Mainview extends Component {
             })
         }
         else{
-           
             const user = {
                 type: this.state.searchtype,
                 request: this.state.search
@@ -71,9 +63,10 @@ class Mainview extends Component {
                 rows = res;
                 console.log(res);
                 this.setState({user: [] })
-                for(let i = 0;i < res.length;i++){
-                    this.state.user.push(res[i]);
-                }
+                if(res)
+                    for(let i = 0;i < res.length;i++){
+                        this.state.user.push(res[i]);
+                    }
                 console.log(this.state);
                 this.forceUpdate();
 

@@ -7,8 +7,9 @@ if(window.location.href.match('patient')!=null)
 class Navbar extends Component {
     logOut(e) {
         e.preventDefault()
-        localStorage.removeItem('usertoken')
-        this.props.history.push(`/`)
+        localStorage.removeItem('usertoken');
+        window.location.href="/";
+        window.location.reload();
     }
 
     render() {

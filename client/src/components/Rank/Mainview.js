@@ -28,17 +28,9 @@ class Mainview extends Component {
         rank().then(res => {
             //console.log(res);
             for(let i = 0;i < res.length;i++){
-                //console.log(res[i].userid);
                 this.state.user.push(res[i].name);
                 this.state.imagepath.push(res[i].imagepath);
                 this.state.activate_value.push(res[i].activate_value);
-                /*this.state.name.push(res[i].name);
-                this.state.blood_suger.push(res[i].blood_suger);
-                this.state.blood_pressure.push(res[i].blood_pressure);
-                this.state.temperature.push(res[i].temperature);
-                this.state.activate.push(res[i].activate);
-                this.state.sleep.push(res[i].sleep);
-                this.state.imagepath.push(res[i].imagepath);*/
                 this.setState(this.state)
             }
             console.log(this.state.user);
@@ -68,9 +60,9 @@ class Mainview extends Component {
         let lngth4=(this.state.activate_value[4]/this.state.activate_value[0])*35+"vw";
         let title_rank_1,title_rank_2,title_rank_3,rank_1,rank_2,rank_3,rank_4,rank_5,rank_6,rank_7,rank_8,rank_9,rank_10;
         if(this.state.imagepath[0] != null){
-            title_rank_1 = <div ><img src={this.state.imagepath[0]}  className="rank_1"/></div>
+            title_rank_1 = <div ><img src={ require('../'+this.state.imagepath[0]+'.png') }  className="rank_1"/></div>
             rank_1 = <div className="oneGuy">
-                        <img src={this.state.imagepath[0]}  className="img"/>
+                        <img src={require("../"+this.state.imagepath[0]+".png")}  className="img"/>
                         <a className="rank">1</a>
                         <a className="name">{this.state.user[0]}</a>
                         <a className="value">{this.state.activate_value[0]}min</a>
@@ -82,9 +74,9 @@ class Mainview extends Component {
             rank_1 = <div></div>
         }
         if(this.state.imagepath[1] != null){
-            title_rank_2 = <div ><img src={this.state.imagepath[1]}  className="rank_2"/></div>
+            title_rank_2 = <div ><img src={require("../"+this.state.imagepath[1]+".png")}  className="rank_2"/></div>
             rank_2 = <div className="oneGuy">
-                        <img src={this.state.imagepath[1]}  className="img"/>
+                        <img src={require("../"+this.state.imagepath[1]+".png")}  className="img"/>
                         <a className="rank">2</a>
                         <a className="name">{this.state.user[1]}</a>
                         <a className="value">{this.state.activate_value[1]}min</a>
@@ -96,9 +88,9 @@ class Mainview extends Component {
             rank_2 = <div></div>
         }
         if(this.state.imagepath[2] != null){
-            title_rank_3 = <div ><img src={this.state.imagepath[2]}  className="rank_3"/></div>
+            title_rank_3 = <div ><img src={require("../"+this.state.imagepath[2]+".png")}  className="rank_3"/></div>
             rank_3 = <div className="oneGuy">
-                        <img src={this.state.imagepath[2]}  className="img"/>
+                        <img src={require("../"+this.state.imagepath[2]+".png")}  className="img"/>
                         <a className="rank">3</a>
                         <a className="name">{this.state.user[2]}</a>
                         <a className="value">{this.state.activate_value[2]}min</a>
@@ -111,7 +103,7 @@ class Mainview extends Component {
         }
         if(this.state.imagepath[3] != null)
             rank_4 = <div className="oneGuy">
-                        <img src={this.state.imagepath[3]}  className="img"/>
+                        <img src={require("../"+this.state.imagepath[3]+".png")}  className="img"/>
                         <a className="rank">4</a>
                         <a className="name">{this.state.user[3]}</a>
                         <a className="value">{this.state.activate_value[3]}min</a>
@@ -121,7 +113,7 @@ class Mainview extends Component {
             rank_4 = <div></div>
         if(this.state.imagepath[4] != null)
             rank_5 = <div className="oneGuy">
-                        <img src={this.state.imagepath[4]}  className="img"/>
+                        <img src={require("../"+this.state.imagepath[4]+".png")}  className="img"/>
                         <a className="rank">5</a>
                         <a className="name">{this.state.user[4]}</a>
                         <a className="value">{this.state.activate_value[4]}min</a>
