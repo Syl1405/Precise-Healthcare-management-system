@@ -255,6 +255,14 @@ div{
     padding-left: 8vw;
     border: 0px;
 }
+.image{
+  margin-left: -100vw;
+  margin-top: 10vh;
+    display: grid;
+    grid-gap: 3vw 0.5vw;
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh ;
+    grid-template-columns: 15vw 15vw 15vw;
+}
 #sort{
   width:8vw;
   border: 1px #8C1C04 solid;
@@ -266,9 +274,7 @@ div{
   font-size: 2vw;
   filter: drop-shadow(0.3vw 0.3vw 0.6vw rgba(0, 0, 0, 0.1));
 }
-.sort_panel{
 
-}
 #search{
   /* margin-left: 2vw; */
   width:8vw;
@@ -317,10 +323,7 @@ div{
 #canc{
   /* margin-left: 50vw; */
 }
-.leftphoto
-{
-  margin-left: -10vw;
-}
+
 /* .logincontent{
   background-image:url( '../image/background.jpg' );
 　background-size: Cover;
@@ -651,10 +654,10 @@ div{
     background-color: #FFFF;
 }
 .mainPanel .graphs_5 .image{
-    margin-left:20vw;
-    margin-top:-80vw;
+    margin-left:10vw;
+    margin-top:-75vw;
     height:80vw;
-    width:38vw;
+    width:30vw;
     text-align:center;
     background-color: #FFFF;
 }

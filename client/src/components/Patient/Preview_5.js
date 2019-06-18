@@ -108,8 +108,9 @@ class Preview_5 extends Component {
         //console.log(example);
         return (
             <div className="graphs_5">
-               <div className="radio">
+               <div className="radio" style={{width:'10vw'}}>
                     <div className="top">
+                    <br/>
                     </div>
                     {
                        this.state.type_all.map((type) => {
@@ -121,16 +122,15 @@ class Preview_5 extends Component {
                         })
                     }
                </div>
-               <div className="image">
-                    <div className="top">
-                    </div>
+               <div class="image">
+                    
 
                         {
                            this.state.image.map((image) => {
                               return (
                                 <div>
                                     <img src={require("../"+image.imagepath+".jpg")} />
-                                    <a>{image.name}</a>
+                                    <a style={{fontSize:'20px'}}>{image.name}</a>
                                 </div>
                               );
                             })
