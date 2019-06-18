@@ -14,9 +14,7 @@ import HighchartsReact from 'highcharts-react-official' //npm install highcharts
 HighchartsMore(Highcharts)
 HighchartsMore(Highstock)
 var rows;
-var NewArray = new Array();
-NewArray = window.location.href.split('/');
-const userid =  NewArray[NewArray.length-1];
+var userid;
 class Preview_5 extends Component {
     constructor() {
         super()
@@ -28,6 +26,9 @@ class Preview_5 extends Component {
             type: '',
             image: []
         }
+        var NewArray = new Array();
+        NewArray = window.location.href.split('/');
+        userid =  NewArray[NewArray.length-1];
         imgtype(userid).then(res => {
             rows = res;
             console.log(res);
@@ -51,6 +52,7 @@ class Preview_5 extends Component {
                     type: res[0]
                 }
                 console.log(user);
+                 this.forceUpdate();
                 imgdata(user).then(res => {
                     rows = res;
                     console.log(res);
@@ -69,6 +71,7 @@ class Preview_5 extends Component {
                             this.setState(this.state)
                         }
                         console.log(this.state);
+                         this.forceUpdate();
                     }
                 })
             }
