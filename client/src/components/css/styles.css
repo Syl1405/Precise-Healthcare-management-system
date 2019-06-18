@@ -461,6 +461,9 @@ div{
     height:5vw;
     color: #FF9E43;
     border-radius: 50%;
+    border-style:solid;
+    padding:unset;
+    border-width:1px;
 }
 .leaderboard .cup .rank_2{
     margin-left:-25vw;
@@ -468,6 +471,9 @@ div{
     width:5vw;
     height:5vw;
     color: #FF9E43;
+    border-style:solid;
+    padding:unset;
+    border-width:1px;
     border-radius: 50%;
 }
 .leaderboard .cup .rank_3{
@@ -476,6 +482,9 @@ div{
     width:5vw;
     height:5vw;
     color: #FF9E43;
+    border-style:solid;
+    border-width:1px;
+    padding:unset;
     border-radius: 50%;
 }
 .leaderboard .guys{
@@ -511,6 +520,7 @@ div{
     border-color: #FF9E43;
     border-style:solid;
     border-width:1px;
+    padding:unset;
     z-index: 87;
 }
 .leaderboard .oneGuy .name{
