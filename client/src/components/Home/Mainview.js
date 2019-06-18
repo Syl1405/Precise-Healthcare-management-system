@@ -54,10 +54,7 @@ class Mainview extends Component {
             })
         }
         else{
-<<<<<<< HEAD
-=======
 
->>>>>>> sort and search css
             const user = {
                 type: this.state.searchtype,
                 request: this.state.search
