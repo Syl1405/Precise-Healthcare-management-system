@@ -48,6 +48,17 @@ div{
     width:8.3vw;
     height:7.5vw;
 }
+.loginform label{
+  display: inline;
+  overflow:hidden;
+    float:left;
+}
+.loginform input{
+  float:left;
+}
+#loginText{
+  text-align: left;
+}
 .navigator{
     background-color: #FF9E43;
     position: absolute;
@@ -252,7 +263,7 @@ div{
   filter: drop-shadow(0.3vw 0.3vw 0.6vw rgba(0, 0, 0, 0.1));
 }
 .sort_panel{
-    
+
 }
 #search{
   /* margin-left: 2vw; */
@@ -266,13 +277,18 @@ div{
   filter: drop-shadow(0.3vw 0.3vw 0.6vw rgba(0, 0, 0, 0.1));
   font-size: 2vw;
 }
-/* .loginpage{
-  background-image:url( '../image/background.jpg' );
+ .loginpage{
+  margin:0;
+   padding:0;
+   background: #000 url('../image/background.jpg') center center fixed no-repeat;
+   -moz-background-size: cover;
+   background-size: cover;
 　background-size: Cover ;
   /* background: #FCF4EC; */
-  /* color: #8C1C04;
-  font-family: "微軟正黑體"; */
-/* } */
+   color: #8C1C04;
+  font-family: "微軟正黑體";
+  height: 100%;
+ }
 /* .logincontent{
   background-image:url( '../image/background.jpg' );
 　background-size: Cover;
@@ -282,6 +298,7 @@ div{
 .logincontent form{
   width:30%;
   height:100%;
+  margin-left: 60vw;
 }
 .loginbtn{
   width:8vw;

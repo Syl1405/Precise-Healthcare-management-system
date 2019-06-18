@@ -40,7 +40,7 @@ class Login extends Component {
                         <form noValidate onSubmit={this.onSubmit}>
                             <div id="loginText">登入</div>
                             <div className="form-group">
-                                <label htmlFor="username" style={{fontSize: "1.5vw"}}>帳號</label>
+                                <label class="form-inline" htmlFor="username" style={{fontSize: "1.5vw"}}>帳號</label>
                                 <input type="username"
                                     className="form-control"
                                     name="username"
@@ -50,7 +50,7 @@ class Login extends Component {
                                 />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="password" style={{fontSize: "1.5vw"}}>密碼</label>
+                                <label class="form-inline" htmlFor="password" style={{fontSize: "1.5vw"}}>密碼</label>
                                 <input type="password"
                                     className="form-control"
                                     name="password"
