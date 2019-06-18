@@ -58,6 +58,10 @@ div{
 }
 #loginText{
   text-align: left;
+  margin-left:-5vw;
+}
+.modal-body{
+  display: block;
 }
 .navigator{
     background-color: #FF9E43;
@@ -289,6 +293,34 @@ div{
   font-family: "微軟正黑體";
   height: 100vh;
  }
+.modal-content{
+  height: 50vh;
+  padding-bottom: 5vh;
+  display: inline;
+}
+.leftside{
+  margin-left: -10vw;
+}
+.rightside{
+  margin-left: 10vw;
+}
+.leftsidee{
+  margin-left: -25vw;
+}
+#conf{
+  margin-left: 20vw;
+  margin-right: 2vw;
+}
+#sleep{
+  margin-right: 2vw;
+}
+#canc{
+  /* margin-left: 50vw; */
+}
+.leftphoto
+{
+  margin-left: -10vw;
+}
 /* .logincontent{
   background-image:url( '../image/background.jpg' );
 　background-size: Cover;
@@ -299,6 +331,8 @@ div{
   width:30%;
   height:100%;
   margin-left: 60vw;
+  position: absolute;
+  top:30vh;
 }
 .loginbtn{
   width:8vw;

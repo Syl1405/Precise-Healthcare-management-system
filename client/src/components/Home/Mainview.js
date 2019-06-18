@@ -54,6 +54,10 @@ class Mainview extends Component {
             })
         }
         else{
+<<<<<<< HEAD
+=======
+
+>>>>>>> sort and search css
             const user = {
                 type: this.state.searchtype,
                 request: this.state.search
@@ -80,7 +84,7 @@ class Mainview extends Component {
                   <input type="button" data-toggle="modal" id="sort" value="排序" href="#sortModal"/>
                   <input type="button" data-toggle="modal" id="search" value="搜尋" href="#searchModal"/>
                 </div>
-                
+
                 <div className="guys">
                     {
                        this.state.user.map((user) => {
@@ -89,26 +93,23 @@ class Mainview extends Component {
                                 <Preview user={user} key={user.userid} />
                             </div>
                           );
-                        }) 
+                        })
                     }
                 </div>
                 <div className="modal fade" id="sortModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" onSubmit={this.onSubmit}>
                     <div className="modal-dialog">
                         <div className="modal-content">
-                            <div className="modal-header">
-                                <p style={{ textAlign: 'center' }}>排序</p>
-                                <button type="button" className="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            </div>
                             <div className="modal-body">
-                                <input type="radio" name="sort" value="sleep" onClick={this.onChange} checked={this.state.sort === "sleep"}/><label style={{fontSize: "1.5vw"}}>睡眠</label>
-                                <input type="radio" name="sort" value="temperature" onClick={this.onChange} checked={this.state.sort === "temperature"}/><label style={{fontSize: "1.5vw"}}>體溫</label>
-                                <input type="radio" name="sort" value="activate" onClick={this.onChange} checked={this.state.sort === "activate"}/><label style={{fontSize: "1.5vw"}}>活動量</label>
-                                <input type="radio" name="sort" value="blood_pressure" onClick={this.onChange} checked={this.state.sort === "blood_pressure"}/><label style={{fontSize: "1.5vw"}}>血壓</label>
-                                <input type="radio" name="sort" value="blood_suger" onClick={this.onChange} checked={this.state.sort === "blood_suger"}/><label style={{fontSize: "1.5vw"}}>血糖</label>
+                            <br/>
+                                <input type="radio" name="sort" value="sleep" onClick={this.onChange} className="leftside" checked={this.state.sort === "sleep"}/><label id="sleep" style={{fontSize: "1.5vw"}}>睡眠</label>
+                                <input type="radio" name="sort" value="temperature" onClick={this.onChange} className="rightside" checked={this.state.sort === "temperature"}/><label style={{fontSize: "1.5vw"}}>體溫</label><br/>
+                                <input type="radio" name="sort" value="activate" onClick={this.onChange} className="leftside" checked={this.state.sort === "activate"}/><label style={{fontSize: "1.5vw"}}>活動量</label>
+                                <input type="radio" name="sort" value="blood_pressure" onClick={this.onChange} className="rightside" checked={this.state.sort === "blood_pressure"}/><label style={{fontSize: "1.5vw"}}>血壓</label><br/>
+                                <input type="radio" name="sort" value="blood_suger" className="leftsidee" onClick={this.onChange} checked={this.state.sort === "blood_suger"}/><label style={{fontSize: "1.5vw"}}>血糖</label>
                             </div>
-                            <div>
-                                <button data-dismiss="modal" aria-hidden="true" onClick={this.onSubmit} className="btn" name="sort">確定</button>
-                                <button data-dismiss="modal" aria-hidden="true" className="btn">取消</button>
+                            <div >
+                                <button data-dismiss="modal" aria-hidden="true" onClick={this.onSubmit} className="loginbtn" name="sort" id="conf">確定</button>
+                                <button data-dismiss="modal" aria-hidden="true" className="loginbtn" id="canc">取消</button>
                             </div>
                         </div>
                     </div>
@@ -116,18 +117,15 @@ class Mainview extends Component {
                 <div className="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" onSubmit={this.onSubmit}>
                     <div className="modal-dialog">
                         <div className="modal-content">
-                            <div className="modal-header">
-                                <p style={{ textAlign: 'center' }}>搜尋</p>
-                                <button type="button" className="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            </div>
                             <div className="modal-body">
-                                <input type="search" name="search" value={this.state.search} onChange={this.onChange} style={{width: '200px'}} />
+                            <br/>
+                                <input type="search" name="search" value={this.state.search} onChange={this.onChange} style={{width: '200px',marginRight:'5vw'}} />
                                 <input type="radio" name="searchtype" value="name" onClick={this.onChange} checked={this.state.searchtype === "name"}/><label style={{fontSize: "1.5vw"}}>姓名</label>
                                 <input type="radio" name="searchtype" value="userid" onClick={this.onChange} checked={this.state.searchtype === "userid"}/><label style={{fontSize: "1.5vw"}}>編號</label>
                             </div>
                             <div>
-                                <button data-dismiss="modal" aria-hidden="true" onClick={this.onSubmit} className="btn" name="search">確定</button>
-                                <button data-dismiss="modal" aria-hidden="true" className="btn">取消</button>
+                                <button data-dismiss="modal" aria-hidden="true" onClick={this.onSubmit} className="loginbtn" name="search" id="conf">確定</button>
+                                <button data-dismiss="modal" aria-hidden="true" className="loginbtn">取消</button>
                             </div>
                         </div>
                     </div>

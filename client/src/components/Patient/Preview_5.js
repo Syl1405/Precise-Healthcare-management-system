@@ -73,9 +73,9 @@ class Preview_5 extends Component {
                 })
             }
         })
-        
+
         this.onChange = this.onChange.bind(this)
-        
+
     }
     onChange (e) {
         this.setState({ [e.target.name]: e.target.value });
@@ -105,17 +105,17 @@ class Preview_5 extends Component {
         //console.log(example);
         return (
             <div className="graphs_5">
-               <div className="radio"> 
+               <div className="radio">
                     <div className="top">
                     </div>
                     {
                        this.state.type_all.map((type) => {
                           return (
                             <div>
-                                <input type="radio" name="type" value={type} onClick={this.onChange} checked={this.state.type === type}/><label style={{fontSize: "1.5vw"}}>{type}</label>
+                                <input type="radio" name="type" value={type} onClick={this.onChange} className="leftphoto" checked={this.state.type === type}/><label style={{fontSize: "1.5vw"}}>{type}</label>
                             </div>
                           );
-                        }) 
+                        })
                     }
                </div>
                <div className="image">
@@ -130,12 +130,12 @@ class Preview_5 extends Component {
                                     <a>{image.name}</a>
                                 </div>
                               );
-                            }) 
+                            })
                         }
 
                </div>
             </div>
-                
+
         )
     }
 }
