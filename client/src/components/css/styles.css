@@ -299,16 +299,16 @@ div{
   display: inline;
 }
 .leftside{
-  margin-left: -10vw;
+  margin-left: -5vw;
 }
 .rightside{
   margin-left: 10vw;
 }
 .leftsidee{
-  margin-left: -25vw;
+  margin-left: -20vw;
 }
 #conf{
-  margin-left: 20vw;
+  margin-left: 10vw;
   margin-right: 2vw;
 }
 #sleep{
