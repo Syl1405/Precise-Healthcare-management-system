@@ -203,23 +203,23 @@ class Preview_1 extends Component {
         var configs_3 = {
             chart: {
                 type: 'boxplot',
-                width: this.state.width,
-                height: this.state.height
+                height: this.state.height,
+                width: this.state.width
             },
-
+        
             title: {
                 text: ''
             },
-
+        
             legend: {
                 enabled: false
             },
-
+        
             xAxis: {
                 categories: ['Heart Rate', 'Systolic Blood Pressure', 'Diastolic Blood Pressure', 'Blood Suger',
                             'Sleep', 'Active', 'Calorie']
             },
-
+            
             yAxis: [
                 {
                     title: {
@@ -324,7 +324,7 @@ class Preview_1 extends Component {
                         }
                     ],
                 },
-
+                
                 {
                     name: "old_heart",
                     color: "#aec7e8",
@@ -423,7 +423,7 @@ class Preview_1 extends Component {
                     },
                     enableMouseTracking: false
                 },
-
+                
                 {
                     name: "new_heart",
                     color: "red",

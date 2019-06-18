@@ -121,3 +121,30 @@ export const search = user => {
             console.log(err)
         })
 }
+
+export const imgtype = userid => {
+    return axios
+        .post('patient/image/type', {
+            userid: userid
+        })
+        .then(res => {
+            return res.data
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}
+
+export const imgdata = user => {
+    return axios
+        .post('patient/image/data', {
+            userid: user.userid,
+            type: user.type
+        })
+        .then(res => {
+            return res.data
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}

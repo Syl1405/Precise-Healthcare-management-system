@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Div100vh from 'react-div-100vh'
 import { home , sort , search } from '../UserFunctions'
 import Preview from './Preview';
+import Sidebar from './Sidebar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/styles.css';
 //import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
@@ -37,7 +38,6 @@ class Mainview extends Component {
         })
         this.onChange = this.onChange.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
-
     }
     writeConsole() {
           console.log(this.state.sort)

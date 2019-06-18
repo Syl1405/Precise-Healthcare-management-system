@@ -15,9 +15,11 @@ process.env.SECRET_KEY = 'secret'
 var arrays = new Array();
 var size_user = 0;
 var user = new Array(); 
+var size_image = 0;
+var image = new Array(); 
 var query;
 
-var id;//= '2c1c3a34e3c142c48c2cb09b176045e5',time = '2019-04-29 00:00:00';
+var userid;//= '2c1c3a34e3c142c48c2cb09b176045e5',time = '2019-04-29 00:00:00';
 
 
 router.post('/home', (req, res, next) => {
@@ -111,6 +113,45 @@ router.get('/main', (req, res, next) => {
             res.status(400).json({ error: 'No data' })
         }
        
+   });
+})
+
+router.post('/image/type', (req, res, next) => {
+    userid = req.body.userid;
+    connection.query(" select distinct type from album where userid = ?;",[req.body.userid], function(err,  rows){
+        if(err)
+            res.send('error: ' + err)
+        if(rows && rows.length > 0){
+            size_image = 0;
+            image = new Array(); 
+            image = rows;
+            for(i = 0; i < rows.length;i++)
+                image[i] = rows[i].type;
+            res.send(image); 
+            console.log(image);
+        }
+        else{
+            image[size_image] = null;
+            res.status(400).json({ error: 'No data' })
+        }
+   });
+})
+
+router.post('/image/data', (req, res, next) => {
+    console.log(req.body.userid+req.body.type);
+    connection.query("select name,type,imagepath from album where userid = ? and type = ?;",[req.body.userid,req.body.type], function(err,  rows){
+        if(err)
+            res.send('error: ' + err)
+        if(rows && rows.length > 0){
+            console.log(rows);
+            //image[size_image] = rows[0];  
+            res.send(rows); 
+        }
+        else{
+            image[size_image] = null;
+            res.status(400).json({ error: 'No data' })
+        }
+        //size_image++;
    });
 })
 

@@ -575,6 +575,57 @@ div{
     text-align:center;
     background-color: #FFFF;
 }
+.mainPanel .graphs_5{
+    margin-left:25vw;
+    margin-top:-48vw;
+    height:80vw;
+    width:58vw;
+    text-align:center;
+    background-color: #FFFF;
+}
+.mainPanel .graphs_5 .radio{
+    margin-left:0vw;
+    margin-top:0vw;
+    height:80vw;
+    width:20vw;
+    text-align:center;
+    background-color: #FFFF;
+}
+.mainPanel .graphs_5 .radio .top{
+    margin-left:0vw;
+    margin-top:0vw;
+    height:10vw;
+    width:20vw;
+    text-align:center;
+    background-color: #FFFF;
+}
+.mainPanel .graphs_5 .image{
+    margin-left:20vw;
+    margin-top:-80vw;
+    height:80vw;
+    width:38vw;
+    text-align:center;
+    background-color: #FFFF;
+}
+.mainPanel .graphs_5 .image .top{
+    margin-left:0vw;
+    margin-top:-80vw;
+    height:5vw;
+    width:38vw;
+    text-align:center;
+    background-color: #FFFF;
+}
+.mainPanel .graphs_5 .image .main{
+    margin-left:0vw;
+    margin-top:-80vw;
+    height:75vw;
+    width:38vw;
+    display: grid;
+    grid-gap: 1.2vw 15.7vw;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows:16vw 16vw 16vw;
+    text-align:center;
+}
 .mainPanel .graph{
     height:80vw;
     width:100vw;
