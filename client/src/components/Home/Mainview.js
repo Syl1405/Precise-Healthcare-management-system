@@ -113,10 +113,11 @@ class Mainview extends Component {
                 <div className="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" onSubmit={this.onSubmit}>
                     <div className="modal-dialog">
                         <div className="modal-content">
-                            <div className="modal-body">
+                            <div className="modal-body" style={{padding:'unset'}}>
+                            <br/>
                             <br/>
                                 <input type="search" name="search" value={this.state.search} onChange={this.onChange} style={{width: '200px',marginRight:'5vw'}} />
-                                <input type="radio" name="searchtype" value="name" onClick={this.onChange} checked={this.state.searchtype === "name"}/><label style={{fontSize: "1.5vw"}}>姓名</label>
+                                <input type="radio" name="searchtype" value="name" onClick={this.onChange} checked={this.state.searchtype === "name"}/><label style={{fontSize: "1.5vw",paddingRight:"1vw"}}>姓名</label>
                                 <input type="radio" name="searchtype" value="userid" onClick={this.onChange} checked={this.state.searchtype === "userid"}/><label style={{fontSize: "1.5vw"}}>編號</label>
                             </div>
                             <div>

@@ -264,28 +264,28 @@ div{
     grid-template-columns: 15vw 15vw 15vw;
 }
 #sort{
-  width:8vw;
+  width:7vw;
   border: 1px #8C1C04 solid;
   position:absolute;
-  left:70vw;
+  left:71vw;
   color:#8C1C04;
   background:#FFD686;
-  border-radius:0.5vw;
-  font-size: 2vw;
+  border-radius:0.7vw;
+  font-size: 1.7vw;
   filter: drop-shadow(0.3vw 0.3vw 0.6vw rgba(0, 0, 0, 0.1));
 }
 
 #search{
   /* margin-left: 2vw; */
-  width:8vw;
+  width:7vw;
   border: 1px #8C1C04 solid;
   position:absolute;
   left:80vw;
   color:#8C1C04;
   background:#FFD686;
-  border-radius:0.5vw;
+  border-radius:0.7vw;
   filter: drop-shadow(0.3vw 0.3vw 0.6vw rgba(0, 0, 0, 0.1));
-  font-size: 2vw;
+  font-size: 1.7vw;
 }
  .loginpage{
   margin:0;
@@ -314,8 +314,8 @@ div{
   margin-left: -20vw;
 }
 #conf{
-  margin-left: 10vw;
-  margin-right: 2vw;
+  margin-left: 12vw;
+  margin-right: 1vw;
 }
 #sleep{
   margin-right: 2vw;
@@ -338,12 +338,12 @@ div{
   top:30vh;
 }
 .loginbtn{
-  width:8vw;
+  width:7vw;
   border: 1px #8C1C04 solid;
   color:#8C1C04;
   background:#FFD686;
-  border-radius:0.5vw;
-  font-size: 2vw;
+  border-radius:0.7vw;
+  font-size: 1.7vw;
   filter: drop-shadow(0.3vw 0.3vw 0.6vw rgba(0, 0, 0, 0.1));
 }
 .oneGuy{

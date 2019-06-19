@@ -39,6 +39,7 @@ class Login extends Component {
                 <div className="logincontent">
                         <form noValidate onSubmit={this.onSubmit}>
                             <div id="loginText">登入</div>
+                            <br/>
                             <div className="form-group">
                                 <label class="form-inline" htmlFor="username" style={{fontSize: "1.5vw"}}>帳號</label>
                                 <input type="username"
@@ -59,8 +60,9 @@ class Login extends Component {
                                     onChange={this.onChange}
                                 />
                             </div>
+                            <br/>
                             <button type="submit"
-                                className="loginbtn">
+                                className="loginbtn" style={{marginLeft:'20vw'}}>
                                 確定
                             </button>
                         </form>
