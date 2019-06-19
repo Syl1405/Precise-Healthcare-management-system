@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import { connect } from 'react-redux';
 import '../../index.css';
 import example from '../image/wav_example.png';
-import { patient_1 } from '../UserFunctions'
+import { patient_1 , audiodata } from '../UserFunctions'
 
 import Highcharts from 'highcharts' //npm install highcharts-more --save
 import * as HighchartsMore from "highcharts/highcharts-more"
@@ -20,24 +20,55 @@ HighchartsMore(Highstock)
 
 const keys=Object.keys(data);
 let buffer = [];
+var userid;
 
 class Preview_4 extends Component {
     constructor() {
         super()
         this.state = {
-            width: Number(document.body.clientWidth*0.4),
-            height: Number(document.body.clientWidth*0.2),
-            textsize: Number(document.body.clientWidth*0.001)
-        }
-        for(var i=0;i<keys.length;++i){
-          if(data[keys[i]]["draw"]){
-            buffer.push({text:keys[i],value:data[keys[i]]["times"]+10.5}); //加權
-          }
-          else{
-            buffer.push({text:keys[i],value:data[keys[i]]["times"]});
-          }
+            width: Number(document.body.clientWidth*0.3),
+            height: Number(document.body.clientWidth*0.15),
+            textsize: Number(document.body.clientWidth*0.001),
+            audio: []
         }
         
+        var NewArray = new Array();
+        NewArray = window.location.href.split('/');
+        userid =  NewArray[NewArray.length-1];
+        audiodata(userid).then(res => {
+            console.log(res);
+            if(res){
+                for(let i = 0;i < res.length;i++){
+                    this.state.audio.push(res[i]);
+                    this.setState(this.state)
+                }
+                console.log(res);
+                console.log(this.state.audio);
+            }
+            this.forceUpdate();
+        })
+        this.onClick = this.onClick.bind(this)
+    }
+    onClick (e) {
+        console.log(this.state.width);
+        console.log(this.state.height);
+        var data = require("../"+e.target.name+".json");
+        var keys=Object.keys(data);
+        console.log(data);
+        buffer = [];
+        for(var i=0;i<keys.length;++i){
+            if(data[keys[i]]["draw"]){
+              buffer.push({text:keys[i],value:data[keys[i]]["times"]+10.5}); //加權
+            }
+            else{
+              buffer.push({text:keys[i],value:data[keys[i]]["times"]});
+            }
+        }
+        const newData = buffer.map(item => ({
+          text: item.text,
+          value: item.value
+        }));
+        this.forceUpdate();
     }
     DrawCloud() {
       const newData = buffer.map(item => ({
@@ -62,13 +93,36 @@ class Preview_4 extends Component {
         }));
         return (
                 <div className="graphs_4">
-                    <WordCloud
-                      width={1000}
-                      height={750}
-                      data={newData}
-                      fontSizeMapper={word => word.value*4+10} //scale function
-                      padding={2}
-                    />
+                    {
+                           this.state.audio.map((audio) => {
+                              return (
+                                <div>
+                                    <a style={{fontSize:'20px'}} data-toggle="modal" href="#wavWindow" name={audio.audiopath} onClick={this.onClick}>{audio.name}</a>
+                                </div>
+                              );
+                            })
+                        }
+
+
+                    <div className="modal fade" id="wavWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" onSubmit={this.onSubmit}>
+                        <div className="modal-dialog">
+                            <div className="modal-content">
+                                <div className="modal-body">
+                                <br/>
+                                  <WordCloud
+                                    width={this.state.width}
+                                    height={this.state.height}
+                                    data={newData}
+                                    fontSizeMapper={word => word.value*3+10} //scale function
+                                    padding={2}
+                                  />
+                                </div>
+                                <div >
+                                    <button data-dismiss="modal" aria-hidden="true" className="loginbtn" id="canc">返回</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
         )

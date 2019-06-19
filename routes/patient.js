@@ -139,7 +139,7 @@ router.post('/image/type', (req, res, next) => {
 
 router.post('/image/data', (req, res, next) => {
     console.log(req.body.userid+req.body.type);
-    connection.query("select name,type,imagepath from album where userid = ? and type = ?;",[req.body.userid,req.body.type], function(err,  rows){
+    connection.query("select name,type,imagepath from album where userid = ? and type = ? order by name desc;",[req.body.userid,req.body.type], function(err,  rows){
         if(err)
             res.send('error: ' + err)
         if(rows && rows.length > 0){
@@ -152,6 +152,22 @@ router.post('/image/data', (req, res, next) => {
             res.status(400).json({ error: 'No data' })
         }
         //size_image++;
+   });
+})
+
+router.post('/audio', (req, res, next) => {
+    console.log(req.body.userid);
+    connection.query("select name,audiopath from audio where userid = ? order by name desc;",[req.body.userid], function(err,  rows){
+        if(err)
+            res.send('error: ' + err)
+        if(rows && rows.length > 0){
+            console.log(rows);
+            res.send(rows); 
+        }
+        else{
+            image[size_image] = null;
+            res.status(400).json({ error: 'No data' })
+        }
    });
 })
 

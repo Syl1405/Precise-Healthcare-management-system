@@ -73,8 +73,7 @@ export const patient_1 = user => {
         .post('patient/realtime', {
             userid : user
         })
-        .then(res => {
-            
+        .then(res => {            
             return res.data
         })
         .catch(err => {
@@ -140,6 +139,19 @@ export const imgdata = user => {
         .post('patient/image/data', {
             userid: user.userid,
             type: user.type
+        })
+        .then(res => {
+            return res.data
+        })
+        .catch(err => {
+            console.log(err)
+        })
+}
+
+export const audiodata = userid => {
+    return axios
+        .post('patient/audio', {
+            userid: userid
         })
         .then(res => {
             return res.data

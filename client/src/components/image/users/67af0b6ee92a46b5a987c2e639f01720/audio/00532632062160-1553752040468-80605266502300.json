@@ -1,0 +1,22 @@
+{
+    "你好": {
+        "draw": false,
+        "times": 9
+    },
+    "小說": {
+        "draw": false,
+        "times": 1
+    },
+    "正在": {
+        "draw": false,
+        "times": 4
+    },
+    "現在": {
+        "draw": false,
+        "times": 6
+    },
+    "色": {
+        "draw": false,
+        "times": 1
+    }
+}

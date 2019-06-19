@@ -84,8 +84,8 @@ class Preview_5 extends Component {
                 this.forceUpdate();
             }
         })
-
-    }
+        console.log(e.target.value);
+    }   
     render () {
         //console.log(example);
         return (

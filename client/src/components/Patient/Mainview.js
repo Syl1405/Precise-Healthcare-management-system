@@ -29,7 +29,6 @@ var NewArray = new Array();
 NewArray = window.location.href.split('/');
 const userid =  NewArray[NewArray.length-1];
 console.log(userid);
-const log = require("../image/users/" + "67af0b6ee92a46b5a987c2e639f01720" + "/selfie.png");
 
 class Mainview extends Component {
     constructor() {
@@ -38,7 +37,7 @@ class Mainview extends Component {
         //console.log(this.props.match.params.id);
         this.state = {
             name: '',
-            imagepath:'image/users/67af0b6ee92a46b5a987c2e639f01720/selfie',
+            imagepath:'image/users/empty',
             birth:'',
             sex: '',
             age: '',
@@ -77,7 +76,7 @@ class Mainview extends Component {
 
     }
     componentDidMount() {
-        
+
     }
 
     handleClick (e) {
