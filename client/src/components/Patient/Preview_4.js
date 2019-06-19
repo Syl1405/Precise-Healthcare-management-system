@@ -37,7 +37,7 @@ class Preview_4 extends Component {
             buffer.push({text:keys[i],value:data[keys[i]]["times"]});
           }
         }
-        
+
     }
     DrawCloud() {
       const newData = buffer.map(item => ({
@@ -62,15 +62,31 @@ class Preview_4 extends Component {
         }));
         return (
                 <div className="graphs_4">
+                <a data-toggle="modal" href="#wavWindow">
                     <WordCloud
                       width={1000}
                       height={750}
                       data={newData}
                       fontSizeMapper={word => word.value*4+10} //scale function
                       padding={2}
-                    />
+                    /></a>
+
+                    <div className="modal fade" id="wavWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" onSubmit={this.onSubmit}>
+                        <div className="modal-dialog">
+                            <div className="modal-content">
+                                <div className="modal-body">
+                                <br/>
+
+                                </div>
+                                <div >
+                                    <button data-dismiss="modal" aria-hidden="true" onClick={this.onSubmit} className="loginbtn" name="sort" id="conf">確定</button>
+                                    <button data-dismiss="modal" aria-hidden="true" className="loginbtn" id="canc">取消</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
+
         )
     }
 }
