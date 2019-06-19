@@ -250,7 +250,7 @@ div{
     height:0vw;
     display: grid;
     grid-gap: 3vw 1vw;
-    grid-template-columns: 16vw 16vw 16vw 16vw;
+    grid-template-columns: 16.3vw 16.3vw 16.3vw 16.3vw;
     grid-template-rows:7vw 7vw 7vw 7vw 10vw 10vw 12vw 12vw 12vw 12vw  ;
     padding-left: 8vw;
     border: 0px;
@@ -361,7 +361,7 @@ div{
     border-radius: 1vw;
     margin-top:1vw;
     margin-right:1vw;
-    filter: drop-shadow(0.4vw 0.4vw 0.2vw rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0vw 0.3vw 0.1vw rgba(0, 0, 0, 0.15));
     width:16.5vw;
     height:9.5vw;
 }
