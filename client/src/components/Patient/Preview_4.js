@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import '../../index.css';
 import example from '../image/wav_example.png';
 import { patient_1 , audiodata } from '../UserFunctions'
-
+import music from "../image/music-player.png";
 import Highcharts from 'highcharts' //npm install highcharts-more --save
 import * as HighchartsMore from "highcharts/highcharts-more"
 import Highstock from 'highcharts/highstock'
@@ -31,7 +31,7 @@ class Preview_4 extends Component {
             textsize: Number(document.body.clientWidth*0.001),
             audio: []
         }
-        
+
         var NewArray = new Array();
         NewArray = window.location.href.split('/');
         userid =  NewArray[NewArray.length-1];
@@ -93,18 +93,17 @@ class Preview_4 extends Component {
         }));
         return (
                 <div className="graphs_4">
-<<<<<<< HEAD
+
                     {
                            this.state.audio.map((audio) => {
                               return (
-                                <div>
-                                    <a style={{fontSize:'20px'}} data-toggle="modal" href="#wavWindow" name={audio.audiopath} onClick={this.onClick}>{audio.name}</a>
+                                <div class="zebra">
+                                <img src={music} style={{width:'2.1vw',height:'2.1vw',marginLeft:'1vw',marginRight:'1vw'}} />
+                                    <a style={{fontSize:'20px',color:'#444444'}} data-toggle="modal" href="#wavWindow" name={audio.audiopath} onClick={this.onClick}>{audio.name}</a>
                                 </div>
                               );
                             })
                         }
-
-=======
                 <a data-toggle="modal" href="#wavWindow">
                     <WordCloud
                       width={1000}
@@ -113,14 +112,14 @@ class Preview_4 extends Component {
                       fontSizeMapper={word => word.value*4+10} //scale function
                       padding={2}
                     /></a>
->>>>>>> bc5aa3b83890a93588a2c7fd440fcfe6dac6c6c4
+
 
                     <div className="modal fade" id="wavWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" onSubmit={this.onSubmit}>
                         <div className="modal-dialog">
-                            <div className="modal-content">
+                            <div className="modal-content"  style={{height:'55vh'}}>
                                 <div className="modal-body">
                                 <br/>
-<<<<<<< HEAD
+
                                   <WordCloud
                                     width={this.state.width}
                                     height={this.state.height}
@@ -130,15 +129,9 @@ class Preview_4 extends Component {
                                   />
                                 </div>
                                 <div >
-                                    <button data-dismiss="modal" aria-hidden="true" className="loginbtn" id="canc">返回</button>
-=======
+                                    <button data-dismiss="modal" aria-hidden="true" className="loginbtn" id="canc" style={{marginLeft:'15vw'}}>返回</button>
+                                </div>
 
-                                </div>
-                                <div >
-                                    <button data-dismiss="modal" aria-hidden="true" onClick={this.onSubmit} className="loginbtn" name="sort" id="conf">確定</button>
-                                    <button data-dismiss="modal" aria-hidden="true" className="loginbtn" id="canc">取消</button>
->>>>>>> bc5aa3b83890a93588a2c7fd440fcfe6dac6c6c4
-                                </div>
                             </div>
                         </div>
                     </div>

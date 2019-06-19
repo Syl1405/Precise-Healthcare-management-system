@@ -272,7 +272,7 @@ div{
   background:#FFD686;
   border-radius:0.7vw;
   font-size: 1.7vw;
-  filter: drop-shadow(0.3vw 0.3vw 0.6vw rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0.3vw 0.3vw 0.3vw rgba(0, 0, 0, 0.1));
 }
 
 #search{
@@ -346,12 +346,22 @@ div{
   font-size: 1.7vw;
   filter: drop-shadow(0.3vw 0.3vw 0.6vw rgba(0, 0, 0, 0.1));
 }
+.zebra{
+  text-align: left;
+}
+.zebra:nth-child(odd){
+	background-color: #DDDDDD;
+	color: white;
+}
+.a{
+  color:#DDDDDD;
+}
 .oneGuy{
     background-color: #FFFFFF;
     border-radius: 1vw;
     margin-top:1vw;
     margin-right:1vw;
-    filter: drop-shadow(0.3vw 0.3vw 0.6vw rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0.4vw 0.4vw 0.2vw rgba(0, 0, 0, 0.2));
     width:16.5vw;
     height:9.5vw;
 }
