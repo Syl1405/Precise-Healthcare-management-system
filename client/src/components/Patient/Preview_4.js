@@ -13,7 +13,7 @@ import HighchartsReact from 'highcharts-react-official' //npm install highcharts
 //import {cloud} from './cloud/voice.js'
 
 import WordCloud from "react-d3-cloud";
-import data from "./wordcloud.json";
+import data from "./cloud/json/0328699361220-1549368388953-ce0196cd40b74a508edefb85769eb53a.json";
 
 HighchartsMore(Highcharts)
 HighchartsMore(Highstock)

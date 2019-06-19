@@ -1,0 +1,14 @@
+{
+    "公主": {
+        "draw": false,
+        "times": 2
+    },
+    "迪士尼": {
+        "draw": false,
+        "times": 2
+    },
+    "鯊魚": {
+        "draw": false,
+        "times": 1
+    }
+}

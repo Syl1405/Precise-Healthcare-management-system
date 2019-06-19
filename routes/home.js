@@ -157,7 +157,7 @@ router.get('/sleep', (req, res, next) => {
 })
 
 router.get('/main', (req, res, next) => {
-    connection.query("select userid,name,blood_suger,blood_pressure,temperature,activate,activate_value,sleep,sleep_value,imagepath,sex,age,(blood_suger+blood_pressure+temperature+activate+sleep) as total from realtime_data order by  total desc,blood_suger desc,blood_pressure desc,temperature desc,activate desc,sleep desc,userid asc limit 10", function(err,  rows){
+    connection.query("select userid,name,blood_suger,blood_pressure,temperature,activate,activate_value,sleep,sleep_value,imagepath,sex,age,(blood_suger+blood_pressure+temperature+activate+sleep) as total from realtime_data order by  total desc,blood_suger desc,blood_pressure desc,temperature desc,activate desc,sleep desc,userid asc limit 16", function(err,  rows){
         if(err)
             res.send('error: ' + err)
         if(rows && rows.length > 0){
@@ -173,7 +173,7 @@ router.get('/main', (req, res, next) => {
 
 router.post('/sort', (req, res, next) => {
     console.log(req.body.sort);
-    connection.query("select userid,name,blood_suger,blood_pressure,temperature,activate,activate_value,sleep,sleep_value,imagepath,sex,age,(blood_suger+blood_pressure+temperature+activate+sleep) as total from realtime_data order by "+ req.body.sort +" desc,total desc,blood_suger desc,blood_pressure desc,temperature desc,activate desc,sleep desc,userid asc limit 10", function(err,  rows){
+    connection.query("select userid,name,blood_suger,blood_pressure,temperature,activate,activate_value,sleep,sleep_value,imagepath,sex,age,(blood_suger+blood_pressure+temperature+activate+sleep) as total from realtime_data order by "+ req.body.sort +" desc,total desc,blood_suger desc,blood_pressure desc,temperature desc,activate desc,sleep desc,userid asc limit 16", function(err,  rows){
         if(err)
             res.send('error: ' + err)
         if(rows && rows.length > 0){
@@ -189,7 +189,7 @@ router.post('/sort', (req, res, next) => {
 router.post('/search', (req, res, next) => {
     console.log(req.body.type);
     console.log(req.body.request);
-    connection.query("select userid,name,blood_suger,blood_pressure,temperature,activate,activate_value,sleep,sleep_value,imagepath,sex,age,(blood_suger+blood_pressure+temperature+activate+sleep) as total from realtime_data where "+req.body.type+" = '"+req.body.request+"' order by total desc,blood_suger desc,blood_pressure desc,temperature desc,activate desc,sleep desc,userid asc limit 10", function(err,  rows){
+    connection.query("select userid,name,blood_suger,blood_pressure,temperature,activate,activate_value,sleep,sleep_value,imagepath,sex,age,(blood_suger+blood_pressure+temperature+activate+sleep) as total from realtime_data where "+req.body.type+" = '"+req.body.request+"' order by total desc,blood_suger desc,blood_pressure desc,temperature desc,activate desc,sleep desc,userid asc limit 16", function(err,  rows){
         if(err)
             res.send('error: ' + err)
         if(rows && rows.length > 0){

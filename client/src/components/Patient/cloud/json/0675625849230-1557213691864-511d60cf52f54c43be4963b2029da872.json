@@ -1,0 +1,350 @@
+{
+    "一些": {
+        "draw": false,
+        "times": 1
+    },
+    "一個": {
+        "draw": false,
+        "times": 2
+    },
+    "一名": {
+        "draw": false,
+        "times": 2
+    },
+    "一國兩制": {
+        "draw": false,
+        "times": 1
+    },
+    "一直": {
+        "draw": false,
+        "times": 1
+    },
+    "三峽": {
+        "draw": false,
+        "times": 1
+    },
+    "上班時間": {
+        "draw": false,
+        "times": 2
+    },
+    "上限": {
+        "draw": false,
+        "times": 2
+    },
+    "下載": {
+        "draw": false,
+        "times": 1
+    },
+    "不用": {
+        "draw": false,
+        "times": 4
+    },
+    "主題": {
+        "draw": false,
+        "times": 2
+    },
+    "主題曲": {
+        "draw": false,
+        "times": 1
+    },
+    "人來": {
+        "draw": false,
+        "times": 3
+    },
+    "便當": {
+        "draw": false,
+        "times": 1
+    },
+    "健身運動": {
+        "draw": false,
+        "times": 2
+    },
+    "傳銷": {
+        "draw": false,
+        "times": 4
+    },
+    "允智": {
+        "draw": false,
+        "times": 2
+    },
+    "先": {
+        "draw": false,
+        "times": 1
+    },
+    "兒童": {
+        "draw": false,
+        "times": 3
+    },
+    "內容": {
+        "draw": false,
+        "times": 1
+    },
+    "出現": {
+        "draw": false,
+        "times": 1
+    },
+    "副作用": {
+        "draw": false,
+        "times": 1
+    },
+    "加": {
+        "draw": false,
+        "times": 1
+    },
+    "勁戰": {
+        "draw": false,
+        "times": 1
+    },
+    "化療": {
+        "draw": false,
+        "times": 1
+    },
+    "參與": {
+        "draw": false,
+        "times": 3
+    },
+    "吃": {
+        "draw": false,
+        "times": 1
+    },
+    "周蕙": {
+        "draw": false,
+        "times": 1
+    },
+    "味": {
+        "draw": false,
+        "times": 1
+    },
+    "哪一天": {
+        "draw": false,
+        "times": 1
+    },
+    "喔": {
+        "draw": false,
+        "times": 3
+    },
+    "在線": {
+        "draw": false,
+        "times": 4
+    },
+    "地球": {
+        "draw": false,
+        "times": 1
+    },
+    "大家族": {
+        "draw": false,
+        "times": 1
+    },
+    "好": {
+        "draw": false,
+        "times": 1
+    },
+    "好好": {
+        "draw": false,
+        "times": 3
+    },
+    "孩子": {
+        "draw": false,
+        "times": 1
+    },
+    "宇治": {
+        "draw": false,
+        "times": 1
+    },
+    "宜蘭": {
+        "draw": false,
+        "times": 1
+    },
+    "寮": {
+        "draw": false,
+        "times": 4
+    },
+    "常會": {
+        "draw": false,
+        "times": 1
+    },
+    "張家": {
+        "draw": false,
+        "times": 2
+    },
+    "後": {
+        "draw": false,
+        "times": 2
+    },
+    "意思": {
+        "draw": false,
+        "times": 2
+    },
+    "打開": {
+        "draw": false,
+        "times": 3
+    },
+    "找": {
+        "draw": false,
+        "times": 2
+    },
+    "日本": {
+        "draw": false,
+        "times": 1
+    },
+    "時間": {
+        "draw": false,
+        "times": 5
+    },
+    "晚上": {
+        "draw": false,
+        "times": 4
+    },
+    "有空": {
+        "draw": false,
+        "times": 4
+    },
+    "朝鮮": {
+        "draw": false,
+        "times": 1
+    },
+    "槍": {
+        "draw": false,
+        "times": 1
+    },
+    "歲": {
+        "draw": false,
+        "times": 1
+    },
+    "活動": {
+        "draw": false,
+        "times": 2
+    },
+    "消化": {
+        "draw": true,
+        "times": 1
+    },
+    "消防": {
+        "draw": false,
+        "times": 1
+    },
+    "澳洲": {
+        "draw": false,
+        "times": 1
+    },
+    "營養": {
+        "draw": false,
+        "times": 4
+    },
+    "現在": {
+        "draw": false,
+        "times": 2
+    },
+    "瑋": {
+        "draw": false,
+        "times": 1
+    },
+    "田尾": {
+        "draw": false,
+        "times": 1
+    },
+    "當官": {
+        "draw": false,
+        "times": 1
+    },
+    "目標": {
+        "draw": false,
+        "times": 3
+    },
+    "直播": {
+        "draw": false,
+        "times": 2
+    },
+    "相關": {
+        "draw": false,
+        "times": 5
+    },
+    "社團": {
+        "draw": false,
+        "times": 1
+    },
+    "科": {
+        "draw": false,
+        "times": 2
+    },
+    "網站": {
+        "draw": false,
+        "times": 1
+    },
+    "老娘": {
+        "draw": false,
+        "times": 2
+    },
+    "老牛": {
+        "draw": false,
+        "times": 1
+    },
+    "腸胃": {
+        "draw": true,
+        "times": 2
+    },
+    "自取": {
+        "draw": false,
+        "times": 1
+    },
+    "色情": {
+        "draw": false,
+        "times": 1
+    },
+    "英文": {
+        "draw": false,
+        "times": 2
+    },
+    "菸": {
+        "draw": false,
+        "times": 1
+    },
+    "行銷": {
+        "draw": false,
+        "times": 2
+    },
+    "觀察": {
+        "draw": false,
+        "times": 1
+    },
+    "說": {
+        "draw": false,
+        "times": 1
+    },
+    "財政部": {
+        "draw": false,
+        "times": 1
+    },
+    "起床": {
+        "draw": false,
+        "times": 1
+    },
+    "退出": {
+        "draw": false,
+        "times": 1
+    },
+    "退費": {
+        "draw": false,
+        "times": 1
+    },
+    "還要": {
+        "draw": false,
+        "times": 1
+    },
+    "醫院": {
+        "draw": true,
+        "times": 2
+    },
+    "需要": {
+        "draw": false,
+        "times": 4
+    },
+    "高雄": {
+        "draw": false,
+        "times": 2
+    },
+    "點": {
+        "draw": false,
+        "times": 1
+    }
+}

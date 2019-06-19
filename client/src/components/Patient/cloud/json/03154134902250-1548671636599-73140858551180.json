@@ -1,0 +1,382 @@
+{
+    "一些": {
+        "draw": false,
+        "times": 5
+    },
+    "一般來講": {
+        "draw": false,
+        "times": 1
+    },
+    "下載": {
+        "draw": false,
+        "times": 1
+    },
+    "不吃": {
+        "draw": false,
+        "times": 1
+    },
+    "不用": {
+        "draw": false,
+        "times": 2
+    },
+    "仔": {
+        "draw": false,
+        "times": 1
+    },
+    "他會": {
+        "draw": false,
+        "times": 3
+    },
+    "休息": {
+        "draw": false,
+        "times": 1
+    },
+    "你好": {
+        "draw": false,
+        "times": 2
+    },
+    "優惠": {
+        "draw": false,
+        "times": 1
+    },
+    "克羅": {
+        "draw": false,
+        "times": 1
+    },
+    "再": {
+        "draw": false,
+        "times": 7
+    },
+    "吃": {
+        "draw": false,
+        "times": 9
+    },
+    "周子": {
+        "draw": false,
+        "times": 1
+    },
+    "問": {
+        "draw": false,
+        "times": 6
+    },
+    "問你": {
+        "draw": false,
+        "times": 1
+    },
+    "喔": {
+        "draw": false,
+        "times": 8
+    },
+    "在意": {
+        "draw": false,
+        "times": 1
+    },
+    "多買": {
+        "draw": false,
+        "times": 1
+    },
+    "太": {
+        "draw": false,
+        "times": 1
+    },
+    "好": {
+        "draw": false,
+        "times": 13
+    },
+    "好好": {
+        "draw": false,
+        "times": 1
+    },
+    "好玩": {
+        "draw": false,
+        "times": 1
+    },
+    "如果說": {
+        "draw": false,
+        "times": 1
+    },
+    "子": {
+        "draw": false,
+        "times": 1
+    },
+    "完": {
+        "draw": false,
+        "times": 3
+    },
+    "寮": {
+        "draw": false,
+        "times": 1
+    },
+    "庚烷": {
+        "draw": false,
+        "times": 1
+    },
+    "影響": {
+        "draw": false,
+        "times": 1
+    },
+    "後面": {
+        "draw": false,
+        "times": 4
+    },
+    "忘記": {
+        "draw": false,
+        "times": 2
+    },
+    "想": {
+        "draw": false,
+        "times": 5
+    },
+    "想要": {
+        "draw": false,
+        "times": 7
+    },
+    "愛麗絲": {
+        "draw": false,
+        "times": 2
+    },
+    "懲罰": {
+        "draw": false,
+        "times": 1
+    },
+    "成份": {
+        "draw": false,
+        "times": 5
+    },
+    "我還": {
+        "draw": false,
+        "times": 3
+    },
+    "找": {
+        "draw": false,
+        "times": 4
+    },
+    "抗過敏": {
+        "draw": true,
+        "times": 4
+    },
+    "拉": {
+        "draw": false,
+        "times": 1
+    },
+    "拉完": {
+        "draw": false,
+        "times": 1
+    },
+    "拉瓦": {
+        "draw": false,
+        "times": 1
+    },
+    "採": {
+        "draw": false,
+        "times": 1
+    },
+    "揚州": {
+        "draw": false,
+        "times": 1
+    },
+    "擔心": {
+        "draw": false,
+        "times": 1
+    },
+    "收假": {
+        "draw": false,
+        "times": 1
+    },
+    "早上": {
+        "draw": false,
+        "times": 5
+    },
+    "晚安": {
+        "draw": false,
+        "times": 1
+    },
+    "有時候": {
+        "draw": false,
+        "times": 5
+    },
+    "有點": {
+        "draw": false,
+        "times": 2
+    },
+    "檢查": {
+        "draw": false,
+        "times": 1
+    },
+    "治療": {
+        "draw": true,
+        "times": 3
+    },
+    "洋蔥": {
+        "draw": false,
+        "times": 1
+    },
+    "爸爸": {
+        "draw": false,
+        "times": 4
+    },
+    "狀況": {
+        "draw": false,
+        "times": 2
+    },
+    "玉山": {
+        "draw": false,
+        "times": 1
+    },
+    "瑜": {
+        "draw": false,
+        "times": 1
+    },
+    "的藥": {
+        "draw": false,
+        "times": 1
+    },
+    "直接": {
+        "draw": false,
+        "times": 5
+    },
+    "看過": {
+        "draw": false,
+        "times": 1
+    },
+    "知道": {
+        "draw": false,
+        "times": 5
+    },
+    "米": {
+        "draw": false,
+        "times": 1
+    },
+    "老師": {
+        "draw": false,
+        "times": 1
+    },
+    "耳朵": {
+        "draw": true,
+        "times": 2
+    },
+    "腳踏車": {
+        "draw": false,
+        "times": 2
+    },
+    "臉": {
+        "draw": true,
+        "times": 1
+    },
+    "自療": {
+        "draw": false,
+        "times": 1
+    },
+    "艾莉": {
+        "draw": false,
+        "times": 1
+    },
+    "茶": {
+        "draw": false,
+        "times": 2
+    },
+    "藥": {
+        "draw": true,
+        "times": 4
+    },
+    "藥物": {
+        "draw": true,
+        "times": 5
+    },
+    "蚵": {
+        "draw": false,
+        "times": 1
+    },
+    "蝦子": {
+        "draw": false,
+        "times": 1
+    },
+    "蝦皮": {
+        "draw": false,
+        "times": 1
+    },
+    "行車": {
+        "draw": false,
+        "times": 1
+    },
+    "補時": {
+        "draw": false,
+        "times": 1
+    },
+    "製": {
+        "draw": false,
+        "times": 4
+    },
+    "設": {
+        "draw": false,
+        "times": 1
+    },
+    "說": {
+        "draw": false,
+        "times": 9
+    },
+    "說不定": {
+        "draw": false,
+        "times": 3
+    },
+    "買": {
+        "draw": false,
+        "times": 3
+    },
+    "身體": {
+        "draw": true,
+        "times": 2
+    },
+    "載貨": {
+        "draw": false,
+        "times": 2
+    },
+    "週點": {
+        "draw": false,
+        "times": 1
+    },
+    "過你": {
+        "draw": false,
+        "times": 1
+    },
+    "過敏": {
+        "draw": true,
+        "times": 7
+    },
+    "醫師": {
+        "draw": false,
+        "times": 1
+    },
+    "醫生": {
+        "draw": false,
+        "times": 3
+    },
+    "銀製": {
+        "draw": false,
+        "times": 1
+    },
+    "需要": {
+        "draw": false,
+        "times": 2
+    },
+    "馬桶": {
+        "draw": false,
+        "times": 2
+    },
+    "高血壓": {
+        "draw": true,
+        "times": 3
+    },
+    "魚蝦": {
+        "draw": false,
+        "times": 1
+    },
+    "魚香茄子": {
+        "draw": false,
+        "times": 1
+    },
+    "點": {
+        "draw": false,
+        "times": 2
+    }
+}

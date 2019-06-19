@@ -34,15 +34,7 @@ class Preview_5 extends Component {
             console.log(res);
             if(res){
                 for(let i = 0;i < res.length;i++){
-                    //console.log(res[i].userid);
                     this.state.type_all.push(res[i]);
-                    /*this.state.name.push(res[i].name);
-                    this.state.blood_suger.push(res[i].blood_suger);
-                    this.state.blood_pressure.push(res[i].blood_pressure);
-                    this.state.temperature.push(res[i].temperature);
-                    this.state.activate.push(res[i].activate);
-                    this.state.sleep.push(res[i].sleep);
-                    this.state.imagepath.push(res[i].imagepath);*/
                     this.setState(this.state)
                 }
                 this.setState({type: this.state.type_all[0]})
@@ -59,15 +51,7 @@ class Preview_5 extends Component {
                     this.setState({image: []})
                     if(res){
                         for(let i = 0;i < res.length;i++){
-                            //console.log(res[i].userid);
                             this.state.image.push(res[i]);
-                            /*this.state.name.push(res[i].name);
-                            this.state.blood_suger.push(res[i].blood_suger);
-                            this.state.blood_pressure.push(res[i].blood_pressure);
-                            this.state.temperature.push(res[i].temperature);
-                            this.state.activate.push(res[i].activate);
-                            this.state.sleep.push(res[i].sleep);
-                            this.state.imagepath.push(res[i].imagepath);*/
                             this.setState(this.state)
                         }
                         console.log(this.state);
@@ -82,7 +66,6 @@ class Preview_5 extends Component {
     }
     onChange (e) {
         this.setState({ [e.target.name]: e.target.value });
-        //console.log(this.state)
         const user = {
             userid: userid,
             type: e.target.value
@@ -94,7 +77,6 @@ class Preview_5 extends Component {
             this.setState({image: []});
             if(res){
                 for(let i = 0;i < res.length;i++){
-                    //console.log(res[i].userid);
                     this.state.image.push(res[i]);
                     this.setState(this.state)
                 }

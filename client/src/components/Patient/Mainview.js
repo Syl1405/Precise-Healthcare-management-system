@@ -38,7 +38,7 @@ class Mainview extends Component {
         //console.log(this.props.match.params.id);
         this.state = {
             name: '',
-            imagepath:'',
+            imagepath:'image/users/67af0b6ee92a46b5a987c2e639f01720/selfie',
             birth:'',
             sex: '',
             age: '',
@@ -71,30 +71,18 @@ class Mainview extends Component {
                 address: res[0] != undefined ? res[0].address : '無紀錄',
                 id: userid
             })
-
-            //console.log(this.state.StagesDeep);
+            console.log(this.state.imagepath);
+            this.forceUpdate();
         })
 
     }
     componentDidMount() {
-
+        
     }
 
     handleClick (e) {
         this.setState({chooser: e.target.id})
-        //console.log(this.state.aaa);
     }
-
-    /*componentDidMount () {
-        const token = localStorage.datatoken
-        //const decoded = jwt_decode(token)
-        this.setState({
-            StagesDeep: token[0].StagesDeep,
-            StagesLight: token[1].StagesLight,
-            StagesRem: token[2].StagesRem,
-            StagesWake: token[3].StagesWake
-        })
-    }*/
 
     render () {
         let preview_2,preview_3;
@@ -414,7 +402,7 @@ class Mainview extends Component {
         return (
             <div>
                 <div className="basicInfo">
-                    <div><img src={log} className="photo"/></div>
+                    <div><img src={ require('../' + this.state.imagepath + '.png') } className="photo"/></div>
                     <a className="name" > {this.state.name}</a>
                     <br/><br/>
                     <p>性別： {this.state.sex}</p>
