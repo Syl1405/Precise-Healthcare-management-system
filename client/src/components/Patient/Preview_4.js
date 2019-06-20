@@ -123,7 +123,7 @@ class Preview_4 extends Component {
                                 <div >
                                     <button data-dismiss="modal" aria-hidden="true" className="loginbtn" id="canc" style={{marginLeft:'0vw'}}>返回</button>
                                 </div>
-
+                            </div>
                             </div>
                         </div>
                     </div>
