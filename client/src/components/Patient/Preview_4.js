@@ -108,6 +108,7 @@ class Preview_4 extends Component {
                     <div className="modal fade" id="wavWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" onSubmit={this.onSubmit}>
                         <div className="modal-dialog">
                             <div className="modal-content"  style={{height:'80vh',width: '50vw',marginLeft: '-10vw',marginTop: '5vw'}}>
+                            <div className="modal-content"  style={{height:'70vh',width:'70vw',marginLeft:'-15vw'}}>
                                 <div className="modal-body">
                                 <br/>
 
