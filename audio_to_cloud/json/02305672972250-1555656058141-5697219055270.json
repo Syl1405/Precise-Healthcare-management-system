@@ -1,0 +1,18 @@
+{
+    "下去": {
+        "draw": false,
+        "times": 1
+    },
+    "樓下": {
+        "draw": false,
+        "times": 2
+    },
+    "走": {
+        "draw": false,
+        "times": 1
+    },
+    "車": {
+        "draw": false,
+        "times": 1
+    }
+}
