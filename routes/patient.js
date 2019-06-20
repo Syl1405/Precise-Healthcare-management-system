@@ -95,6 +95,25 @@ router.get('/sleep', (req, res, next) => {
             user[size_user] = null;
         }
         size_user++;
+        res.redirect("handdata");
+    });
+    
+    //res.send(user);
+})
+
+router.get('/handdata', (req, res, next) => {
+    connection.query("select weight,temperature,blood_pressure,blood_suger from hand_data where userid = ? order by updatetime desc limit 1",[id], function(err,  rows){
+        if(err)
+            res.send('error: ' + err);
+        if(rows && rows.length > 0){
+            user[size_user] = rows[0]; 
+            console.log(user);  
+            
+        }
+        else{
+            user[size_user] = null;
+        }
+        size_user++;
         res.send(user);
     });
     

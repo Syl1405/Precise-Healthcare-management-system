@@ -9,7 +9,6 @@ import _constantData_2 from './_History_ActiveCalories.json';
 import constantData_3 from './_History_BloodSugarPressure.json';
 import _constantData_3 from './_History_BloodSugarPressure.json';
 import { patient_1 } from '../UserFunctions'
-import constantData4 from './fake_data3.json';
 
 import Highcharts from 'highcharts' //npm install highcharts-more --save
 import * as HighchartsMore from "highcharts/highcharts-more"
@@ -23,6 +22,8 @@ HighchartsMore(Highstock)
 var NewArray = new Array();
 NewArray = window.location.href.split('/');
 const userid =  NewArray[NewArray.length-1];
+
+var constantData4 = (userid == "67af0b6ee92a46b5a987c2e639f01720") ? require('./fake_data1.json') : ((userid == "afa9952a02d44533bcbe6b2e3511500d") ? require('./fake_data2.json') : ((userid == "2c1c3a34e3c142c48c2cb09b176045e5") ? require('./fake_data3.json') : require('./fake_data4.json')));
 
 class Preview_2 extends Component {
     constructor() {

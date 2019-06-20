@@ -26,8 +26,8 @@ class Preview_4 extends Component {
     constructor() {
         super()
         this.state = {
-            width: Number(document.body.clientWidth*0.3),
-            height: Number(document.body.clientWidth*0.15),
+            width: Number(document.body.clientWidth*0.4),
+            height: Number(document.body.clientWidth*0.3),
             textsize: Number(document.body.clientWidth*0.001),
             audio: []
         }
@@ -104,19 +104,10 @@ class Preview_4 extends Component {
                               );
                             })
                         }
-                <a data-toggle="modal" href="#wavWindow">
-                    <WordCloud
-                      width={1000}
-                      height={750}
-                      data={newData}
-                      fontSizeMapper={word => word.value*4+10} //scale function
-                      padding={2}
-                    /></a>
-
 
                     <div className="modal fade" id="wavWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" onSubmit={this.onSubmit}>
                         <div className="modal-dialog">
-                            <div className="modal-content"  style={{height:'55vh'}}>
+                            <div className="modal-content"  style={{height:'80vh',width: '50vw',marginLeft: '-10vw',marginTop: '5vw'}}>
                                 <div className="modal-body">
                                 <br/>
 
@@ -129,7 +120,7 @@ class Preview_4 extends Component {
                                   />
                                 </div>
                                 <div >
-                                    <button data-dismiss="modal" aria-hidden="true" className="loginbtn" id="canc" style={{marginLeft:'15vw'}}>返回</button>
+                                    <button data-dismiss="modal" aria-hidden="true" className="loginbtn" id="canc" style={{marginLeft:'0vw'}}>返回</button>
                                 </div>
 
                             </div>

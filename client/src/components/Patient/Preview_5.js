@@ -24,7 +24,8 @@ class Preview_5 extends Component {
             textsize: Number(document.body.clientWidth*0.001),
             type_all: [],
             type: '',
-            image: []
+            image: [],
+            selectimg: 'image/users/empty'
         }
         var NewArray = new Array();
         NewArray = window.location.href.split('/');
@@ -62,6 +63,7 @@ class Preview_5 extends Component {
         })
 
         this.onChange = this.onChange.bind(this)
+        this.onClick = this.onClick.bind(this)
 
     }
     onChange (e) {
@@ -85,7 +87,14 @@ class Preview_5 extends Component {
             }
         })
         console.log(e.target.value);
-    }   
+        this.onClick = this.onClick.bind(this)
+    }  
+    onClick (e) {
+        this.setState({ selectimg: e.target.name });
+        this.forceUpdate();
+        console.log(e.target.name);
+        console.log(this.state);
+    } 
     render () {
         //console.log(example);
         return (
@@ -111,7 +120,7 @@ class Preview_5 extends Component {
                            this.state.image.map((image) => {
                               return (
                                 <div>
-                                    <img src={require("../"+image.imagepath+".jpg")} />
+                                    <img src={require("../"+image.imagepath+".jpg")} data-toggle="modal"  href="#wavWindow" onClick={this.onClick} name={image.imagepath}/>
                                     <a style={{fontSize:'20px'}}>{image.name}</a>
                                 </div>
                               );
@@ -119,6 +128,21 @@ class Preview_5 extends Component {
                         }
 
                </div>
+               <div className="modal fade" id="wavWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" onSubmit={this.onSubmit}>
+                        <div className="modal-dialog">
+                            <div className="modal-content"  style={{height:'80vh',width: '50vw',marginLeft: '-10vw',marginTop: '5vw'}}>
+                                <div className="modal-body">
+                                <br/>
+                                <img src={require("../"+this.state.selectimg+".jpg")}  style={{width: '80vh',height: '50vh'}}/>
+                                  
+                                </div>
+                                <div >
+                                    <button data-dismiss="modal" aria-hidden="true" className="loginbtn" id="canc" style={{marginLeft:'0vw'}}>返回</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
             </div>
 
         )

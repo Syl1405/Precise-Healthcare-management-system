@@ -85,14 +85,8 @@ class Mainview extends Component {
 
     render () {
         let preview_2,preview_3;
-        if(this.state.id == "67af0b6ee92a46b5a987c2e639f01720" || this.state.id == "2c1c3a34e3c142c48c2cb09b176045e5"){
-            preview_2 = <_Preview_2 />
-            preview_3 = <_Preview_3 />
-        }
-        else{
-            preview_2 =  <Preview_2 />
-            preview_3 = <Preview_3 />
-        }
+        preview_2 = <_Preview_2 />
+        preview_3 = <_Preview_3 />
         const chooser_1 = (
             <div>
             <div className="chooser">

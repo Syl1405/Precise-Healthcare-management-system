@@ -86,7 +86,64 @@ class Preview_2 extends Component {
                 {
                     name: 'Cardi_rate',
                     data: constantData4.Cardi_rate
-                },
+                }
+            ]
+        }
+        var configs_2 = {
+            chart: {
+                type: 'line',
+                width: this.state.width,
+                height: this.state.height
+            },                      
+            legend: {
+                enabled: true,
+                align: 'center',
+                symbolWidth: 10,
+                symbolHeight: 10,
+                symbolRadius: 5,
+                itemStyle:{
+                    "fontSize": "0.8rem"
+                }
+            },
+            rangeSelector : {
+                  buttons: [
+                  { type: 'day', count: 1, text: '1 day'},
+                  { type: 'day', count: 7, text: '1w'},
+                  { type: 'month', count: 1, text: '1m'},
+                  { type: 'month', count: 3, text: '3m'},
+                  { type: 'all', text: 'All'}
+                  ],
+                  selected : 1
+            },
+            
+            title : {
+                text : ''
+            },
+            global: {
+                useUTC: false
+            },
+            credits: {
+                enabled: false
+            },
+            exporting: {
+                enabled: true,
+                filename: ""
+            },
+            navigator: {
+                enabled: true,
+                series: {
+                    type: 'line'
+                }
+            },
+            plotOptions: {
+                series: {
+                    dataLabels: {
+                        enabled: false,
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'gray'
+                    }
+                }
+            },
+            series: [
                 {
                     name: 'Diebetes_rate',
                     data: constantData4.Diebetes_rate
@@ -96,8 +153,14 @@ class Preview_2 extends Component {
         return (
                 <div className="graphs_3">
                     <div style={{margin:"0 auto"}}>
-                        <div className="graph_name">疾病</div>
+                        <div className="graph_name">心血管疾病</div>
                         <HighchartsReact highcharts = {Highstock} constructorType = {'stockChart'} options = {configs_1} />
+                        <hr/>
+                    </div>
+
+                    <div style={{margin:"0 auto"}}>
+                        <div className="graph_name">糖尿病</div>
+                        <HighchartsReact highcharts = {Highstock} constructorType = {'stockChart'} options = {configs_2} />
                     </div>
                 </div>
                 

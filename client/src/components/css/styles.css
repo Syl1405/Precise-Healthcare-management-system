@@ -632,7 +632,7 @@ div{
 .mainPanel .graphs_3{
     margin-left:25vw;
     margin-top:-48vw;
-    height:40vw;
+    height:80vw;
     width:58vw;
     display: grid;
     grid-gap: 3vw 1vw;
@@ -644,7 +644,7 @@ div{
 .mainPanel .graphs_4{
     margin-left:25vw;
     margin-top:-48vw;
-    height:80vw;
+    height:37vw;
     width:58vw;
     text-align:center;
     background-color: #FFFF;

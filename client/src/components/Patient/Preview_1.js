@@ -47,6 +47,10 @@ class Preview_1 extends Component {
                 StagesLight: res[2] != undefined ? res[2].StagesLight : 0,
                 StagesRem:  res[2] != undefined ? res[2].StagesRem : 0,
                 StagesWake: res[2] != undefined ? res[2].StagesWake : 0,
+                blood_pressure:  res[3] != undefined ? res[3].blood_pressure : 0,
+                blood_suger: res[3] != undefined ? res[3].blood_suger : 0,
+                temperature:  res[3] != undefined ? res[3].temperature : 0,
+                weight: res[3] != undefined ? res[3].weight : 0,
                 width: Number(document.body.clientWidth*0.5),
                 height: Number(document.body.clientWidth*0.2)
             })
@@ -97,7 +101,8 @@ class Preview_1 extends Component {
                     dataLabels: {
                         enabled: true,
                         color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
-                    }
+                    },
+                    pointWidth: 40
                 }
             },
 
@@ -505,6 +510,7 @@ class Preview_1 extends Component {
         }
         return (
                 <div className="graphs_1">
+                        
                         <div>
                             <div className="graph_name">昨日睡眠</div>
                             <HighchartsReact highcharts = {Highcharts} options={configs}/>
@@ -527,3 +533,13 @@ class Preview_1 extends Component {
 }
 
 export default Preview_1
+/*<div style={{margin:"0 auto"}}>
+                            <div className="graph_name">
+                                <a>心率 : 68 bpm </a>
+                                <a style={{marginLeft: '6vw'}}>血壓 : {this.state.blood_pressure} mmHg</a>
+                                <a style={{marginLeft: '6vw'}}>血糖 : {this.state.blood_suger} mg/dl</a>
+                                <br/><br/><br/>
+                                <a>體重 : {this.state.weight} kg</a>
+                                <a style={{marginLeft: '8vw'}}>體溫 : {this.state.temperature} 度</a>
+                            </div>
+                        </div>*/
