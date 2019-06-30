@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "./",
   "dependencies": {
+    "@material-ui/core": "^4.1.2",
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
     "d3": "^3.5.17",
@@ -29,6 +30,7 @@
     "react-router-dom": "^4.3.1",
     "react-router-redux": "^4.0.8",
     "react-scripts": "1.1.5",
+    "react-window": "^1.8.3",
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6"

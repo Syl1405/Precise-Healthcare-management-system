@@ -348,6 +348,13 @@ div{
 }
 .zebra{
   text-align: left;
+  width:48vw;
+  margin-left: 10vw;
+
+}
+#zebracon{
+  position: absolute;
+  top:15vh;
 }
 .zebra:nth-child(odd){
 	background-color: #DDDDDD;
@@ -972,4 +979,27 @@ border:1px solid;
     background-color: #FFFFFF;
     border-radius: 1.5vw;
 
+}
+#root {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.List {
+  border: 1px solid #f8f8f0;
+  margin-top: -10vh;
+  margin-left: 1vw;
+}
+
+.ListItemEven,
+.ListItemOdd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none 0;
+  font-size:0.5em;
+}
+
+.ListItemEven {
+  background-color: #FFFFFF;
 }
