@@ -1,0 +1,758 @@
+{
+    "一下子": {
+        "draw": false,
+        "times": 1
+    },
+    "一些": {
+        "draw": false,
+        "times": 4
+    },
+    "一個": {
+        "draw": false,
+        "times": 16
+    },
+    "一定": {
+        "draw": false,
+        "times": 5
+    },
+    "一年": {
+        "draw": false,
+        "times": 1
+    },
+    "一種": {
+        "draw": false,
+        "times": 2
+    },
+    "一行": {
+        "draw": false,
+        "times": 1
+    },
+    "下載": {
+        "draw": false,
+        "times": 1
+    },
+    "下降": {
+        "draw": false,
+        "times": 1
+    },
+    "中年": {
+        "draw": false,
+        "times": 1
+    },
+    "中年人": {
+        "draw": false,
+        "times": 3
+    },
+    "之前": {
+        "draw": false,
+        "times": 10
+    },
+    "事": {
+        "draw": false,
+        "times": 1
+    },
+    "五角": {
+        "draw": false,
+        "times": 1
+    },
+    "人": {
+        "draw": false,
+        "times": 3
+    },
+    "人工": {
+        "draw": false,
+        "times": 3
+    },
+    "他同": {
+        "draw": false,
+        "times": 2
+    },
+    "他施": {
+        "draw": false,
+        "times": 1
+    },
+    "他發": {
+        "draw": false,
+        "times": 1
+    },
+    "以上": {
+        "draw": false,
+        "times": 1
+    },
+    "作息": {
+        "draw": false,
+        "times": 3
+    },
+    "你好": {
+        "draw": false,
+        "times": 4
+    },
+    "你將": {
+        "draw": false,
+        "times": 1
+    },
+    "你還": {
+        "draw": false,
+        "times": 1
+    },
+    "做": {
+        "draw": false,
+        "times": 4
+    },
+    "傷勢": {
+        "draw": false,
+        "times": 2
+    },
+    "先": {
+        "draw": false,
+        "times": 6
+    },
+    "兔": {
+        "draw": false,
+        "times": 1
+    },
+    "再": {
+        "draw": false,
+        "times": 11
+    },
+    "再來": {
+        "draw": false,
+        "times": 4
+    },
+    "再寄": {
+        "draw": false,
+        "times": 2
+    },
+    "再給": {
+        "draw": false,
+        "times": 1
+    },
+    "出售": {
+        "draw": false,
+        "times": 1
+    },
+    "分": {
+        "draw": false,
+        "times": 5
+    },
+    "動": {
+        "draw": false,
+        "times": 1
+    },
+    "動作": {
+        "draw": false,
+        "times": 5
+    },
+    "化性": {
+        "draw": false,
+        "times": 1
+    },
+    "匯": {
+        "draw": false,
+        "times": 1
+    },
+    "南投": {
+        "draw": false,
+        "times": 1
+    },
+    "受": {
+        "draw": false,
+        "times": 2
+    },
+    "受傷": {
+        "draw": false,
+        "times": 2
+    },
+    "受損": {
+        "draw": false,
+        "times": 2
+    },
+    "受過傷": {
+        "draw": false,
+        "times": 5
+    },
+    "只會": {
+        "draw": false,
+        "times": 2
+    },
+    "台中市": {
+        "draw": false,
+        "times": 1
+    },
+    "吃": {
+        "draw": false,
+        "times": 3
+    },
+    "同期": {
+        "draw": false,
+        "times": 1
+    },
+    "同樂": {
+        "draw": false,
+        "times": 1
+    },
+    "喔": {
+        "draw": false,
+        "times": 2
+    },
+    "嘗試": {
+        "draw": false,
+        "times": 4
+    },
+    "嚴重": {
+        "draw": false,
+        "times": 5
+    },
+    "地形": {
+        "draw": false,
+        "times": 2
+    },
+    "坐騎": {
+        "draw": false,
+        "times": 1
+    },
+    "多久": {
+        "draw": false,
+        "times": 4
+    },
+    "好": {
+        "draw": false,
+        "times": 4
+    },
+    "姐姐": {
+        "draw": false,
+        "times": 1
+    },
+    "子瑜": {
+        "draw": false,
+        "times": 1
+    },
+    "字": {
+        "draw": false,
+        "times": 1
+    },
+    "客人": {
+        "draw": false,
+        "times": 1
+    },
+    "客服": {
+        "draw": false,
+        "times": 1
+    },
+    "小": {
+        "draw": false,
+        "times": 1
+    },
+    "就醫": {
+        "draw": false,
+        "times": 3
+    },
+    "尿酸": {
+        "draw": true,
+        "times": 4
+    },
+    "工": {
+        "draw": false,
+        "times": 1
+    },
+    "已經": {
+        "draw": false,
+        "times": 1
+    },
+    "已讀": {
+        "draw": false,
+        "times": 1
+    },
+    "年紀": {
+        "draw": false,
+        "times": 4
+    },
+    "幾歲": {
+        "draw": false,
+        "times": 8
+    },
+    "延壽": {
+        "draw": false,
+        "times": 2
+    },
+    "建議": {
+        "draw": false,
+        "times": 1
+    },
+    "強度": {
+        "draw": false,
+        "times": 1
+    },
+    "影響": {
+        "draw": false,
+        "times": 4
+    },
+    "很不舒": {
+        "draw": false,
+        "times": 1
+    },
+    "很重": {
+        "draw": false,
+        "times": 3
+    },
+    "從量稅": {
+        "draw": false,
+        "times": 1
+    },
+    "急": {
+        "draw": false,
+        "times": 1
+    },
+    "急性": {
+        "draw": false,
+        "times": 1
+    },
+    "性": {
+        "draw": false,
+        "times": 4
+    },
+    "悠遊": {
+        "draw": false,
+        "times": 2
+    },
+    "情形": {
+        "draw": false,
+        "times": 2
+    },
+    "愛吧": {
+        "draw": false,
+        "times": 1
+    },
+    "成": {
+        "draw": false,
+        "times": 1
+    },
+    "我剛": {
+        "draw": false,
+        "times": 4
+    },
+    "我會": {
+        "draw": false,
+        "times": 1
+    },
+    "承受": {
+        "draw": false,
+        "times": 2
+    },
+    "挺": {
+        "draw": false,
+        "times": 2
+    },
+    "掃地": {
+        "draw": false,
+        "times": 1
+    },
+    "推薦": {
+        "draw": false,
+        "times": 2
+    },
+    "換人": {
+        "draw": false,
+        "times": 1
+    },
+    "撞": {
+        "draw": false,
+        "times": 3
+    },
+    "操作": {
+        "draw": false,
+        "times": 1
+    },
+    "改": {
+        "draw": false,
+        "times": 1
+    },
+    "改變": {
+        "draw": false,
+        "times": 7
+    },
+    "數學": {
+        "draw": false,
+        "times": 1
+    },
+    "是不是": {
+        "draw": false,
+        "times": 1
+    },
+    "是否": {
+        "draw": false,
+        "times": 7
+    },
+    "智慧": {
+        "draw": false,
+        "times": 2
+    },
+    "曉得": {
+        "draw": false,
+        "times": 4
+    },
+    "更換": {
+        "draw": false,
+        "times": 4
+    },
+    "書法": {
+        "draw": false,
+        "times": 1
+    },
+    "曹操": {
+        "draw": false,
+        "times": 1
+    },
+    "最好": {
+        "draw": false,
+        "times": 1
+    },
+    "最後": {
+        "draw": false,
+        "times": 1
+    },
+    "會怕": {
+        "draw": false,
+        "times": 1
+    },
+    "有個": {
+        "draw": false,
+        "times": 1
+    },
+    "期": {
+        "draw": false,
+        "times": 1
+    },
+    "查": {
+        "draw": false,
+        "times": 1
+    },
+    "樣子": {
+        "draw": false,
+        "times": 1
+    },
+    "止痛": {
+        "draw": true,
+        "times": 1
+    },
+    "止痛藥": {
+        "draw": false,
+        "times": 1
+    },
+    "歲": {
+        "draw": false,
+        "times": 1
+    },
+    "求有": {
+        "draw": false,
+        "times": 2
+    },
+    "治療": {
+        "draw": true,
+        "times": 2
+    },
+    "減少": {
+        "draw": false,
+        "times": 2
+    },
+    "減重": {
+        "draw": false,
+        "times": 1
+    },
+    "測速": {
+        "draw": false,
+        "times": 1
+    },
+    "炎": {
+        "draw": true,
+        "times": 1
+    },
+    "照相": {
+        "draw": false,
+        "times": 3
+    },
+    "玻": {
+        "draw": false,
+        "times": 3
+    },
+    "玻尿": {
+        "draw": false,
+        "times": 1
+    },
+    "現在": {
+        "draw": false,
+        "times": 5
+    },
+    "生活": {
+        "draw": false,
+        "times": 4
+    },
+    "用車": {
+        "draw": false,
+        "times": 1
+    },
+    "畫室": {
+        "draw": false,
+        "times": 1
+    },
+    "疼痛": {
+        "draw": true,
+        "times": 4
+    },
+    "瘦": {
+        "draw": false,
+        "times": 1
+    },
+    "發作": {
+        "draw": false,
+        "times": 3
+    },
+    "的戲": {
+        "draw": false,
+        "times": 1
+    },
+    "監所": {
+        "draw": false,
+        "times": 1
+    },
+    "相": {
+        "draw": false,
+        "times": 1
+    },
+    "看裡面": {
+        "draw": false,
+        "times": 1
+    },
+    "碼": {
+        "draw": false,
+        "times": 2
+    },
+    "秒": {
+        "draw": false,
+        "times": 1
+    },
+    "秒數": {
+        "draw": false,
+        "times": 1
+    },
+    "程度": {
+        "draw": false,
+        "times": 3
+    },
+    "種子": {
+        "draw": false,
+        "times": 2
+    },
+    "結構": {
+        "draw": false,
+        "times": 3
+    },
+    "聽": {
+        "draw": false,
+        "times": 3
+    },
+    "聽說": {
+        "draw": false,
+        "times": 2
+    },
+    "膝": {
+        "draw": true,
+        "times": 1
+    },
+    "膝蓋": {
+        "draw": true,
+        "times": 4
+    },
+    "膝關節": {
+        "draw": true,
+        "times": 3
+    },
+    "自由": {
+        "draw": false,
+        "times": 1
+    },
+    "舊衣": {
+        "draw": false,
+        "times": 1
+    },
+    "舒服": {
+        "draw": false,
+        "times": 4
+    },
+    "舒緩": {
+        "draw": false,
+        "times": 1
+    },
+    "茶": {
+        "draw": false,
+        "times": 1
+    },
+    "藝術": {
+        "draw": false,
+        "times": 1
+    },
+    "行蹤": {
+        "draw": false,
+        "times": 1
+    },
+    "衣": {
+        "draw": false,
+        "times": 1
+    },
+    "裡面": {
+        "draw": false,
+        "times": 2
+    },
+    "複雜": {
+        "draw": false,
+        "times": 1
+    },
+    "詢問": {
+        "draw": false,
+        "times": 2
+    },
+    "話": {
+        "draw": false,
+        "times": 1
+    },
+    "說": {
+        "draw": false,
+        "times": 30
+    },
+    "調": {
+        "draw": false,
+        "times": 1
+    },
+    "變成": {
+        "draw": false,
+        "times": 4
+    },
+    "負擔": {
+        "draw": false,
+        "times": 2
+    },
+    "負荷": {
+        "draw": true,
+        "times": 2
+    },
+    "身體": {
+        "draw": true,
+        "times": 2
+    },
+    "退化": {
+        "draw": false,
+        "times": 4
+    },
+    "這是": {
+        "draw": false,
+        "times": 5
+    },
+    "這條": {
+        "draw": false,
+        "times": 1
+    },
+    "造句": {
+        "draw": false,
+        "times": 1
+    },
+    "進步": {
+        "draw": false,
+        "times": 2
+    },
+    "道奇": {
+        "draw": false,
+        "times": 1
+    },
+    "重因": {
+        "draw": false,
+        "times": 1
+    },
+    "重量": {
+        "draw": false,
+        "times": 3
+    },
+    "銀座": {
+        "draw": false,
+        "times": 1
+    },
+    "銀行": {
+        "draw": false,
+        "times": 1
+    },
+    "鋼琴": {
+        "draw": false,
+        "times": 1
+    },
+    "長": {
+        "draw": false,
+        "times": 1
+    },
+    "長度": {
+        "draw": false,
+        "times": 1
+    },
+    "長輩": {
+        "draw": false,
+        "times": 3
+    },
+    "關節": {
+        "draw": true,
+        "times": 1
+    },
+    "關節炎": {
+        "draw": true,
+        "times": 8
+    },
+    "闡述": {
+        "draw": false,
+        "times": 3
+    },
+    "阿喝": {
+        "draw": false,
+        "times": 1
+    },
+    "阿婆": {
+        "draw": false,
+        "times": 1
+    },
+    "雞雞": {
+        "draw": false,
+        "times": 1
+    },
+    "雲朵": {
+        "draw": false,
+        "times": 1
+    },
+    "需要": {
+        "draw": false,
+        "times": 9
+    },
+    "飛梭": {
+        "draw": false,
+        "times": 2
+    },
+    "飲茶": {
+        "draw": false,
+        "times": 1
+    },
+    "餵": {
+        "draw": false,
+        "times": 4
+    },
+    "香": {
+        "draw": false,
+        "times": 1
+    },
+    "骨科": {
+        "draw": false,
+        "times": 7
+    },
+    "體重": {
+        "draw": false,
+        "times": 6
+    },
+    "黑": {
+        "draw": false,
+        "times": 1
+    }
+}

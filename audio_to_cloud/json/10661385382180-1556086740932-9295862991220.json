@@ -1,0 +1,698 @@
+{
+    "一個": {
+        "draw": false,
+        "times": 2
+    },
+    "一定": {
+        "draw": false,
+        "times": 1
+    },
+    "一張": {
+        "draw": false,
+        "times": 1
+    },
+    "一芳": {
+        "draw": false,
+        "times": 1
+    },
+    "三江": {
+        "draw": false,
+        "times": 1
+    },
+    "三軍": {
+        "draw": false,
+        "times": 1
+    },
+    "上課": {
+        "draw": false,
+        "times": 1
+    },
+    "不好": {
+        "draw": false,
+        "times": 3
+    },
+    "中醫師": {
+        "draw": false,
+        "times": 1
+    },
+    "中間": {
+        "draw": false,
+        "times": 2
+    },
+    "京都": {
+        "draw": false,
+        "times": 1
+    },
+    "人": {
+        "draw": false,
+        "times": 1
+    },
+    "人員": {
+        "draw": false,
+        "times": 3
+    },
+    "今天": {
+        "draw": false,
+        "times": 2
+    },
+    "以來": {
+        "draw": false,
+        "times": 3
+    },
+    "件": {
+        "draw": false,
+        "times": 1
+    },
+    "像是": {
+        "draw": false,
+        "times": 1
+    },
+    "先到": {
+        "draw": false,
+        "times": 1
+    },
+    "內心": {
+        "draw": false,
+        "times": 1
+    },
+    "分": {
+        "draw": false,
+        "times": 1
+    },
+    "分鐘": {
+        "draw": false,
+        "times": 4
+    },
+    "前到": {
+        "draw": false,
+        "times": 2
+    },
+    "加油": {
+        "draw": false,
+        "times": 3
+    },
+    "動物": {
+        "draw": false,
+        "times": 1
+    },
+    "協調": {
+        "draw": false,
+        "times": 1
+    },
+    "南": {
+        "draw": false,
+        "times": 1
+    },
+    "南投": {
+        "draw": false,
+        "times": 1
+    },
+    "南美洲": {
+        "draw": false,
+        "times": 1
+    },
+    "友愛": {
+        "draw": false,
+        "times": 1
+    },
+    "反正": {
+        "draw": false,
+        "times": 2
+    },
+    "叮到": {
+        "draw": false,
+        "times": 1
+    },
+    "合約": {
+        "draw": false,
+        "times": 2
+    },
+    "吉": {
+        "draw": false,
+        "times": 2
+    },
+    "吳世勳": {
+        "draw": false,
+        "times": 1
+    },
+    "哈囉": {
+        "draw": false,
+        "times": 5
+    },
+    "問說": {
+        "draw": false,
+        "times": 1
+    },
+    "回來": {
+        "draw": false,
+        "times": 1
+    },
+    "回答": {
+        "draw": false,
+        "times": 8
+    },
+    "圖片": {
+        "draw": false,
+        "times": 1
+    },
+    "在線": {
+        "draw": false,
+        "times": 2
+    },
+    "外面": {
+        "draw": false,
+        "times": 2
+    },
+    "多一些": {
+        "draw": false,
+        "times": 1
+    },
+    "好": {
+        "draw": false,
+        "times": 1
+    },
+    "媽媽": {
+        "draw": false,
+        "times": 1
+    },
+    "安樂": {
+        "draw": false,
+        "times": 1
+    },
+    "家": {
+        "draw": false,
+        "times": 3
+    },
+    "家常事": {
+        "draw": false,
+        "times": 1
+    },
+    "家長": {
+        "draw": false,
+        "times": 1
+    },
+    "寵物": {
+        "draw": false,
+        "times": 1
+    },
+    "將夜": {
+        "draw": false,
+        "times": 1
+    },
+    "專家": {
+        "draw": false,
+        "times": 3
+    },
+    "專業": {
+        "draw": false,
+        "times": 4
+    },
+    "專頁": {
+        "draw": false,
+        "times": 2
+    },
+    "小豬": {
+        "draw": false,
+        "times": 2
+    },
+    "尷尬": {
+        "draw": false,
+        "times": 3
+    },
+    "屋": {
+        "draw": false,
+        "times": 2
+    },
+    "希望": {
+        "draw": false,
+        "times": 5
+    },
+    "希臘": {
+        "draw": false,
+        "times": 1
+    },
+    "幫": {
+        "draw": false,
+        "times": 1
+    },
+    "幾家": {
+        "draw": false,
+        "times": 1
+    },
+    "廁所": {
+        "draw": false,
+        "times": 2
+    },
+    "建議": {
+        "draw": false,
+        "times": 1
+    },
+    "很怪": {
+        "draw": false,
+        "times": 3
+    },
+    "念": {
+        "draw": false,
+        "times": 1
+    },
+    "怪獸": {
+        "draw": false,
+        "times": 1
+    },
+    "想": {
+        "draw": false,
+        "times": 1
+    },
+    "想來": {
+        "draw": false,
+        "times": 4
+    },
+    "愛人": {
+        "draw": false,
+        "times": 1
+    },
+    "愛心": {
+        "draw": false,
+        "times": 1
+    },
+    "應大": {
+        "draw": false,
+        "times": 1
+    },
+    "我會": {
+        "draw": false,
+        "times": 1
+    },
+    "我查": {
+        "draw": false,
+        "times": 1
+    },
+    "戰士": {
+        "draw": false,
+        "times": 1
+    },
+    "手推車": {
+        "draw": false,
+        "times": 1
+    },
+    "打給": {
+        "draw": false,
+        "times": 5
+    },
+    "打電話": {
+        "draw": false,
+        "times": 4
+    },
+    "掃射": {
+        "draw": false,
+        "times": 1
+    },
+    "掛號": {
+        "draw": false,
+        "times": 2
+    },
+    "擔心": {
+        "draw": false,
+        "times": 3
+    },
+    "收費": {
+        "draw": false,
+        "times": 4
+    },
+    "收費員": {
+        "draw": false,
+        "times": 1
+    },
+    "新竹": {
+        "draw": false,
+        "times": 1
+    },
+    "方式": {
+        "draw": false,
+        "times": 1
+    },
+    "是否": {
+        "draw": false,
+        "times": 1
+    },
+    "最好": {
+        "draw": false,
+        "times": 1
+    },
+    "最快": {
+        "draw": false,
+        "times": 1
+    },
+    "會會給": {
+        "draw": false,
+        "times": 1
+    },
+    "會長": {
+        "draw": false,
+        "times": 2
+    },
+    "月": {
+        "draw": false,
+        "times": 1
+    },
+    "月姐": {
+        "draw": false,
+        "times": 3
+    },
+    "有沒有": {
+        "draw": false,
+        "times": 1
+    },
+    "李知勳": {
+        "draw": false,
+        "times": 1
+    },
+    "東西": {
+        "draw": false,
+        "times": 2
+    },
+    "架": {
+        "draw": false,
+        "times": 1
+    },
+    "梅州": {
+        "draw": false,
+        "times": 1
+    },
+    "業": {
+        "draw": false,
+        "times": 1
+    },
+    "業績": {
+        "draw": false,
+        "times": 1
+    },
+    "樂來樂": {
+        "draw": false,
+        "times": 1
+    },
+    "模糊": {
+        "draw": false,
+        "times": 3
+    },
+    "每個": {
+        "draw": false,
+        "times": 4
+    },
+    "法律": {
+        "draw": false,
+        "times": 3
+    },
+    "泰碳": {
+        "draw": false,
+        "times": 2
+    },
+    "消耗": {
+        "draw": false,
+        "times": 1
+    },
+    "漁會": {
+        "draw": false,
+        "times": 1
+    },
+    "無腦": {
+        "draw": true,
+        "times": 1
+    },
+    "無關": {
+        "draw": true,
+        "times": 1
+    },
+    "煎": {
+        "draw": false,
+        "times": 1
+    },
+    "營業人員": {
+        "draw": false,
+        "times": 1
+    },
+    "狀態": {
+        "draw": false,
+        "times": 4
+    },
+    "王傑": {
+        "draw": false,
+        "times": 1
+    },
+    "生根": {
+        "draw": false,
+        "times": 1
+    },
+    "男": {
+        "draw": false,
+        "times": 1
+    },
+    "疑問": {
+        "draw": false,
+        "times": 1
+    },
+    "病": {
+        "draw": true,
+        "times": 1
+    },
+    "發票": {
+        "draw": false,
+        "times": 5
+    },
+    "皮膚": {
+        "draw": true,
+        "times": 1
+    },
+    "監視器": {
+        "draw": false,
+        "times": 3
+    },
+    "相加": {
+        "draw": false,
+        "times": 1
+    },
+    "相思": {
+        "draw": false,
+        "times": 1
+    },
+    "睡": {
+        "draw": false,
+        "times": 1
+    },
+    "箱": {
+        "draw": false,
+        "times": 1
+    },
+    "粉絲": {
+        "draw": false,
+        "times": 3
+    },
+    "約會": {
+        "draw": false,
+        "times": 1
+    },
+    "紅衣": {
+        "draw": false,
+        "times": 1
+    },
+    "給你": {
+        "draw": false,
+        "times": 6
+    },
+    "給民眾": {
+        "draw": false,
+        "times": 2
+    },
+    "網美": {
+        "draw": false,
+        "times": 1
+    },
+    "線上": {
+        "draw": false,
+        "times": 4
+    },
+    "股票": {
+        "draw": false,
+        "times": 2
+    },
+    "腦": {
+        "draw": true,
+        "times": 1
+    },
+    "英文": {
+        "draw": false,
+        "times": 2
+    },
+    "菜豚": {
+        "draw": false,
+        "times": 2
+    },
+    "菜頭": {
+        "draw": false,
+        "times": 2
+    },
+    "蔡": {
+        "draw": false,
+        "times": 1
+    },
+    "蔡琴": {
+        "draw": false,
+        "times": 1
+    },
+    "蝦場": {
+        "draw": false,
+        "times": 2
+    },
+    "行李箱": {
+        "draw": false,
+        "times": 1
+    },
+    "視訊": {
+        "draw": false,
+        "times": 3
+    },
+    "角度": {
+        "draw": false,
+        "times": 2
+    },
+    "解讀": {
+        "draw": false,
+        "times": 4
+    },
+    "訊": {
+        "draw": false,
+        "times": 1
+    },
+    "記": {
+        "draw": false,
+        "times": 1
+    },
+    "詳細": {
+        "draw": false,
+        "times": 4
+    },
+    "說": {
+        "draw": false,
+        "times": 8
+    },
+    "請": {
+        "draw": false,
+        "times": 1
+    },
+    "諮詢": {
+        "draw": false,
+        "times": 1
+    },
+    "資訊": {
+        "draw": false,
+        "times": 1
+    },
+    "跳": {
+        "draw": false,
+        "times": 3
+    },
+    "這一": {
+        "draw": false,
+        "times": 1
+    },
+    "運動": {
+        "draw": false,
+        "times": 1
+    },
+    "運輸": {
+        "draw": false,
+        "times": 1
+    },
+    "過來": {
+        "draw": false,
+        "times": 1
+    },
+    "還說": {
+        "draw": false,
+        "times": 1
+    },
+    "醫生": {
+        "draw": false,
+        "times": 5
+    },
+    "醫院": {
+        "draw": true,
+        "times": 5
+    },
+    "金": {
+        "draw": false,
+        "times": 1
+    },
+    "銀行": {
+        "draw": false,
+        "times": 1
+    },
+    "開": {
+        "draw": false,
+        "times": 1
+    },
+    "關掉": {
+        "draw": false,
+        "times": 4
+    },
+    "阿妹": {
+        "draw": false,
+        "times": 1
+    },
+    "附近": {
+        "draw": false,
+        "times": 1
+    },
+    "電力": {
+        "draw": false,
+        "times": 1
+    },
+    "電影": {
+        "draw": false,
+        "times": 1
+    },
+    "電音": {
+        "draw": false,
+        "times": 1
+    },
+    "音箱": {
+        "draw": false,
+        "times": 1
+    },
+    "項鍊": {
+        "draw": false,
+        "times": 1
+    },
+    "類似": {
+        "draw": false,
+        "times": 1
+    },
+    "飛以": {
+        "draw": false,
+        "times": 1
+    },
+    "飛語": {
+        "draw": false,
+        "times": 1
+    },
+    "飛魚": {
+        "draw": false,
+        "times": 1
+    },
+    "鯨魚": {
+        "draw": false,
+        "times": 1
+    },
+    "鴨肉": {
+        "draw": false,
+        "times": 1
+    },
+    "麗": {
+        "draw": false,
+        "times": 1
+    },
+    "黑掉": {
+        "draw": false,
+        "times": 2
+    }
+}

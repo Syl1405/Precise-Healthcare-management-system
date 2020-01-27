@@ -1,0 +1,54 @@
+{
+    "你好": {
+        "draw": false,
+        "times": 2
+    },
+    "做": {
+        "draw": false,
+        "times": 3
+    },
+    "回答": {
+        "draw": false,
+        "times": 1
+    },
+    "好": {
+        "draw": false,
+        "times": 1
+    },
+    "座車": {
+        "draw": false,
+        "times": 1
+    },
+    "拜拜": {
+        "draw": false,
+        "times": 1
+    },
+    "會場": {
+        "draw": false,
+        "times": 1
+    },
+    "會長": {
+        "draw": false,
+        "times": 1
+    },
+    "正在": {
+        "draw": false,
+        "times": 5
+    },
+    "清楚": {
+        "draw": false,
+        "times": 1
+    },
+    "測試": {
+        "draw": false,
+        "times": 3
+    },
+    "現在": {
+        "draw": false,
+        "times": 8
+    },
+    "聲音": {
+        "draw": false,
+        "times": 1
+    }
+}

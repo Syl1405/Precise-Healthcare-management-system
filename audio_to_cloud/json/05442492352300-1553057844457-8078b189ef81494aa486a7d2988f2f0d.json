@@ -1,0 +1,34 @@
+{
+    "內湖": {
+        "draw": false,
+        "times": 1
+    },
+    "女朋友": {
+        "draw": false,
+        "times": 2
+    },
+    "木瓜": {
+        "draw": false,
+        "times": 2
+    },
+    "灣人": {
+        "draw": false,
+        "times": 1
+    },
+    "盆栽": {
+        "draw": false,
+        "times": 1
+    },
+    "看台": {
+        "draw": false,
+        "times": 1
+    },
+    "米粉": {
+        "draw": false,
+        "times": 1
+    },
+    "高中": {
+        "draw": false,
+        "times": 1
+    }
+}

@@ -1,0 +1,966 @@
+{
+    "一些": {
+        "draw": false,
+        "times": 3
+    },
+    "一個": {
+        "draw": false,
+        "times": 5
+    },
+    "一包": {
+        "draw": false,
+        "times": 1
+    },
+    "一天": {
+        "draw": false,
+        "times": 3
+    },
+    "一定": {
+        "draw": false,
+        "times": 7
+    },
+    "一起": {
+        "draw": false,
+        "times": 1
+    },
+    "一隻": {
+        "draw": false,
+        "times": 1
+    },
+    "上問": {
+        "draw": false,
+        "times": 1
+    },
+    "上戶": {
+        "draw": false,
+        "times": 1
+    },
+    "上班": {
+        "draw": false,
+        "times": 3
+    },
+    "上班族": {
+        "draw": false,
+        "times": 4
+    },
+    "上門": {
+        "draw": false,
+        "times": 1
+    },
+    "下午": {
+        "draw": false,
+        "times": 2
+    },
+    "不合": {
+        "draw": false,
+        "times": 1
+    },
+    "不太": {
+        "draw": false,
+        "times": 3
+    },
+    "不太舒": {
+        "draw": false,
+        "times": 1
+    },
+    "不好": {
+        "draw": false,
+        "times": 4
+    },
+    "不笨": {
+        "draw": false,
+        "times": 2
+    },
+    "之後": {
+        "draw": false,
+        "times": 1
+    },
+    "事": {
+        "draw": false,
+        "times": 1
+    },
+    "人": {
+        "draw": false,
+        "times": 5
+    },
+    "今天": {
+        "draw": false,
+        "times": 1
+    },
+    "代謝": {
+        "draw": true,
+        "times": 1
+    },
+    "作品": {
+        "draw": false,
+        "times": 2
+    },
+    "你好": {
+        "draw": false,
+        "times": 2
+    },
+    "使用": {
+        "draw": false,
+        "times": 5
+    },
+    "保持": {
+        "draw": false,
+        "times": 2
+    },
+    "保濕": {
+        "draw": false,
+        "times": 3
+    },
+    "保護膜": {
+        "draw": false,
+        "times": 1
+    },
+    "保養": {
+        "draw": false,
+        "times": 5
+    },
+    "保養品": {
+        "draw": false,
+        "times": 1
+    },
+    "假日": {
+        "draw": false,
+        "times": 1
+    },
+    "做": {
+        "draw": false,
+        "times": 10
+    },
+    "做好": {
+        "draw": false,
+        "times": 2
+    },
+    "做得好": {
+        "draw": false,
+        "times": 3
+    },
+    "像是": {
+        "draw": false,
+        "times": 1
+    },
+    "兆": {
+        "draw": false,
+        "times": 1
+    },
+    "兩個": {
+        "draw": false,
+        "times": 4
+    },
+    "公視": {
+        "draw": false,
+        "times": 1
+    },
+    "再": {
+        "draw": false,
+        "times": 1
+    },
+    "再查": {
+        "draw": false,
+        "times": 2
+    },
+    "再次": {
+        "draw": false,
+        "times": 1
+    },
+    "再現": {
+        "draw": true,
+        "times": 1
+    },
+    "出去玩": {
+        "draw": false,
+        "times": 1
+    },
+    "分": {
+        "draw": false,
+        "times": 3
+    },
+    "分割": {
+        "draw": false,
+        "times": 1
+    },
+    "分泌": {
+        "draw": false,
+        "times": 4
+    },
+    "刺激": {
+        "draw": false,
+        "times": 1
+    },
+    "勁": {
+        "draw": false,
+        "times": 1
+    },
+    "動作": {
+        "draw": false,
+        "times": 3
+    },
+    "化工廠": {
+        "draw": false,
+        "times": 1
+    },
+    "卸妝": {
+        "draw": false,
+        "times": 1
+    },
+    "口罩": {
+        "draw": false,
+        "times": 8
+    },
+    "吃": {
+        "draw": false,
+        "times": 1
+    },
+    "吳寶春": {
+        "draw": false,
+        "times": 1
+    },
+    "哈囉": {
+        "draw": false,
+        "times": 1
+    },
+    "問": {
+        "draw": false,
+        "times": 3
+    },
+    "問說": {
+        "draw": false,
+        "times": 1
+    },
+    "喔": {
+        "draw": false,
+        "times": 6
+    },
+    "因素": {
+        "draw": false,
+        "times": 4
+    },
+    "圖": {
+        "draw": false,
+        "times": 1
+    },
+    "在家": {
+        "draw": false,
+        "times": 2
+    },
+    "地化": {
+        "draw": false,
+        "times": 1
+    },
+    "均衡": {
+        "draw": true,
+        "times": 2
+    },
+    "坐": {
+        "draw": false,
+        "times": 2
+    },
+    "坐在": {
+        "draw": false,
+        "times": 1
+    },
+    "坐骨": {
+        "draw": true,
+        "times": 1
+    },
+    "基礎": {
+        "draw": false,
+        "times": 5
+    },
+    "塗": {
+        "draw": false,
+        "times": 1
+    },
+    "塞劑": {
+        "draw": false,
+        "times": 2
+    },
+    "外線": {
+        "draw": false,
+        "times": 3
+    },
+    "外面": {
+        "draw": false,
+        "times": 4
+    },
+    "多一層": {
+        "draw": false,
+        "times": 2
+    },
+    "多久": {
+        "draw": false,
+        "times": 7
+    },
+    "多益": {
+        "draw": false,
+        "times": 1
+    },
+    "大部分": {
+        "draw": false,
+        "times": 2
+    },
+    "大陸": {
+        "draw": false,
+        "times": 1
+    },
+    "太久": {
+        "draw": false,
+        "times": 4
+    },
+    "太子": {
+        "draw": false,
+        "times": 1
+    },
+    "好": {
+        "draw": false,
+        "times": 11
+    },
+    "如果說": {
+        "draw": false,
+        "times": 1
+    },
+    "婚": {
+        "draw": false,
+        "times": 1
+    },
+    "子": {
+        "draw": false,
+        "times": 6
+    },
+    "室內": {
+        "draw": false,
+        "times": 3
+    },
+    "專業": {
+        "draw": false,
+        "times": 1
+    },
+    "小時": {
+        "draw": false,
+        "times": 3
+    },
+    "小說": {
+        "draw": false,
+        "times": 1
+    },
+    "少": {
+        "draw": false,
+        "times": 4
+    },
+    "就近": {
+        "draw": false,
+        "times": 1
+    },
+    "屏科": {
+        "draw": false,
+        "times": 1
+    },
+    "展": {
+        "draw": false,
+        "times": 1
+    },
+    "山": {
+        "draw": false,
+        "times": 1
+    },
+    "崑": {
+        "draw": false,
+        "times": 1
+    },
+    "工廠": {
+        "draw": false,
+        "times": 1
+    },
+    "布": {
+        "draw": false,
+        "times": 1
+    },
+    "帳戶": {
+        "draw": false,
+        "times": 1
+    },
+    "帳號": {
+        "draw": false,
+        "times": 2
+    },
+    "帽子": {
+        "draw": false,
+        "times": 6
+    },
+    "幫": {
+        "draw": false,
+        "times": 2
+    },
+    "幫助": {
+        "draw": false,
+        "times": 4
+    },
+    "建議": {
+        "draw": false,
+        "times": 2
+    },
+    "張家": {
+        "draw": false,
+        "times": 1
+    },
+    "彩上": {
+        "draw": false,
+        "times": 1
+    },
+    "影響": {
+        "draw": false,
+        "times": 3
+    },
+    "很大": {
+        "draw": false,
+        "times": 1
+    },
+    "您好": {
+        "draw": false,
+        "times": 1
+    },
+    "想": {
+        "draw": false,
+        "times": 1
+    },
+    "想像": {
+        "draw": false,
+        "times": 2
+    },
+    "想要": {
+        "draw": false,
+        "times": 3
+    },
+    "愛玩": {
+        "draw": false,
+        "times": 1
+    },
+    "我家": {
+        "draw": false,
+        "times": 1
+    },
+    "我想問": {
+        "draw": false,
+        "times": 3
+    },
+    "我會": {
+        "draw": false,
+        "times": 2
+    },
+    "戴": {
+        "draw": false,
+        "times": 4
+    },
+    "戴帽子": {
+        "draw": false,
+        "times": 1
+    },
+    "房貸": {
+        "draw": false,
+        "times": 1
+    },
+    "手機": {
+        "draw": false,
+        "times": 1
+    },
+    "找出": {
+        "draw": false,
+        "times": 1
+    },
+    "撐傘": {
+        "draw": false,
+        "times": 1
+    },
+    "擦": {
+        "draw": false,
+        "times": 3
+    },
+    "改善": {
+        "draw": false,
+        "times": 4
+    },
+    "故事": {
+        "draw": false,
+        "times": 1
+    },
+    "效果": {
+        "draw": false,
+        "times": 4
+    },
+    "新生兒": {
+        "draw": true,
+        "times": 1
+    },
+    "日期": {
+        "draw": false,
+        "times": 1
+    },
+    "日本": {
+        "draw": false,
+        "times": 1
+    },
+    "明顯": {
+        "draw": false,
+        "times": 4
+    },
+    "時間": {
+        "draw": false,
+        "times": 2
+    },
+    "最": {
+        "draw": false,
+        "times": 4
+    },
+    "最近": {
+        "draw": false,
+        "times": 4
+    },
+    "有時候": {
+        "draw": false,
+        "times": 4
+    },
+    "有給": {
+        "draw": false,
+        "times": 4
+    },
+    "有點": {
+        "draw": false,
+        "times": 2
+    },
+    "東西": {
+        "draw": false,
+        "times": 4
+    },
+    "果山": {
+        "draw": false,
+        "times": 1
+    },
+    "概要": {
+        "draw": false,
+        "times": 1
+    },
+    "概說": {
+        "draw": false,
+        "times": 1
+    },
+    "樂園": {
+        "draw": false,
+        "times": 1
+    },
+    "樂高": {
+        "draw": false,
+        "times": 4
+    },
+    "檔": {
+        "draw": false,
+        "times": 1
+    },
+    "武漢": {
+        "draw": false,
+        "times": 3
+    },
+    "每個": {
+        "draw": false,
+        "times": 5
+    },
+    "每天": {
+        "draw": false,
+        "times": 1
+    },
+    "毛孔": {
+        "draw": true,
+        "times": 3
+    },
+    "江玲": {
+        "draw": false,
+        "times": 1
+    },
+    "沒差": {
+        "draw": false,
+        "times": 2
+    },
+    "沙烏地": {
+        "draw": false,
+        "times": 1
+    },
+    "油脂": {
+        "draw": false,
+        "times": 4
+    },
+    "流汗": {
+        "draw": false,
+        "times": 1
+    },
+    "海上": {
+        "draw": false,
+        "times": 3
+    },
+    "澳洲": {
+        "draw": false,
+        "times": 1
+    },
+    "火山": {
+        "draw": false,
+        "times": 5
+    },
+    "烏龜": {
+        "draw": false,
+        "times": 1
+    },
+    "無憾": {
+        "draw": false,
+        "times": 2
+    },
+    "照鏡": {
+        "draw": false,
+        "times": 1
+    },
+    "照顧": {
+        "draw": false,
+        "times": 4
+    },
+    "特別": {
+        "draw": false,
+        "times": 3
+    },
+    "狀": {
+        "draw": false,
+        "times": 1
+    },
+    "狀態": {
+        "draw": false,
+        "times": 1
+    },
+    "現在": {
+        "draw": false,
+        "times": 1
+    },
+    "球": {
+        "draw": false,
+        "times": 2
+    },
+    "畫戴": {
+        "draw": false,
+        "times": 1
+    },
+    "痘痘": {
+        "draw": false,
+        "times": 1
+    },
+    "療程": {
+        "draw": true,
+        "times": 3
+    },
+    "癢癢": {
+        "draw": false,
+        "times": 5
+    },
+    "的問": {
+        "draw": false,
+        "times": 1
+    },
+    "皮膚": {
+        "draw": true,
+        "times": 13
+    },
+    "皮膚病": {
+        "draw": true,
+        "times": 1
+    },
+    "皮膚科": {
+        "draw": false,
+        "times": 8
+    },
+    "目前": {
+        "draw": false,
+        "times": 10
+    },
+    "直接": {
+        "draw": false,
+        "times": 3
+    },
+    "直說": {
+        "draw": false,
+        "times": 1
+    },
+    "相機": {
+        "draw": false,
+        "times": 3
+    },
+    "相關": {
+        "draw": false,
+        "times": 4
+    },
+    "知識": {
+        "draw": false,
+        "times": 2
+    },
+    "程度": {
+        "draw": false,
+        "times": 1
+    },
+    "稍微": {
+        "draw": false,
+        "times": 1
+    },
+    "穩定": {
+        "draw": false,
+        "times": 2
+    },
+    "空氣": {
+        "draw": false,
+        "times": 4
+    },
+    "窗戶": {
+        "draw": false,
+        "times": 2
+    },
+    "竹科": {
+        "draw": false,
+        "times": 1
+    },
+    "笑": {
+        "draw": false,
+        "times": 1
+    },
+    "第一天": {
+        "draw": false,
+        "times": 1
+    },
+    "第二天": {
+        "draw": false,
+        "times": 2
+    },
+    "維持": {
+        "draw": false,
+        "times": 3
+    },
+    "線上": {
+        "draw": false,
+        "times": 1
+    },
+    "肉骨": {
+        "draw": false,
+        "times": 1
+    },
+    "背帶": {
+        "draw": false,
+        "times": 1
+    },
+    "能夠": {
+        "draw": false,
+        "times": 3
+    },
+    "舒服": {
+        "draw": false,
+        "times": 3
+    },
+    "花": {
+        "draw": false,
+        "times": 1
+    },
+    "花會": {
+        "draw": false,
+        "times": 1
+    },
+    "茶": {
+        "draw": false,
+        "times": 3
+    },
+    "藍": {
+        "draw": false,
+        "times": 1
+    },
+    "藥膏": {
+        "draw": false,
+        "times": 3
+    },
+    "蚵": {
+        "draw": false,
+        "times": 1
+    },
+    "蛤蜊": {
+        "draw": false,
+        "times": 3
+    },
+    "製造": {
+        "draw": false,
+        "times": 1
+    },
+    "解說": {
+        "draw": false,
+        "times": 1
+    },
+    "解釋": {
+        "draw": false,
+        "times": 1
+    },
+    "記憶體": {
+        "draw": false,
+        "times": 1
+    },
+    "說": {
+        "draw": false,
+        "times": 4
+    },
+    "說蛤蜊": {
+        "draw": false,
+        "times": 1
+    },
+    "講義": {
+        "draw": false,
+        "times": 1
+    },
+    "豆豆": {
+        "draw": false,
+        "times": 1
+    },
+    "象棋": {
+        "draw": false,
+        "times": 1
+    },
+    "負債": {
+        "draw": false,
+        "times": 1
+    },
+    "買": {
+        "draw": false,
+        "times": 4
+    },
+    "賣": {
+        "draw": false,
+        "times": 1
+    },
+    "辦公室": {
+        "draw": false,
+        "times": 3
+    },
+    "迪士尼": {
+        "draw": false,
+        "times": 1
+    },
+    "這是": {
+        "draw": false,
+        "times": 1
+    },
+    "通常": {
+        "draw": false,
+        "times": 2
+    },
+    "遊戲": {
+        "draw": false,
+        "times": 1
+    },
+    "達爾": {
+        "draw": false,
+        "times": 1
+    },
+    "還會": {
+        "draw": false,
+        "times": 3
+    },
+    "那智": {
+        "draw": false,
+        "times": 1
+    },
+    "那次": {
+        "draw": false,
+        "times": 1
+    },
+    "部分": {
+        "draw": false,
+        "times": 12
+    },
+    "配件": {
+        "draw": false,
+        "times": 1
+    },
+    "醫師": {
+        "draw": false,
+        "times": 5
+    },
+    "重點": {
+        "draw": false,
+        "times": 4
+    },
+    "長痘痘": {
+        "draw": false,
+        "times": 2
+    },
+    "門前": {
+        "draw": false,
+        "times": 4
+    },
+    "防曬": {
+        "draw": false,
+        "times": 19
+    },
+    "阻塞": {
+        "draw": false,
+        "times": 3
+    },
+    "阿文": {
+        "draw": false,
+        "times": 1
+    },
+    "陽光": {
+        "draw": false,
+        "times": 4
+    },
+    "隔": {
+        "draw": false,
+        "times": 3
+    },
+    "隔絕": {
+        "draw": false,
+        "times": 4
+    },
+    "需要": {
+        "draw": false,
+        "times": 3
+    },
+    "預防": {
+        "draw": false,
+        "times": 1
+    },
+    "餵": {
+        "draw": false,
+        "times": 3
+    },
+    "騎車去": {
+        "draw": false,
+        "times": 1
+    },
+    "髒": {
+        "draw": false,
+        "times": 2
+    },
+    "髒污": {
+        "draw": false,
+        "times": 1
+    },
+    "鮮": {
+        "draw": false,
+        "times": 1
+    },
+    "鱉": {
+        "draw": false,
+        "times": 1
+    },
+    "黃色": {
+        "draw": false,
+        "times": 1
+    },
+    "黑": {
+        "draw": false,
+        "times": 1
+    },
+    "鼓山": {
+        "draw": false,
+        "times": 1
+    }
+}

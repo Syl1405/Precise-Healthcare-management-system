@@ -348,7 +348,17 @@ div{
 }
 .zebra{
   text-align: left;
+<<<<<<< HEAD
   
+=======
+  width:48vw;
+  margin-left: 10vw;
+
+}
+#zebracon{
+  position: absolute;
+  top:15vh;
+>>>>>>> b0b4046858188cfacaf093805d237779d8c10a36
 }
 .zebra:nth-child(odd){
 	background-color: #DDDDDD;
@@ -974,6 +984,7 @@ border:1px solid;
     border-radius: 1.5vw;
 
 }
+<<<<<<< HEAD
 #root { 
 height: 100%; 
 overflow-x: hidden; 
@@ -996,4 +1007,28 @@ border : none 0;
 
 .ListItemEven { 
 background-color: #f8f8f0; 
+=======
+#root {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.List {
+  border: 1px solid #f8f8f0;
+  margin-top: -10vh;
+  margin-left: 1vw;
+}
+
+.ListItemEven,
+.ListItemOdd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none 0;
+  font-size:0.5em;
+}
+
+.ListItemEven {
+  background-color: #FFFFFF;
+>>>>>>> b0b4046858188cfacaf093805d237779d8c10a36
 }

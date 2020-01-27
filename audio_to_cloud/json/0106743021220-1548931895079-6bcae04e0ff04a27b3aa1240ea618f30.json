@@ -1,0 +1,710 @@
+{
+    "一個": {
+        "draw": false,
+        "times": 3
+    },
+    "一半": {
+        "draw": false,
+        "times": 1
+    },
+    "一夜": {
+        "draw": false,
+        "times": 1
+    },
+    "一直": {
+        "draw": false,
+        "times": 2
+    },
+    "一碗": {
+        "draw": false,
+        "times": 6
+    },
+    "一種": {
+        "draw": false,
+        "times": 5
+    },
+    "一類": {
+        "draw": false,
+        "times": 4
+    },
+    "一點": {
+        "draw": false,
+        "times": 4
+    },
+    "上網": {
+        "draw": false,
+        "times": 1
+    },
+    "上面": {
+        "draw": false,
+        "times": 2
+    },
+    "不夠": {
+        "draw": false,
+        "times": 4
+    },
+    "不用": {
+        "draw": false,
+        "times": 8
+    },
+    "並不": {
+        "draw": false,
+        "times": 5
+    },
+    "主菜": {
+        "draw": false,
+        "times": 1
+    },
+    "主食": {
+        "draw": false,
+        "times": 4
+    },
+    "五股": {
+        "draw": false,
+        "times": 6
+    },
+    "人會": {
+        "draw": false,
+        "times": 1
+    },
+    "他樣": {
+        "draw": false,
+        "times": 1
+    },
+    "佛曲": {
+        "draw": false,
+        "times": 1
+    },
+    "你講": {
+        "draw": false,
+        "times": 4
+    },
+    "使用": {
+        "draw": false,
+        "times": 3
+    },
+    "便當": {
+        "draw": false,
+        "times": 2
+    },
+    "便當盒": {
+        "draw": false,
+        "times": 7
+    },
+    "做": {
+        "draw": false,
+        "times": 12
+    },
+    "傍晚": {
+        "draw": false,
+        "times": 1
+    },
+    "傳統": {
+        "draw": false,
+        "times": 4
+    },
+    "價格": {
+        "draw": false,
+        "times": 3
+    },
+    "兩天": {
+        "draw": false,
+        "times": 2
+    },
+    "兩種": {
+        "draw": false,
+        "times": 4
+    },
+    "公": {
+        "draw": false,
+        "times": 1
+    },
+    "公分": {
+        "draw": false,
+        "times": 8
+    },
+    "凱旋": {
+        "draw": false,
+        "times": 1
+    },
+    "分": {
+        "draw": false,
+        "times": 3
+    },
+    "初戀": {
+        "draw": false,
+        "times": 3
+    },
+    "加油": {
+        "draw": false,
+        "times": 2
+    },
+    "包含": {
+        "draw": false,
+        "times": 4
+    },
+    "南瓜": {
+        "draw": false,
+        "times": 4
+    },
+    "只": {
+        "draw": false,
+        "times": 1
+    },
+    "台獨": {
+        "draw": false,
+        "times": 1
+    },
+    "台股": {
+        "draw": false,
+        "times": 1
+    },
+    "吃": {
+        "draw": false,
+        "times": 8
+    },
+    "吃太多": {
+        "draw": false,
+        "times": 1
+    },
+    "吉他": {
+        "draw": false,
+        "times": 2
+    },
+    "哈囉": {
+        "draw": false,
+        "times": 1
+    },
+    "喔": {
+        "draw": false,
+        "times": 2
+    },
+    "單爐": {
+        "draw": false,
+        "times": 1
+    },
+    "嚴格": {
+        "draw": false,
+        "times": 8
+    },
+    "回答": {
+        "draw": false,
+        "times": 1
+    },
+    "在家": {
+        "draw": false,
+        "times": 3
+    },
+    "地方": {
+        "draw": false,
+        "times": 3
+    },
+    "地毯": {
+        "draw": false,
+        "times": 1
+    },
+    "地瓜": {
+        "draw": false,
+        "times": 5
+    },
+    "外食": {
+        "draw": false,
+        "times": 3
+    },
+    "天": {
+        "draw": false,
+        "times": 1
+    },
+    "太": {
+        "draw": false,
+        "times": 4
+    },
+    "太過": {
+        "draw": false,
+        "times": 8
+    },
+    "太高": {
+        "draw": false,
+        "times": 2
+    },
+    "奇怪": {
+        "draw": false,
+        "times": 1
+    },
+    "奶粉": {
+        "draw": false,
+        "times": 1
+    },
+    "好": {
+        "draw": false,
+        "times": 19
+    },
+    "子": {
+        "draw": false,
+        "times": 1
+    },
+    "家": {
+        "draw": false,
+        "times": 1
+    },
+    "導航": {
+        "draw": false,
+        "times": 2
+    },
+    "小": {
+        "draw": false,
+        "times": 1
+    },
+    "左": {
+        "draw": false,
+        "times": 1
+    },
+    "已經": {
+        "draw": false,
+        "times": 2
+    },
+    "幫": {
+        "draw": false,
+        "times": 4
+    },
+    "平平的": {
+        "draw": false,
+        "times": 2
+    },
+    "建議": {
+        "draw": false,
+        "times": 8
+    },
+    "彰化": {
+        "draw": false,
+        "times": 1
+    },
+    "我會": {
+        "draw": false,
+        "times": 9
+    },
+    "我用": {
+        "draw": false,
+        "times": 2
+    },
+    "我要": {
+        "draw": false,
+        "times": 2
+    },
+    "排": {
+        "draw": false,
+        "times": 2
+    },
+    "排骨": {
+        "draw": false,
+        "times": 1
+    },
+    "提醒": {
+        "draw": false,
+        "times": 2
+    },
+    "提高": {
+        "draw": true,
+        "times": 4
+    },
+    "撥打": {
+        "draw": false,
+        "times": 1
+    },
+    "放": {
+        "draw": false,
+        "times": 2
+    },
+    "時間": {
+        "draw": false,
+        "times": 1
+    },
+    "最": {
+        "draw": false,
+        "times": 2
+    },
+    "有氧": {
+        "draw": false,
+        "times": 3
+    },
+    "東西": {
+        "draw": false,
+        "times": 5
+    },
+    "桃園": {
+        "draw": false,
+        "times": 3
+    },
+    "植物性": {
+        "draw": false,
+        "times": 5
+    },
+    "標誌": {
+        "draw": false,
+        "times": 2
+    },
+    "模式": {
+        "draw": true,
+        "times": 3
+    },
+    "死": {
+        "draw": false,
+        "times": 1
+    },
+    "比例": {
+        "draw": false,
+        "times": 2
+    },
+    "油": {
+        "draw": false,
+        "times": 4
+    },
+    "油脂": {
+        "draw": false,
+        "times": 5
+    },
+    "泰國": {
+        "draw": false,
+        "times": 2
+    },
+    "測試": {
+        "draw": false,
+        "times": 1
+    },
+    "準備": {
+        "draw": false,
+        "times": 4
+    },
+    "火山": {
+        "draw": false,
+        "times": 1
+    },
+    "烹調": {
+        "draw": false,
+        "times": 4
+    },
+    "無氧": {
+        "draw": false,
+        "times": 1
+    },
+    "煮菜": {
+        "draw": false,
+        "times": 3
+    },
+    "熱量": {
+        "draw": true,
+        "times": 4
+    },
+    "營養": {
+        "draw": false,
+        "times": 3
+    },
+    "營養素": {
+        "draw": false,
+        "times": 3
+    },
+    "牙齒": {
+        "draw": true,
+        "times": 1
+    },
+    "特別": {
+        "draw": false,
+        "times": 2
+    },
+    "狀況": {
+        "draw": false,
+        "times": 4
+    },
+    "現在": {
+        "draw": false,
+        "times": 7
+    },
+    "瓦斯爐": {
+        "draw": false,
+        "times": 1
+    },
+    "甲地": {
+        "draw": false,
+        "times": 3
+    },
+    "男生": {
+        "draw": false,
+        "times": 2
+    },
+    "當天": {
+        "draw": false,
+        "times": 2
+    },
+    "白紙": {
+        "draw": false,
+        "times": 1
+    },
+    "白質": {
+        "draw": false,
+        "times": 3
+    },
+    "白飯": {
+        "draw": false,
+        "times": 2
+    },
+    "盡量": {
+        "draw": false,
+        "times": 1
+    },
+    "盧": {
+        "draw": false,
+        "times": 1
+    },
+    "直徑": {
+        "draw": false,
+        "times": 3
+    },
+    "直接": {
+        "draw": false,
+        "times": 7
+    },
+    "看過": {
+        "draw": false,
+        "times": 1
+    },
+    "砂": {
+        "draw": false,
+        "times": 1
+    },
+    "站": {
+        "draw": false,
+        "times": 1
+    },
+    "粉": {
+        "draw": false,
+        "times": 1
+    },
+    "總統": {
+        "draw": false,
+        "times": 1
+    },
+    "總統府": {
+        "draw": false,
+        "times": 1
+    },
+    "義務": {
+        "draw": false,
+        "times": 1
+    },
+    "老闆": {
+        "draw": false,
+        "times": 3
+    },
+    "肉": {
+        "draw": false,
+        "times": 1
+    },
+    "脂肪": {
+        "draw": false,
+        "times": 1
+    },
+    "脂肪酸": {
+        "draw": true,
+        "times": 3
+    },
+    "自助餐": {
+        "draw": false,
+        "times": 7
+    },
+    "芋頭": {
+        "draw": false,
+        "times": 1
+    },
+    "若離": {
+        "draw": false,
+        "times": 1
+    },
+    "草": {
+        "draw": false,
+        "times": 1
+    },
+    "菜刀": {
+        "draw": false,
+        "times": 4
+    },
+    "蒸": {
+        "draw": false,
+        "times": 1
+    },
+    "蒸白": {
+        "draw": false,
+        "times": 1
+    },
+    "蔬菜": {
+        "draw": false,
+        "times": 5
+    },
+    "蛋白質": {
+        "draw": true,
+        "times": 9
+    },
+    "裡": {
+        "draw": false,
+        "times": 3
+    },
+    "西安": {
+        "draw": false,
+        "times": 1
+    },
+    "要求": {
+        "draw": false,
+        "times": 3
+    },
+    "診斷": {
+        "draw": true,
+        "times": 4
+    },
+    "說": {
+        "draw": false,
+        "times": 3
+    },
+    "講": {
+        "draw": false,
+        "times": 2
+    },
+    "講太多": {
+        "draw": false,
+        "times": 1
+    },
+    "講就": {
+        "draw": false,
+        "times": 2
+    },
+    "貝殼": {
+        "draw": false,
+        "times": 1
+    },
+    "超過": {
+        "draw": false,
+        "times": 4
+    },
+    "辦法": {
+        "draw": false,
+        "times": 2
+    },
+    "通常": {
+        "draw": false,
+        "times": 1
+    },
+    "運動": {
+        "draw": false,
+        "times": 5
+    },
+    "適合": {
+        "draw": false,
+        "times": 6
+    },
+    "選": {
+        "draw": false,
+        "times": 1
+    },
+    "選擇": {
+        "draw": false,
+        "times": 3
+    },
+    "那種": {
+        "draw": false,
+        "times": 5
+    },
+    "部分": {
+        "draw": false,
+        "times": 6
+    },
+    "郵局": {
+        "draw": false,
+        "times": 1
+    },
+    "量表": {
+        "draw": false,
+        "times": 2
+    },
+    "針對": {
+        "draw": false,
+        "times": 3
+    },
+    "銀行": {
+        "draw": false,
+        "times": 2
+    },
+    "長長的": {
+        "draw": false,
+        "times": 2
+    },
+    "阿妹": {
+        "draw": false,
+        "times": 1
+    },
+    "限制": {
+        "draw": false,
+        "times": 3
+    },
+    "雞排": {
+        "draw": false,
+        "times": 4
+    },
+    "雞腿": {
+        "draw": false,
+        "times": 4
+    },
+    "類": {
+        "draw": false,
+        "times": 3
+    },
+    "類標": {
+        "draw": false,
+        "times": 1
+    },
+    "食物": {
+        "draw": false,
+        "times": 9
+    },
+    "飯": {
+        "draw": false,
+        "times": 3
+    },
+    "飯桶": {
+        "draw": false,
+        "times": 1
+    },
+    "飯要": {
+        "draw": false,
+        "times": 1
+    },
+    "飲食": {
+        "draw": false,
+        "times": 4
+    },
+    "餵": {
+        "draw": false,
+        "times": 4
+    },
+    "體": {
+        "draw": false,
+        "times": 1
+    },
+    "體型": {
+        "draw": false,
+        "times": 1
+    },
+    "高": {
+        "draw": false,
+        "times": 6
+    },
+    "高度": {
+        "draw": false,
+        "times": 4
+    },
+    "高蛋白": {
+        "draw": false,
+        "times": 1
+    },
+    "鼻子": {
+        "draw": true,
+        "times": 1
+    }
+}

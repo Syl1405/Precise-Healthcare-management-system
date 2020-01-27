@@ -1,0 +1,42 @@
+{
+    "你好": {
+        "draw": false,
+        "times": 1
+    },
+    "坐": {
+        "draw": false,
+        "times": 1
+    },
+    "幾號": {
+        "draw": false,
+        "times": 1
+    },
+    "後": {
+        "draw": false,
+        "times": 2
+    },
+    "新泰": {
+        "draw": false,
+        "times": 1
+    },
+    "樂高": {
+        "draw": false,
+        "times": 1
+    },
+    "處理": {
+        "draw": false,
+        "times": 2
+    },
+    "註冊": {
+        "draw": false,
+        "times": 1
+    },
+    "語音輸入": {
+        "draw": false,
+        "times": 3
+    },
+    "路": {
+        "draw": false,
+        "times": 1
+    }
+}
