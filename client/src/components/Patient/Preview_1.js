@@ -29,12 +29,17 @@ class Preview_1 extends Component {
             VeryActiveMinutes: '',
             CaloriesOut: '',
             width: '',
-            height: ''
+            height: '',
+            blood_pressure: '',
+            blood_suger: '',
+            temperature: '',
+            weight: '',
+            heart: Math.floor((Math.random()*85+60))
         }
         var NewArray = new Array();
 　      NewArray = window.location.href.split('/');
         console.log(NewArray[NewArray.length-1]);
-        const userid =  NewArray[NewArray.length-1];
+        var userid =  NewArray[NewArray.length-1];
         patient_1(userid).then(res => {
             console.log(res);
             //console.log(res[3] != undefined ? 1 : 0);
@@ -509,10 +514,20 @@ class Preview_1 extends Component {
             ]
         }
         return (
+
                 <div className="graphs_1">
-                        
+                        <div style={{margin:"0 auto"}}>
+                            <div className="graph_name" >
+                                <a>心率 : {this.state.heart} bpm </a>
+                                <a style={{marginLeft: '6vw'}}>血壓 : {this.state.blood_pressure} mmHg</a>
+                                <a style={{marginLeft: '6vw'}}>血糖 : {this.state.blood_suger} mg/dl</a>
+                                <br/><br/><br/>
+                                <a>體重 : {this.state.weight} kg</a>
+                                <a style={{marginLeft: '8vw'}}>體溫 : {this.state.temperature} 度</a>
+                            </div>
+                        </div>
                         <div>
-                            <div className="graph_name">昨日睡眠</div>
+                            <div className="graph_name" style={{marginTop:"-15vw"}}>昨日睡眠</div>
                             <HighchartsReact highcharts = {Highcharts} options={configs}/>
                             <hr/>
                         </div>

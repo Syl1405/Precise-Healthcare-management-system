@@ -83,22 +83,21 @@ class Preview_5 extends Component {
         })
 
         this.onChange = this.onChange.bind(this)
+        this.test = this.test.bind(this)
         this.onClick = this.onClick.bind(this)
 
     }
+    test(e){
+      console.log(e.target.name+" "+e.target.value);
+    }
     onChange (e) {
-
         console.log(e.target.name+" "+e.target.value);
         this.setState({ [e.target.name]: e.target.value });
-        this.state.type = this.state.type_all[2];
-        console.log(e.target.value);
-
         const user = {
             userid: userid,
             type: e.target.value
         }
         console.log(user);
-        console.log(this.value);
         imgdata(user).then(res => {
             rows = res;
             console.log(res);
@@ -113,22 +112,20 @@ class Preview_5 extends Component {
             }
         })
         console.log(e.target.value);
-        this.onClick = this.onClick.bind(this);
-
+        this.onClick = this.onClick.bind(this)
     }
     onClick (e) {
         this.setState({ selectimg: e.target.name });
         this.forceUpdate();
         console.log(e.target.name);
         console.log(this.state);
-        console.log(this.state.type);
     }
     render () {
         //console.log(example);
         const Row = ({ index, style }) => (
-          <button className={index % 2 ? "ListItemOdd" : "ListItemEven"} name="type" style={style} value={this.state.type_all[index]} onClick={this.onChange} >
-            {this.state.type_all[index]}
-          </button>
+          <div className={index % 2 ? "ListItemOdd" : "ListItemEven"}  style={style} >
+              <input type="text" name="type" value={this.state.type_all[index]} onClick={this.onChange} />
+          </div>
         )
         const Example = () => (
             <List
@@ -139,7 +136,7 @@ class Preview_5 extends Component {
             width={100}
           >
           {Row}
-
+          
         </List>
         )
 
@@ -151,9 +148,20 @@ class Preview_5 extends Component {
                  <br/>
                  </div>
                    <Example/>
-
+                 {
+                    this.state.type_all.map((type) => {
+                       return (
+                         <div>
+                             <input type="radio" name="type" value={type} onClick={this.onChange} className="leftphoto" checked={this.state.type === type}/><label style={{fontSize: "1.5vw"}}>{type}</label>
+                         </div>
+                       );
+                     })
+                 }
             </div>
+
                <div class="image">
+
+
                         {
                            this.state.image.map((image) => {
                               return (
@@ -171,7 +179,7 @@ class Preview_5 extends Component {
                             <div className="modal-content"  style={{height:'80vh',width: '50vw',marginLeft: '-10vw',marginTop: '5vw'}}>
                                 <div className="modal-body">
                                 <br/>
-                                <img src={require("../"+this.state.selectimg+".jpg")}  style={{width: '80vh',height: '60vh'}}/>
+                                <img src={require("../"+this.state.selectimg+".jpg")}  style={{width: '80vh',height: '50vh'}}/>
 
                                 </div>
                                 <div >

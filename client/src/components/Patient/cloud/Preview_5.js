@@ -9,33 +9,13 @@ import Highcharts from 'highcharts' //npm install highcharts-more --save
 import * as HighchartsMore from "highcharts/highcharts-more"
 import Highstock from 'highcharts/highstock'
 import HighchartsReact from 'highcharts-react-official' //npm install highcharts-react-official
-import PropTypes from 'prop-types';
-import { FixedSizeList as List } from "react-window";
+
 
 HighchartsMore(Highcharts)
 HighchartsMore(Highstock)
 var rows;
 var userid;
-/*const Row = ({ index, style }) => (
-  <div className={index % 2 ? "ListItemOdd" : "ListItemEven"} style={style}>
-    Row {index}
-  </div>
-);
-
-const Example = () => (
-  <List
-  className="List"
-  height={100}
-  itemCount={10}
-  itemSize={20}
-  width={100}
->
-  {Row}
-
-</List>
-);*/
 class Preview_5 extends Component {
-
     constructor() {
         super()
         this.state = {
@@ -87,18 +67,12 @@ class Preview_5 extends Component {
 
     }
     onChange (e) {
-
-        console.log(e.target.name+" "+e.target.value);
         this.setState({ [e.target.name]: e.target.value });
-        this.state.type = this.state.type_all[2];
-        console.log(e.target.value);
-
         const user = {
             userid: userid,
             type: e.target.value
         }
         console.log(user);
-        console.log(this.value);
         imgdata(user).then(res => {
             rows = res;
             console.log(res);
@@ -113,47 +87,35 @@ class Preview_5 extends Component {
             }
         })
         console.log(e.target.value);
-        this.onClick = this.onClick.bind(this);
-
-    }
+        this.onClick = this.onClick.bind(this)
+    }  
     onClick (e) {
         this.setState({ selectimg: e.target.name });
         this.forceUpdate();
         console.log(e.target.name);
         console.log(this.state);
-        console.log(this.state.type);
-    }
+    } 
     render () {
         //console.log(example);
-        const Row = ({ index, style }) => (
-          <button className={index % 2 ? "ListItemOdd" : "ListItemEven"} name="type" style={style} value={this.state.type_all[index]} onClick={this.onChange} >
-            {this.state.type_all[index]}
-          </button>
-        )
-        const Example = () => (
-            <List
-            className="List"
-            height={150}
-            itemCount={this.state.type_all.length}
-            itemSize={50}
-            width={100}
-          >
-          {Row}
-
-        </List>
-        )
-
         return (
             <div className="graphs_5">
-            <div className="radio" style={{width:'10vw'}}>
-
-                 <div className="top">
-                 <br/>
-                 </div>
-                   <Example/>
-
-            </div>
+               <div className="radio" style={{width:'10vw'}}>
+                    <div className="top">
+                    <br/>
+                    </div>
+                    {
+                       this.state.type_all.map((type) => {
+                          return (
+                            <div>
+                                <input type="radio" name="type" value={type} onClick={this.onChange} className="leftphoto" checked={this.state.type === type}/><label style={{fontSize: "1.5vw"}}>{type}</label>
+                            </div>
+                          );
+                        })
+                    }
+               </div>
                <div class="image">
+                    
+
                         {
                            this.state.image.map((image) => {
                               return (
@@ -171,8 +133,8 @@ class Preview_5 extends Component {
                             <div className="modal-content"  style={{height:'80vh',width: '50vw',marginLeft: '-10vw',marginTop: '5vw'}}>
                                 <div className="modal-body">
                                 <br/>
-                                <img src={require("../"+this.state.selectimg+".jpg")}  style={{width: '80vh',height: '60vh'}}/>
-
+                                <img src={require("../"+this.state.selectimg+".jpg")}  style={{width: '80vh',height: '50vh'}}/>
+                                  
                                 </div>
                                 <div >
                                     <button data-dismiss="modal" aria-hidden="true" className="loginbtn" id="canc" style={{marginLeft:'0vw'}}>返回</button>

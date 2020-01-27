@@ -20,6 +20,8 @@ HighchartsMore(Highstock)
 
 const keys=Object.keys(data);
 let buffer = [];
+let med = [];
+let notmed = [];
 var userid;
 
 class Preview_4 extends Component {
@@ -29,7 +31,8 @@ class Preview_4 extends Component {
             width: Number(document.body.clientWidth*0.4),
             height: Number(document.body.clientWidth*0.3),
             textsize: Number(document.body.clientWidth*0.001),
-            audio: []
+            audio: [],
+            type: "醫療"
         }
 
         var NewArray = new Array();
@@ -48,6 +51,11 @@ class Preview_4 extends Component {
             this.forceUpdate();
         })
         this.onClick = this.onClick.bind(this)
+        this.onChange = this.onChange.bind(this)
+    }
+    onChange (e) {
+        this.setState({ [e.target.name]: e.target.value });
+        this.forceUpdate();
     }
     onClick (e) {
         console.log(this.state.width);
@@ -56,18 +64,32 @@ class Preview_4 extends Component {
         var keys=Object.keys(data);
         console.log(data);
         buffer = [];
+        med = [];
+        notmed = [];
         for(var i=0;i<keys.length;++i){
-            if(data[keys[i]]["draw"]){
-              buffer.push({text:keys[i],value:data[keys[i]]["times"]+10.5}); //加權
-            }
-            else{
-              buffer.push({text:keys[i],value:data[keys[i]]["times"]});
-            }
+          if(data[keys[i]]["draw"]){
+            med.push({text:keys[i],value:data[keys[i]]["times"]}); //加權
+          }
+          else{
+            notmed.push({text:keys[i],value:data[keys[i]]["times"]});
+          }
         }
-        const newData = buffer.map(item => ({
-          text: item.text,
-          value: item.value
-        }));
+        console.log(med);
+        console.log(notmed);
+        console.log(this.state.type);
+        if(this.state.type == "醫療"){
+            const newData = med.map(item => ({
+              text: item.text,
+              value: item.value
+            }));
+        }
+        else{
+            const newData = notmed.map(item => ({
+              text: item.text,
+              value: item.value
+            }));
+        }
+        
         this.forceUpdate();
     }
     DrawCloud() {
@@ -87,13 +109,26 @@ class Preview_4 extends Component {
     }
     render () {
         console.log(example);
+        if(this.state.type == "醫療")
+            buffer = med;
+        else
+            buffer = notmed;
         const newData = buffer.map(item => ({
             text: item.text,
             value: item.value
         }));
+        let cloud;
         return (
-                <div className="graphs_4">
-
+                <div className="graphs_5">
+                <div className="radio" style={{width:'10vw'}}>
+                    <div className="top">
+                        <br/>
+                     </div>
+                    <input type="radio" name="type" value="醫療" onClick={this.onChange} className="leftphoto" checked={this.state.type === "醫療"}/><label style={{fontSize: "1.5vw"}}>醫療</label>
+                    <br/>
+                    <input type="radio" name="type" value="其他" onClick={this.onChange} className="leftphoto" checked={this.state.type === "其他"}/><label style={{fontSize: "1.5vw"}}>其他</label>
+                </div>
+                <div className="image">
                     {
                            this.state.audio.map((audio) => {
                               return (
@@ -104,14 +139,13 @@ class Preview_4 extends Component {
                               );
                             })
                         }
+                </div>
 
                     <div className="modal fade" id="wavWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" onSubmit={this.onSubmit}>
                         <div className="modal-dialog">
                             <div className="modal-content"  style={{height:'80vh',width: '50vw',marginLeft: '-10vw',marginTop: '5vw'}}>
-                            <div className="modal-content"  style={{height:'70vh',width:'50vw',marginLeft:'0vw'}}>
                                 <div className="modal-body">
                                 <br/>
-
                                   <WordCloud
                                     width={this.state.width}
                                     height={this.state.height}
@@ -123,7 +157,6 @@ class Preview_4 extends Component {
                                 <div >
                                     <button data-dismiss="modal" aria-hidden="true" className="loginbtn" id="canc" style={{marginLeft:'0vw'}}>返回</button>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
