@@ -358,7 +358,6 @@ div{
 #zebracon{
   position: absolute;
   top:15vh;
->>>>>>> b0b4046858188cfacaf093805d237779d8c10a36
 }
 .zebra:nth-child(odd){
 	background-color: #DDDDDD;
@@ -1007,7 +1006,7 @@ border : none 0;
 
 .ListItemEven { 
 background-color: #f8f8f0; 
-=======
+}
 #root {
   height: 100%;
   overflow-x: hidden;
@@ -1030,5 +1029,4 @@ background-color: #f8f8f0;
 
 .ListItemEven {
   background-color: #FFFFFF;
->>>>>>> b0b4046858188cfacaf093805d237779d8c10a36
 }

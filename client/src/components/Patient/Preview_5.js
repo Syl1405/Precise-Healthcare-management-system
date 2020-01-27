@@ -133,11 +133,8 @@ class Preview_5 extends Component {
         const Example = () => (
             <List
             className="List"
-<<<<<<< HEAD
             height={150}
-=======
             height={100}
->>>>>>> b0b4046858188cfacaf093805d237779d8c10a36
             itemCount={this.state.type_all.length}
             itemSize={50}
             width={100}
@@ -174,13 +171,8 @@ class Preview_5 extends Component {
                         <div className="modal-dialog">
                             <div className="modal-content"  style={{height:'80vh',width: '50vw',marginLeft: '-10vw',marginTop: '5vw'}}>
                                 <div className="modal-body">
-                                <br/>
-<<<<<<< HEAD
-                                <img src={require("../"+this.state.selectimg+".jpg")}  style={{width: '80vh',height: '60vh'}}/>
-=======
+                                <br/>                                <img src={require("../"+this.state.selectimg+".jpg")}  style={{width: '80vh',height: '60vh'}}/>
                                 <img src={require("../"+this.state.selectimg+".jpg")}  style={{width: '80vh',height: '50vh'}}/>
->>>>>>> b0b4046858188cfacaf093805d237779d8c10a36
-
                                 </div>
                                 <div >
                                     <button data-dismiss="modal" aria-hidden="true" className="loginbtn" id="canc" style={{marginLeft:'0vw'}}>返回</button>
