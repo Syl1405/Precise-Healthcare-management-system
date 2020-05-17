@@ -23,7 +23,6 @@
 
 ![](https://i.imgur.com/98mSfY1.png)
 
-  #文字雲圖
 
 ### 風險評估
 
@@ -33,7 +32,7 @@
 
 ### 資料視覺化
 
-使用HighChart.js精選適合的圖表來傳達各式即時與歷史生理數據，包含心跳，血壓，血糖等等。
+使用HighChart.js精選適合的圖表來傳達各式即時與歷史生理數據，包含心跳，血壓，血糖等等。其中圖表可以自由調整想看的日期區間
 
 ![](https://i.imgur.com/TnwYeIs.jpg)
 
@@ -42,5 +41,7 @@
 我們遵循完整的軟體開發流程，從最一開始的[user story](https://drive.google.com/file/d/1z7V2q-Y4YtiDV1KeeHV1wEInJGR_NIXG/view?usp=sharing),[function map, flowchart](https://drive.google.com/file/d/1s54lWls3S8VSwLZEZzNNAoL53RSv7FxL/view?usp=sharing) ,UI的設計 都有經過完整的討論以及修正
 
 前端採用的框架為 React.js & Redux , 並搭配highchart.js作為資料視覺化的套件
+
 後端串接node.js，資料庫使用mySQL
+
 文字雲的部分則是使用python資料處理及語音辨識，使用t3cloud呈現
