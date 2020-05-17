@@ -14,14 +14,14 @@
 這個頁面可以看見每個受照護者當下的狀況，只要受照護者有數據偏離正常值，就會以不同燈號表示，點擊卡片即可進入個人頁面，
 此外左上角還有搜尋功能，可以快速尋找其中一種數值偏離正常值的受照護者
 
-![](https://i.imgur.com/OZpgnFm.jpg =500x300)
+![](https://i.imgur.com/OZpgnFm.jpg)
 
 
 ### 語音分析
 透過API將音檔轉成文字，取得關鍵字出現頻率，以文字雲的方式呈現，
 照護者只須點選語音分析訪談功能，系統即會以視覺立即呈顯談話重點
 
-![](https://i.imgur.com/98mSfY1.png =500x300)
+![](https://i.imgur.com/98mSfY1.png)
 
   #文字雲圖
 
@@ -29,13 +29,13 @@
 
 基於Framingham Risk Score估計心血管相關疾病的風險，我們會每日統計受照護人的健康資料作統計並視覺化
 
-![](https://i.imgur.com/smXi3iH.png =500x300)
+![](https://i.imgur.com/smXi3iH.png)
 
 ### 資料視覺化
 
 使用HighChart.js精選適合的圖表來傳達各式即時與歷史生理數據，包含心跳，血壓，血糖等等。
 
-![](https://i.imgur.com/TnwYeIs.jpg =500x300)
+![](https://i.imgur.com/TnwYeIs.jpg)
 
 ## 開發流程
 
